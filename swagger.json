@@ -1,0 +1,1812 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API+ Endpoints for NBA",
+    "version": "1.0.0",
+    "title": "Sportradar's API+ NBA Endpoints",
+    "termsOfService": "",
+    "contact": { "email": "l.chiu@sportradar.com" },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "http://fake_api_link.com/api",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "team",
+      "description": "API+ official stats for NBA teams",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://sportradar.us/"
+      }
+    },
+    {
+      "name": "player",
+      "description": "API+ official stats for NBA players",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://sportradar.us/"
+      }
+    }
+  ],
+  "schemes": ["http", "https"],
+  "paths": {
+    "/en_US/NBA/team/{teamId}/post_play": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's post play",
+        "description": "",
+        "operationId": "team_post_play",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "post_play": {
+                          "type": "object",
+                          "properties": {
+                            "post_location_left": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_points_per_game_created_left": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "post_location_right": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_points_per_game_created_right": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "post_plays_count": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/paint_drive_location": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's paint drive location team",
+        "description": "",
+        "operationId": "paint_drive_location_team",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "paint_drive_location": {
+                          "type": "object",
+                          "properties": {
+                            "paint_drive_location_left": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "per_game_created_left": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "paint_drive_location_right": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "points_per_game_created_right": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "total_paint_drives": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/shot_tracks_time": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's shot tracks time",
+        "description": "",
+        "operationId": "shot_tracks_time",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "shot_tracks_time": {
+                          "type": "object",
+                          "properties": {
+                            "on_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "off_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "on_ball": { "type": "number", "format": "float" },
+                            "off_ball": { "type": "number", "format": "float" },
+                            "shooting_plays": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/shot_tracks_length": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's shot tracks length",
+        "description": "",
+        "operationId": "shot_tracks_length",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "shot_tracks_length": {
+                          "type": "object",
+                          "properties": {
+                            "on_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "off_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "on_ball": { "type": "number", "format": "float" },
+                            "off_ball": { "type": "number", "format": "float" },
+                            "shooting_plays": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/offensive_rating": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's offensive rating",
+        "description": "",
+        "operationId": "offensive_rating",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "offensive_rating": {
+                          "type": "object",
+                          "properties": {
+                            "off_screen_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "rim_protection": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "1_on_1_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "perimeter_shot_contesting": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "ball_screen_handler_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "ball_screener_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "closeouts": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "defending_drives": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "help_rotations": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "steals": { "type": "integer", "format": "int32" },
+                            "defensive_boards": {
+                              "type": "integer",
+                              "format": "int32"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/trends_player": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's trends player",
+        "description": "",
+        "operationId": "trends_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "trends_player": {
+                          "type": "object",
+                          "properties": {
+                            "up_down": { "type": "string" },
+                            "player_downwards_trend_1": { "type": "string" },
+                            "player_downwards_trend_2": { "type": "string" },
+                            "player_downwards_trend_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/trends_team": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's trends team",
+        "description": "",
+        "operationId": "trends_team",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "trends_team": {
+                          "type": "object",
+                          "properties": {
+                            "up_down": { "type": "string" },
+                            "player_downwards_trend_1": { "type": "string" },
+                            "player_downwards_trend_2": { "type": "string" },
+                            "player_downwards_trend_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/sport_key_stretch": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's sport key stretch",
+        "description": "",
+        "operationId": "sport_key_stretch",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "sport_key_stretch": {
+                          "type": "object",
+                          "properties": {
+                            "team_worst_stretch_1": { "type": "string" },
+                            "team_worst_stretch_2": { "type": "string" },
+                            "team_worst_stretch_3": { "type": "string" },
+                            "team_worst_stretch_4": { "type": "string" },
+                            "team_worst_stretch_5": { "type": "string" },
+                            "text_description": {
+                              "type": "array",
+                              "items": { "type": "string" }
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/court_zone_1": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's player shot zones",
+        "description": "",
+        "operationId": "player_shot_zones_1",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "player_shot_zones": {
+                          "type": "object",
+                          "properties": {
+                            "three_zones": {
+                              "type": "object",
+                              "properties": {
+                                "3-pointer_attempts": { "type": "string" },
+                                "3-pointer_eFG_pct": { "type": "string" },
+                                "3-pointer_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "midrange_attempts": { "type": "string" },
+                                "midrange_eFG_pct": { "type": "string" },
+                                "midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "paint_attempts": { "type": "string" },
+                                "paint_eFG_pct": { "type": "string" },
+                                "paint_points_per_shot": { "type": "string" },
+                                "card_image": { "type": "string" }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/court_zone_2": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's player shot zones",
+        "description": "",
+        "operationId": "player_shot_zones_2",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "player_shot_zones": {
+                          "type": "object",
+                          "properties": {
+                            "five_zones": {
+                              "type": "object",
+                              "properties": {
+                                "midrange_attempts": { "type": "string" },
+                                "midrange_eFG_pct": { "type": "string" },
+                                "midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "left_corner_3_attempts": { "type": "string" },
+                                "left_corner_3_eFG_pct": { "type": "string" },
+                                "left_corner_3_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "3-pointer_attempts": { "type": "string" },
+                                "3-pointer_eFG_pct": { "type": "string" },
+                                "3-pointer_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "paint_attempts": { "type": "string" },
+                                "paint_eFG_pct": { "type": "string" },
+                                "paint_points_per_shot": { "type": "string" },
+                                "right_corner_3_attempts": { "type": "string" },
+                                "right_corner_3_eFG_pct": { "type": "string" },
+                                "right_corner_3_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "card_image": { "type": "string" }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/court_zone_3": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's player shot zones",
+        "description": "",
+        "operationId": "player_shot_zones_3",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "player_shot_zones": {
+                          "type": "object",
+                          "properties": {
+                            "seven_zones": {
+                              "type": "object",
+                              "properties": {
+                                "paint_attempts": { "type": "string" },
+                                "paint_eFG_pct": { "type": "string" },
+                                "paint_points_per_shot": { "type": "string" },
+                                "low_right_attempts": { "type": "string" },
+                                "low_right_eFG_pct": { "type": "string" },
+                                "low_right_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "3-pointer_attempts": { "type": "string" },
+                                "3-pointer_eFG_pct": { "type": "string" },
+                                "3-pointer_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "low_left_attempts": { "type": "string" },
+                                "low_left_eFG_pct": { "type": "string" },
+                                "low_left_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "straight_attempts": { "type": "string" },
+                                "straight_eFG_pct": { "type": "string" },
+                                "straight_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "card_image": { "type": "string" }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/court_zone_4": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's player shot zones",
+        "description": "",
+        "operationId": "player_shot_zones_4",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "player_shot_zones": {
+                          "type": "object",
+                          "properties": {
+                            "fourteen_zones": {
+                              "type": "object",
+                              "properties": {
+                                "under_the_hoop_post_attempts": {
+                                  "type": "string"
+                                },
+                                "under_the_hoop_post_eFG_pct": {
+                                  "type": "string"
+                                },
+                                "under_the_hoop_post_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "right_post_attempts": { "type": "string" },
+                                "right_post_eFG_pct": { "type": "string" },
+                                "right_post_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "right_corner_3_attempts": { "type": "string" },
+                                "right_corner_3_eFG_pct": { "type": "string" },
+                                "right_corner_3_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "left_3_attempts": { "type": "string" },
+                                "left_3_eFG_pct": { "type": "string" },
+                                "left_3_points_per_shot": { "type": "string" },
+                                "middle_post_attempts": { "type": "string" },
+                                "middle_post_eFG_pct": { "type": "string" },
+                                "middle_post_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "left_corner_3_attempts": { "type": "string" },
+                                "left_corner_3_eFG_pct": { "type": "string" },
+                                "left_corner_3_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "far_left_midrange_attempts": {
+                                  "type": "string"
+                                },
+                                "far_left_midrange_eFG_pct": {
+                                  "type": "string"
+                                },
+                                "far_left_midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "middle_right_midrange_attempts": {
+                                  "type": "string"
+                                },
+                                "middle_right_midrange_eFG_pct": {
+                                  "type": "string"
+                                },
+                                "middle_right_midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "right_3_attempts": { "type": "string" },
+                                "right_3_eFG_pct": { "type": "string" },
+                                "right_3_points_per_shot": { "type": "string" },
+                                "left_post_attempts": { "type": "string" },
+                                "left_post_eFG_pct": { "type": "string" },
+                                "left_post_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "middle_left_midrange_attempts": {
+                                  "type": "string"
+                                },
+                                "middle_left_midrange_eFG_pct": {
+                                  "type": "string"
+                                },
+                                "middle_left_midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "center_3_attempts": { "type": "string" },
+                                "center_3_eFG_pct": { "type": "string" },
+                                "center_3_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "far_right_midrange_attempts": {
+                                  "type": "string"
+                                },
+                                "far_right_midrange_eFG_pct": {
+                                  "type": "string"
+                                },
+                                "far_right_midrange_points_per_shot": {
+                                  "type": "string"
+                                },
+                                "card_image": { "type": "string" }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/chemistry": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's chemistry",
+        "description": "",
+        "operationId": "chemistry",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "chemistry": {
+                          "type": "object",
+                          "properties": {
+                            "best_play_1": { "type": "string" },
+                            "best_play_2": { "type": "string" },
+                            "best_play_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/matchup_comparison": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's matchup comparison",
+        "description": "",
+        "operationId": "matchup_comparison",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "matchup_comparison": {
+                          "type": "object",
+                          "properties": {
+                            "player_1_offensive_rating": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "player_1_possessions": { "type": "string" },
+                            "player_2_offensive_rating": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "player_2_possessions": { "type": "string" },
+                            "total_possessions": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "efficiency": { "type": "string" },
+                            "text_description": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_easiest": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's nba seasonal matchup easiest",
+        "description": "",
+        "operationId": "nba_seasonal_matchup_easiest",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "nba_seasonal_matchup_easiest": {
+                          "type": "object",
+                          "properties": {
+                            "easiest_matchup_offense_1": { "type": "string" },
+                            "easiest_matchup_offense_2": { "type": "string" },
+                            "easiest_matchup_offense_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_toughest": {
+      "get": {
+        "tags": ["team"],
+        "summary": "team card's nba seasonal matchup toughest",
+        "description": "",
+        "operationId": "nba_seasonal_matchup_toughest",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "team's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "nba_seasonal_matchup_toughest": {
+                          "type": "object",
+                          "properties": {
+                            "toughest_matchup_offense_1": { "type": "string" },
+                            "toughest_matchup_offense_2": { "type": "string" },
+                            "toughest_matchup_offense_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/post_play": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's player's post play",
+        "description": "",
+        "operationId": "player_post_play",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "post_play": {
+                          "type": "object",
+                          "properties": {
+                            "post_location_left": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_points_per_game_created_left": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "post_location_right": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_points_per_game_created_right": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "post_plays_count": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/paint_drive_location": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's paint drive location player",
+        "description": "",
+        "operationId": "paint_drive_location_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "paint_drive_location": {
+                          "type": "object",
+                          "properties": {
+                            "paint_drive_location_left": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "per_game_created_left": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "paint_drive_location_right": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "points_per_game_created_right": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "total_paint_drives": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/shot_tracks_length": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's shot tracks length",
+        "description": "",
+        "operationId": "shot_tracks_length_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "shot_tracks_length": {
+                          "type": "object",
+                          "properties": {
+                            "on_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "off_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "on_ball": { "type": "number", "format": "float" },
+                            "off_ball": { "type": "number", "format": "float" },
+                            "shooting_plays": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/shot_tracks_time": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's shot tracks time",
+        "description": "",
+        "operationId": "shot_tracks_time_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "shot_tracks_time": {
+                          "type": "object",
+                          "properties": {
+                            "on_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "off_ball_pct": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "on_ball": { "type": "number", "format": "float" },
+                            "off_ball": { "type": "number", "format": "float" },
+                            "shooting_plays": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/offensive_rating": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's offensive rating",
+        "description": "",
+        "operationId": "offensive_rating",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "offensive_rating": {
+                          "type": "object",
+                          "properties": {
+                            "help_rotations": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "closeouts": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "1_on_1_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "perimeter_shot_contesting": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "off_screen_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "post_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "defending_drives": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "ball_screen_handler_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "steals": { "type": "integer", "format": "int32" },
+                            "ball_screener_defense": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "defensive_boards": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "rim_protection": {
+                              "type": "integer",
+                              "format": "int32"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/trends_player": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's trends player",
+        "description": "",
+        "operationId": "trends_player_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "trends_player": {
+                          "type": "object",
+                          "properties": {
+                            "up_down": { "type": "string" },
+                            "player_downwards_trend_1": { "type": "string" },
+                            "player_downwards_trend_2": { "type": "string" },
+                            "player_downwards_trend_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/chemistry": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's chemistry",
+        "description": "",
+        "operationId": "chemistry",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "chemistry": {
+                          "type": "object",
+                          "properties": {
+                            "best_play_1": { "type": "string" },
+                            "best_play_2": { "type": "string" },
+                            "best_play_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/matchup_comparison": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's matchup comparison",
+        "description": "",
+        "operationId": "matchup_comparison_player",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "matchup_comparison": {
+                          "type": "object",
+                          "properties": {
+                            "player_1_offensive_rating": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "player_1_possessions": { "type": "string" },
+                            "player_2_offensive_rating": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "player_2_possessions": { "type": "string" },
+                            "total_possessions": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "efficiency": { "type": "string" },
+                            "text_description": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/nba_seasonal_matchup_easiest": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's nba seasonal matchup easiest",
+        "description": "",
+        "operationId": "nba_seasonal_matchup_easiest",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "nba_seasonal_matchup_easiest": {
+                          "type": "object",
+                          "properties": {
+                            "easiest_matchup_offense_1": { "type": "string" },
+                            "easiest_matchup_offense_2": { "type": "string" },
+                            "easiest_matchup_offense_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/en_US/NBA/player/{playerId}/nba_seasonal_matchup_toughest": {
+      "get": {
+        "tags": ["player"],
+        "summary": "player card's nba seasonal matchup toughest",
+        "description": "",
+        "operationId": "nba_seasonal_matchup_toughest",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "player's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "card": {
+                      "type": "object",
+                      "properties": {
+                        "nba_seasonal_matchup_toughest": {
+                          "type": "object",
+                          "properties": {
+                            "toughest_matchup_offense_1": { "type": "string" },
+                            "toughest_matchup_offense_2": { "type": "string" },
+                            "toughest_matchup_offense_3": { "type": "string" },
+                            "card_image": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "shot_tracks": {
+      "type": "object",
+      "properties": {
+        "on_ball_pct": { "type": "number", "format": "float" },
+        "off_ball_pct": { "type": "number", "format": "float" },
+        "on_ball": { "type": "number", "format": "float" },
+        "off_ball": { "type": "number", "format": "float" },
+        "shooting_plays": { "type": "integer", "format": "int32" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "trends": {
+      "type": "object",
+      "properties": {
+        "up_down": { "type": "string" },
+        "player_downwards_trend_1": { "type": "string" },
+        "player_downwards_trend_2": { "type": "string" },
+        "player_downwards_trend_3": { "type": "string" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "post_play": {
+      "type": "object",
+      "properties": {
+        "post_location_left": { "type": "integer", "format": "int32" },
+        "post_points_per_game_created_left": {
+          "type": "number",
+          "format": "float"
+        },
+        "post_location_right": { "type": "integer", "format": "int32" },
+        "post_points_per_game_created_right": {
+          "type": "number",
+          "format": "float"
+        },
+        "post_plays_count": { "type": "integer", "format": "int32" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "paint_drive_location": {
+      "type": "object",
+      "properties": {
+        "paint_drive_location_left": { "type": "integer", "format": "int32" },
+        "per_game_created_left": { "type": "number", "format": "float" },
+        "paint_drive_location_right": { "type": "integer", "format": "int32" },
+        "points_per_game_created_right": {
+          "type": "number",
+          "format": "float"
+        },
+        "total_paint_drives": { "type": "integer", "format": "int32" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "matchup_comparison": {
+      "type": "object",
+      "properties": {
+        "player_1_offensive_rating": { "type": "integer", "format": "int32" },
+        "player_1_possessions": { "type": "string" },
+        "player_2_offensive_rating": { "type": "integer", "format": "int32" },
+        "player_2_possessions": { "type": "string" },
+        "total_possessions": { "type": "integer", "format": "int32" },
+        "efficiency": { "type": "string" },
+        "text_description": { "type": "string" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "chemistry": {
+      "type": "object",
+      "properties": {
+        "best_play_1": { "type": "string" },
+        "best_play_2": { "type": "string" },
+        "best_play_3": { "type": "string" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "nba_seasonal_matchup_easiest": {
+      "type": "object",
+      "properties": {
+        "easiest_matchup_offense_1": { "type": "string" },
+        "easiest_matchup_offense_2": { "type": "string" },
+        "easiest_matchup_offense_3": { "type": "string" },
+        "card_image": { "type": "string" }
+      }
+    },
+    "nba_seasonal_matchup_toughest": {
+      "type": "object",
+      "properties": {
+        "toughest_matchup_offense_1": { "type": "string" },
+        "toughest_matchup_offense_2": { "type": "string" },
+        "toughest_matchup_offense_3": { "type": "string" },
+        "card_image": { "type": "string" }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out More",
+    "url": "https://sportradar.us/"
+  }
+}

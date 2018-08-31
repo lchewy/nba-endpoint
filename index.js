@@ -1,8 +1,6 @@
 import swagger from "./components";
 
-// const swagJSON = JSON.parse(str)
-// console.log("JSON ", swagJSON)
-
+// console.log(JSON.stringify(swagger));
 
 window.onload = function() {
   // Build a system
