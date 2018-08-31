@@ -3,7 +3,7 @@ import nba_seasonal_matchup_easiest from "../../definitions/nba_seasonal_matchup
 
 export default getFunc(
   "nba seasonal matchup easiest",
-  "nba_seasonal_matchup_easiest",
+  "nba_seasonal_matchup_easiest_player",
   "nba_seasonal_matchup_easiest",
   nba_seasonal_matchup_easiest,
   "player"

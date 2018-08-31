@@ -21,7 +21,7 @@ const body = {
 
 export default getFunc(
   "offensive rating",
-  "offensive_rating",
+  "offensive_rating_player",
   "offensive_rating",
   body,
   "player"

@@ -8,7 +8,7 @@ const getFn = (summary, id, key, body, tag) => {
       produces: ["application/json"],
       parameters: [
         {
-          name: "teamId",
+          name: `${tag}Id`,
           in: "path",
           description: `${tag}'s Id from SR model`,
           type: "string",

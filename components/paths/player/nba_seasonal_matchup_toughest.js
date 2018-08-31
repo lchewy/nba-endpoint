@@ -3,7 +3,7 @@ import nba_seasonal_matchup_toughest from "../../definitions/nba_seasonal_matchu
 
 export default getFunc(
   "nba seasonal matchup toughest",
-  "nba_seasonal_matchup_toughest",
+  "nba_seasonal_matchup_toughest_player",
   "nba_seasonal_matchup_toughest",
   nba_seasonal_matchup_toughest,
   "player"

@@ -11,7 +11,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "http://fake_api_link.com/api",
+  "host": "localhost:2000/api",
   "basePath": "/v1",
   "tags": [
     {
@@ -1108,7 +1108,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1175,7 +1175,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1242,7 +1242,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1303,7 +1303,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1360,11 +1360,11 @@
         "tags": ["player"],
         "summary": "player card's offensive rating",
         "description": "",
-        "operationId": "offensive_rating",
+        "operationId": "offensive_rating_player",
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1455,7 +1455,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1502,11 +1502,11 @@
         "tags": ["player"],
         "summary": "player card's chemistry",
         "description": "",
-        "operationId": "chemistry",
+        "operationId": "chemistry_player",
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1556,7 +1556,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1615,11 +1615,11 @@
         "tags": ["player"],
         "summary": "player card's nba seasonal matchup easiest",
         "description": "",
-        "operationId": "nba_seasonal_matchup_easiest",
+        "operationId": "nba_seasonal_matchup_easiest_player",
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",
@@ -1665,11 +1665,11 @@
         "tags": ["player"],
         "summary": "player card's nba seasonal matchup toughest",
         "description": "",
-        "operationId": "nba_seasonal_matchup_toughest",
+        "operationId": "nba_seasonal_matchup_toughest_player",
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "teamId",
+            "name": "playerId",
             "in": "path",
             "description": "player's Id from SR model",
             "type": "string",

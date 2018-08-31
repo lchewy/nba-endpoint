@@ -3,7 +3,7 @@ import chemistry from "../../definitions/chemistry";
 
 export default getFunc(
   "chemistry",
-  "chemistry",
+  "chemistry_player",
   "chemistry",
   chemistry,
   "player"
