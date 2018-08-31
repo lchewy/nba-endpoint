@@ -6,5 +6,5 @@ export default getFunc(
   "chemistry",
   "chemistry",
   chemistry,
-  "team"
+  "player"
 );

@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/definitions/chemistry.js":
+/*!*********************************************!*\
+  !*** ./components/definitions/chemistry.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst str = { type: \"string\" };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  type: \"object\",\n  properties: {\n    best_play_1: str,\n    best_play_2: str,\n    best_play_3: str,\n    card_image: str\n  }\n});\n\n\n//# sourceURL=webpack:///./components/definitions/chemistry.js?");
+
+/***/ }),
+
 /***/ "./components/definitions/index.js":
 /*!*****************************************!*\
   !*** ./components/definitions/index.js ***!
@@ -94,7 +106,55 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shot_tracks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shot_tracks */ \"./components/definitions/shot_tracks.js\");\n/* harmony import */ var _trends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./trends */ \"./components/definitions/trends.js\");\n/* harmony import */ var _post_play__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./post_play */ \"./components/definitions/post_play.js\");\n\n\n\n\nconst definitions = {\n  shot_tracks: _shot_tracks__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  trends: _trends__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  post_play: _post_play__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (definitions);\n\n\n//# sourceURL=webpack:///./components/definitions/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shot_tracks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shot_tracks */ \"./components/definitions/shot_tracks.js\");\n/* harmony import */ var _trends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./trends */ \"./components/definitions/trends.js\");\n/* harmony import */ var _post_play__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./post_play */ \"./components/definitions/post_play.js\");\n/* harmony import */ var _paint_drive_location__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./paint_drive_location */ \"./components/definitions/paint_drive_location.js\");\n/* harmony import */ var _matchup_comparison__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./matchup_comparison */ \"./components/definitions/matchup_comparison.js\");\n/* harmony import */ var _nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nba_seasonal_matchup_easiest */ \"./components/definitions/nba_seasonal_matchup_easiest.js\");\n/* harmony import */ var _chemistry__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./chemistry */ \"./components/definitions/chemistry.js\");\n/* harmony import */ var _nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./nba_seasonal_matchup_toughest */ \"./components/definitions/nba_seasonal_matchup_toughest.js\");\n\n\n\n\n\n\n\n\n\nconst definitions = {\n  shot_tracks: _shot_tracks__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  trends: _trends__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  post_play: _post_play__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  paint_drive_location: _paint_drive_location__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  matchup_comparison: _matchup_comparison__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n  chemistry: _chemistry__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n  nba_seasonal_matchup_easiest: _nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n  nba_seasonal_matchup_toughest: _nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_7__[\"default\"]\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (definitions);\n\n\n//# sourceURL=webpack:///./components/definitions/index.js?");
+
+/***/ }),
+
+/***/ "./components/definitions/matchup_comparison.js":
+/*!******************************************************!*\
+  !*** ./components/definitions/matchup_comparison.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst int32 = { type: \"integer\", format: \"int32\" };\nconst str = { type: \"string\" };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  type: \"object\",\n  properties: {\n    player_1_offensive_rating: int32,\n    player_1_possessions: str,\n    player_2_offensive_rating: int32,\n    player_2_possessions: str,\n    total_possessions: int32,\n\n    efficiency: str,\n    text_description: str,\n    card_image: str\n  }\n});\n\n\n//# sourceURL=webpack:///./components/definitions/matchup_comparison.js?");
+
+/***/ }),
+
+/***/ "./components/definitions/nba_seasonal_matchup_easiest.js":
+/*!****************************************************************!*\
+  !*** ./components/definitions/nba_seasonal_matchup_easiest.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst str = { type: \"string\" };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  type: \"object\",\n  properties: {\n    easiest_matchup_offense_1: str,\n    easiest_matchup_offense_2: str,\n    easiest_matchup_offense_3: str,\n    card_image: str\n  }\n});\n\n\n//# sourceURL=webpack:///./components/definitions/nba_seasonal_matchup_easiest.js?");
+
+/***/ }),
+
+/***/ "./components/definitions/nba_seasonal_matchup_toughest.js":
+/*!*****************************************************************!*\
+  !*** ./components/definitions/nba_seasonal_matchup_toughest.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst str = { type: \"string\" };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  type: \"object\",\n  properties: {\n    toughest_matchup_offense_1: str,\n    toughest_matchup_offense_2: str,\n    toughest_matchup_offense_3: str,\n    card_image: str\n  }\n});\n\n\n//# sourceURL=webpack:///./components/definitions/nba_seasonal_matchup_toughest.js?");
+
+/***/ }),
+
+/***/ "./components/definitions/paint_drive_location.js":
+/*!********************************************************!*\
+  !*** ./components/definitions/paint_drive_location.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst int32 = {\n  type: \"integer\",\n  format: \"int32\"\n};\n\nconst float = {\n  type: \"number\",\n  format: \"float\"\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  type: \"object\",\n  properties: {\n    paint_drive_location_left: int32,\n    per_game_created_left: float,\n    paint_drive_location_right: int32,\n    points_per_game_created_right: float,\n    total_paint_drives: int32,\n    card_image: { type: \"string\" }\n  }\n});\n\n\n//# sourceURL=webpack:///./components/definitions/paint_drive_location.js?");
 
 /***/ }),
 
@@ -118,7 +178,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst int32 = { type: \"integ
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    type: \"object\",\n    properties: {\n      on_ball_pct: { type: \"number\", format: \"float\" },\n      off_ball_pct: { type: \"number\", format: \"float\" },\n      on_ball: { type: \"number\", format: \"float\" },\n      off_ball: { type: \"number\", format: \"float\" },\n      shooting_plays: { type: \"integer\", type: \"\" },\n      card_image: { type: \"string\" }\n    }\n  });\n\n//# sourceURL=webpack:///./components/definitions/shot_tracks.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    type: \"object\",\n    properties: {\n      on_ball_pct: { type: \"number\", format: \"float\" },\n      off_ball_pct: { type: \"number\", format: \"float\" },\n      on_ball: { type: \"number\", format: \"float\" },\n      off_ball: { type: \"number\", format: \"float\" },\n      shooting_plays: { type: \"integer\", format: \"int32\" },\n      card_image: { type: \"string\" }\n    }\n  });\n\n//# sourceURL=webpack:///./components/definitions/shot_tracks.js?");
 
 /***/ }),
 
@@ -154,7 +214,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pat
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./team */ \"./components/paths/team/index.js\");\n/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./player */ \"./components/paths/player/index.js\");\n\n\nconst paths = {..._team__WEBPACK_IMPORTED_MODULE_0__[\"default\"], ..._player__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}\nconsole.log(\"paths \", paths)\n/* harmony default export */ __webpack_exports__[\"default\"] = (paths);\n\n\n// import post_play from \"./common/post_play\";\n// import paint_drive_location from \"./team/paint_drive_location\";\n// import shot_tracks_time from \"./team/shot_tracks_time\";\n// import shot_tracks_length from \"./team/shot_tracks_length\";\n// import offensive_rating from \"./team/offensive_rating\";\n// import trends_player from \"./team/trends_player\";\n// import trends_team from \"./team/trends_team\";\n// import sport_key_stretch from \"./team/sport_key_stretch\";\n// import {\n//   court_zone_1,\n//   court_zone_2,\n//   court_zone_3,\n//   court_zone_4\n// } from \"./team/player_shot_zones\";\n\n// import chemistry from \"./team/chemistry\";\n// import matchup_comparison from \"./team/matchup_comparison\";\n// import nba_seasonal_matchup_easiest from \"./team/nba_seasonal_matchup_easiest\";\n// import nba_seasonal_matchup_toughest from \"./team/nba_seasonal_matchup_toughest\";\n// export default {\n//   \"/en_US/NBA/team/{teamId}/post_play\": post_play,\n//   \"/en_US/NBA/team/{teamId}/paint_drive_location\": paint_drive_location,\n//   \"/en_US/NBA/team/{teamId}/shot_tracks_time\": shot_tracks_time,\n//   \"/en_US/NBA/team/{teamId}/shot_tracks_length\": shot_tracks_length,\n//   \"/en_US/NBA/team/{teamId}/offensive_rating\": offensive_rating,\n//   \"/en_US/NBA/team/{teamId}/trends_player\": trends_player,\n//   \"/en_US/NBA/team/{teamId}/trends_team\": trends_team,\n//   \"/en_US/NBA/team/{teamId}/sport_key_stretch\": sport_key_stretch,\n//   \"/en_US/NBA/team/{teamId}/court_zone_1\": court_zone_1,\n//   \"/en_US/NBA/team/{teamId}/court_zone_2\": court_zone_2,\n//   \"/en_US/NBA/team/{teamId}/court_zone_3\": court_zone_3,\n//   \"/en_US/NBA/team/{teamId}/court_zone_4\": court_zone_4,\n//   \"/en_US/NBA/team/{teamId}/chemistry\": chemistry,\n//   \"/en_US/NBA/team/{teamId}/matchup_comparison\": matchup_comparison,\n//   \"/en_US/NBA/team/{teamId}/nba_seasonal_matchup_easiest\": nba_seasonal_matchup_easiest,\n//   \"/en_US/NBA/team/{teamId}/nba_seasonal_matchup_toughest\": nba_seasonal_matchup_toughest\n// };\n\n// const list = [\n//   { path: \"post_play\", obj: post_play },\n//   { path: \"paint_drive_location\", obj: paint_drive_location },\n//   { path: \"shot_tracks_time\", obj: shot_tracks_time },\n//   { path: \"shot_tracks_length\", obj: shot_tracks_length },\n//   { path: \"offensive_rating\", obj: offensive_rating },\n//   { path: \"trends_player\", obj: trends_player },\n//   { path: \"trends_team\", obj: trends_team }\n// ];\n\n// const testing = list.reduce((accumulator, currentVal, currentInd, arr) => {\n//   console.log(accumulator);\n//   return (accumulator[`/en_US/NBA/team/{teamId}/${currentInd}`] = \"b\");\n// }, {});\n\n// console.log(\"coffeeeee \", testing);\n\n// export default testing;\n\n\n//# sourceURL=webpack:///./components/paths/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./team */ \"./components/paths/team/index.js\");\n/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./player */ \"./components/paths/player/index.js\");\n\n\nconst paths = { ..._team__WEBPACK_IMPORTED_MODULE_0__[\"default\"], ..._player__WEBPACK_IMPORTED_MODULE_1__[\"default\"] };\n/* harmony default export */ __webpack_exports__[\"default\"] = (paths);\n\n\n//# sourceURL=webpack:///./components/paths/index.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/chemistry.js":
+/*!**********************************************!*\
+  !*** ./components/paths/player/chemistry.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_chemistry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/chemistry */ \"./components/definitions/chemistry.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"chemistry\",\n  \"chemistry\",\n  \"chemistry\",\n  _definitions_chemistry__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/chemistry.js?");
 
 /***/ }),
 
@@ -166,7 +238,67 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tea
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _post_play__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./post_play */ \"./components/paths/player/post_play.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    \"/en_US/NBA/player/{playerId}/post_play\": _post_play__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n});\n\n\n//# sourceURL=webpack:///./components/paths/player/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _post_play__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./post_play */ \"./components/paths/player/post_play.js\");\n/* harmony import */ var _paint_drive_location__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./paint_drive_location */ \"./components/paths/player/paint_drive_location.js\");\n/* harmony import */ var _shot_tracks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shot_tracks */ \"./components/paths/player/shot_tracks.js\");\n/* harmony import */ var _offensive_rating__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./offensive_rating */ \"./components/paths/player/offensive_rating.js\");\n/* harmony import */ var _trends_player__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./trends_player */ \"./components/paths/player/trends_player.js\");\n/* harmony import */ var _chemistry__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./chemistry */ \"./components/paths/player/chemistry.js\");\n/* harmony import */ var _matchup_comparison__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./matchup_comparison */ \"./components/paths/player/matchup_comparison.js\");\n/* harmony import */ var _nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./nba_seasonal_matchup_easiest */ \"./components/paths/player/nba_seasonal_matchup_easiest.js\");\n/* harmony import */ var _nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nba_seasonal_matchup_toughest */ \"./components/paths/player/nba_seasonal_matchup_toughest.js\");\n\n\n\n\n\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  \"/en_US/NBA/player/{playerId}/post_play\": _post_play__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/paint_drive_location\": _paint_drive_location__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/shot_tracks_length\": _shot_tracks__WEBPACK_IMPORTED_MODULE_2__[\"shotTracksLength\"],\n  \"/en_US/NBA/player/{playerId}/shot_tracks_time\": _shot_tracks__WEBPACK_IMPORTED_MODULE_2__[\"shotTracksTime\"],\n  \"/en_US/NBA/player/{playerId}/offensive_rating\": _offensive_rating__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/trends_player\": _trends_player__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/chemistry\": _chemistry__WEBPACK_IMPORTED_MODULE_5__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/matchup_comparison\": _matchup_comparison__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/nba_seasonal_matchup_easiest\": _nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_7__[\"default\"],\n  \"/en_US/NBA/player/{playerId}/nba_seasonal_matchup_toughest\": _nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_8__[\"default\"]\n});\n\n\n//# sourceURL=webpack:///./components/paths/player/index.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/matchup_comparison.js":
+/*!*******************************************************!*\
+  !*** ./components/paths/player/matchup_comparison.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_matchup_comparison__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/matchup_comparison */ \"./components/definitions/matchup_comparison.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"matchup comparison\",\n  \"matchup_comparison_player\",\n  \"matchup_comparison\",\n  _definitions_matchup_comparison__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/matchup_comparison.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/nba_seasonal_matchup_easiest.js":
+/*!*****************************************************************!*\
+  !*** ./components/paths/player/nba_seasonal_matchup_easiest.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/nba_seasonal_matchup_easiest */ \"./components/definitions/nba_seasonal_matchup_easiest.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  _definitions_nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/nba_seasonal_matchup_easiest.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/nba_seasonal_matchup_toughest.js":
+/*!******************************************************************!*\
+  !*** ./components/paths/player/nba_seasonal_matchup_toughest.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/nba_seasonal_matchup_toughest */ \"./components/definitions/nba_seasonal_matchup_toughest.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  _definitions_nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/nba_seasonal_matchup_toughest.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/offensive_rating.js":
+/*!*****************************************************!*\
+  !*** ./components/paths/player/offensive_rating.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\n\nconst int32 = { type: \"integer\", format: \"int32\" };\nconst body = {\n  type: \"object\",\n  properties: {\n    help_rotations: int32,\n    closeouts: int32,\n    \"1_on_1_defense\": int32,\n    perimeter_shot_contesting: int32,\n    off_screen_defense: int32,\n    post_defense: int32,\n    defending_drives: int32,\n    ball_screen_handler_defense: int32,\n    steals: int32,\n    ball_screener_defense: int32,\n    defensive_boards: int32,\n    rim_protection: int32\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"offensive rating\",\n  \"offensive_rating\",\n  \"offensive_rating\",\n  body,\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/offensive_rating.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/paint_drive_location.js":
+/*!*********************************************************!*\
+  !*** ./components/paths/player/paint_drive_location.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_paint_drive_location__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/paint_drive_location */ \"./components/definitions/paint_drive_location.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"paint drive location player\",\n  \"paint_drive_location_player\",\n  \"paint_drive_location\",\n  _definitions_paint_drive_location__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/paint_drive_location.js?");
 
 /***/ }),
 
@@ -182,6 +314,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 
 /***/ }),
 
+/***/ "./components/paths/player/shot_tracks.js":
+/*!************************************************!*\
+  !*** ./components/paths/player/shot_tracks.js ***!
+  \************************************************/
+/*! exports provided: shotTracksLength, shotTracksTime */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shotTracksLength\", function() { return shotTracksLength; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shotTracksTime\", function() { return shotTracksTime; });\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_shot_tracks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/shot_tracks */ \"./components/definitions/shot_tracks.js\");\n\n\n\nconst shotTracksLength = Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"shot tracks length\",\n  \"shot_tracks_length_player\",\n  \"shot_tracks_length\",\n  _definitions_shot_tracks__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n);\n\nconst shotTracksTime = Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"shot tracks time\",\n  \"shot_tracks_time_player\",\n  \"shot_tracks_time\",\n  _definitions_shot_tracks__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n);\n\n\n//# sourceURL=webpack:///./components/paths/player/shot_tracks.js?");
+
+/***/ }),
+
+/***/ "./components/paths/player/trends_player.js":
+/*!**************************************************!*\
+  !*** ./components/paths/player/trends_player.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_trends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/trends */ \"./components/definitions/trends.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"trends player\",\n  \"trends_player_player\",\n  \"trends_player\",\n  _definitions_trends__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"player\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/player/trends_player.js?");
+
+/***/ }),
+
 /***/ "./components/paths/team/chemistry.js":
 /*!********************************************!*\
   !*** ./components/paths/team/chemistry.js ***!
@@ -190,7 +346,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\n\nconst str = { type: \"string\" };\n\nconst body = {\n  type: \"object\",\n  properties: {\n    best_play_1: str,\n    best_play_2: str,\n    best_play_3: str,\n    card_image: str\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"chemistry\", \"chemistry\", \"chemistry\", body, \"team\"));\n\n\n//# sourceURL=webpack:///./components/paths/team/chemistry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_chemistry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/chemistry */ \"./components/definitions/chemistry.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"chemistry\",\n  \"chemistry\",\n  \"chemistry\",\n  _definitions_chemistry__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/chemistry.js?");
 
 /***/ }),
 
@@ -214,7 +370,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pos
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\n\nconst int32 = { type: \"integer\", format: \"int32\" };\nconst str = { type: \"string\" };\n\nconst body = {\n  type: \"object\",\n  properties: {\n    player_1_offensive_rating: int32,\n    player_1_possessions: str,\n    player_2_offensive_rating: int32,\n    player_2_possessions: str,\n    total_possessions: int32,\n    total_possessions: str,\n    total_possessions: str,\n    total_possessions: str\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"matchup comparison\",\n  \"matchup_comparison\",\n  \"matchup_comparison\",\n  body,\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/matchup_comparison.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_matchup_comparison__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/matchup_comparison */ \"./components/definitions/matchup_comparison.js\");\n\n\n\n// const int32 = { type: \"integer\", format: \"int32\" };\n// const str = { type: \"string\" };\n\n// const body = {\n//   type: \"object\",\n//   properties: {\n//     player_1_offensive_rating: int32,\n//     player_1_possessions: str,\n//     player_2_offensive_rating: int32,\n//     player_2_possessions: str,\n//     total_possessions: int32,\n\n//     efficiency: str,\n//     text_description: str,\n//     card_image: str\n//   }\n// };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"matchup comparison\",\n  \"matchup_comparison\",\n  \"matchup_comparison\",\n  _definitions_matchup_comparison__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/matchup_comparison.js?");
 
 /***/ }),
 
@@ -226,7 +382,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\n\nconst str = { type: \"string\" };\n\nconst body = {\n  type: \"object\",\n  properties: {\n    nba_seasonal_matchup_easiest: str,\n    easiest_matchup_offense_2: str,\n    easiest_matchup_offense_3: str,\n    card_image: str\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  body,\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/nba_seasonal_matchup_easiest.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/nba_seasonal_matchup_easiest */ \"./components/definitions/nba_seasonal_matchup_easiest.js\");\n\n\n\n// const str = { type: \"string\" };\n\n// const body = {\n//   type: \"object\",\n//   properties: {\n//     easiest_matchup_offense_1: str,\n//     easiest_matchup_offense_2: str,\n//     easiest_matchup_offense_3: str,\n//     card_image: str\n//   }\n// };\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  \"nba_seasonal_matchup_easiest\",\n  _definitions_nba_seasonal_matchup_easiest__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/nba_seasonal_matchup_easiest.js?");
 
 /***/ }),
 
@@ -238,7 +394,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\nconst str = { type: \"string\" };\n\nconst body = {\n  type: \"object\",\n  properties: {\n    toughest_matchup_offense_1: str,\n    toughest_matchup_offense_2: str,\n    toughest_matchup_offense_3: str,\n    card_image: str\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  body,\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/nba_seasonal_matchup_toughest.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/nba_seasonal_matchup_toughest */ \"./components/definitions/nba_seasonal_matchup_toughest.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"nba seasonal matchup toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  \"nba_seasonal_matchup_toughest\",\n  _definitions_nba_seasonal_matchup_toughest__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/nba_seasonal_matchup_toughest.js?");
 
 /***/ }),
 
@@ -262,7 +418,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n\n\nconst body = {\n  type: \"object\",\n  properties: {\n    paint_drive_location_left: {\n      type: \"integer\",\n      format: \"int32\"\n    },\n    per_game_created_left: {\n      type: \"number\",\n      format: \"float\"\n    },\n    paint_drive_location_right: {\n      type: \"integer\",\n      format: \"int32\"\n    },\n    points_per_game_created_right: {\n      type: \"number\",\n      format: \"float\"\n    },\n    total_paint_drives: {\n      type: \"integer\",\n      format: \"int32\"\n    },\n    card_image: { type: \"string\" }\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"paint drive location\",\n  \"paint_drive_location\",\n  \"paint_drive_location\",\n  body,\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/paint_drive_location.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_getFn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/getFn */ \"./components/paths/utils/getFn.js\");\n/* harmony import */ var _definitions_paint_drive_location__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../definitions/paint_drive_location */ \"./components/definitions/paint_drive_location.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_utils_getFn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\n  \"paint drive location team\",\n  \"paint_drive_location_team\",\n  \"paint_drive_location\",\n  _definitions_paint_drive_location__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  \"team\"\n));\n\n\n//# sourceURL=webpack:///./components/paths/team/paint_drive_location.js?");
 
 /***/ }),
 
@@ -358,7 +514,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst getFn= (summary, id, key,body, team) =>{\n    return {\n        get: {\n          tags: [team],\n          summary: `card's ${summary}`,\n          description: \"\",\n          operationId: `${id}`,\n          produces: [\"application/json\"],\n          parameters: [\n            {\n              name: \"teamId\",\n              in: \"path\",\n              description: \"team's Id from SR model\",\n              type: \"string\",\n              required: true\n            }\n          ],\n          responses: {\n            \"200\": {\n              description: \"successful operation\",\n              schema: {\n                type: \"object\",\n                properties: {\n                  success: { type: \"boolean\" },\n                  response: {\n                    type: \"object\",\n                    properties: {\n                      card: {\n                        type: \"object\",\n                        properties: {\n                          [key]: body\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            },\n            \"400\": { description: \"Invalid ID supplied\" },\n            \"404\": { description: \"Player not found\" }\n          }\n        }\n      };\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getFn);\n\n//# sourceURL=webpack:///./components/paths/utils/getFn.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst getFn = (summary, id, key, body, tag) => {\n  return {\n    get: {\n      tags: [tag],\n      summary: `${tag} card's ${summary}`,\n      description: \"\",\n      operationId: `${id}`,\n      produces: [\"application/json\"],\n      parameters: [\n        {\n          name: \"teamId\",\n          in: \"path\",\n          description: `${tag}'s Id from SR model`,\n          type: \"string\",\n          required: true\n        }\n      ],\n      responses: {\n        \"200\": {\n          description: \"successful operation\",\n          schema: {\n            type: \"object\",\n            properties: {\n              success: { type: \"boolean\" },\n              response: {\n                type: \"object\",\n                properties: {\n                  card: {\n                    type: \"object\",\n                    properties: {\n                      [key]: body\n                    }\n                  }\n                }\n              }\n            }\n          }\n        },\n        \"400\": { description: \"Invalid ID supplied\" },\n        \"404\": { description: \"Player not found\" }\n      }\n    }\n  };\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getFn);\n\n\n//# sourceURL=webpack:///./components/paths/utils/getFn.js?");
 
 /***/ }),
 
