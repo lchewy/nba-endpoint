@@ -1,9 +1,9 @@
-const getFn = (summary, id, key, body, tag) => {
+const getFn = (summary, id, key, body, tag, methodDescription) => {
   return {
     get: {
       tags: [tag],
       summary: `${tag} card's ${summary}`,
-      description: "",
+      description: methodDescription,
       operationId: `${id}`,
       produces: ["application/json"],
       parameters: [

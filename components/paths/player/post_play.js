@@ -6,5 +6,6 @@ export default getFunc(
   "player_post_play",
   "post_play",
   post_play,
-  "player"
+  "player",
+  "a players post play abilities to the left/right"
 );

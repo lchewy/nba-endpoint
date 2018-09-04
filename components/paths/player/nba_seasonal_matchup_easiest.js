@@ -6,5 +6,6 @@ export default getFunc(
   "nba_seasonal_matchup_easiest_player",
   "nba_seasonal_matchup_easiest",
   nba_seasonal_matchup_easiest,
-  "player"
+  "player",
+  "Three most favorable matchup for a team's player against players from another team"
 );

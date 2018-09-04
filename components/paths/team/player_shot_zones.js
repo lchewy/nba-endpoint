@@ -139,7 +139,8 @@ export const court_zone_1 = getFunc(
   "player_shot_zones_1",
   "player_shot_zones",
   zone_1,
-  "team"
+  "team",
+  "a player's shot attempts and percentages broken down to three zones"
 );
 
 export const court_zone_2 = getFunc(
@@ -147,7 +148,8 @@ export const court_zone_2 = getFunc(
   "player_shot_zones_2",
   "player_shot_zones",
   zone_2,
-  "team"
+  "team",
+  "a player's shot attempts and percentages broken down to five zones"
 );
 
 export const court_zone_3 = getFunc(
@@ -155,7 +157,8 @@ export const court_zone_3 = getFunc(
   "player_shot_zones_3",
   "player_shot_zones",
   zone_3,
-  "team"
+  "team",
+  "a player's shot attempts and percentages broken down to seven zones"
 );
 
 export const court_zone_4 = getFunc(
@@ -163,5 +166,6 @@ export const court_zone_4 = getFunc(
   "player_shot_zones_4",
   "player_shot_zones",
   zone_4,
-  "team"
+  "team",
+  "a player's shot attempts and percentages broken down to fourteen zones"
 );

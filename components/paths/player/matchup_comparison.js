@@ -6,5 +6,6 @@ export default getFunc(
   "matchup_comparison_player",
   "matchup_comparison",
   matchup_comparison,
-  "player"
+  "player",
+  "matchup comparison between a team's player vs opponents"
 );

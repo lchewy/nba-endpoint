@@ -6,5 +6,6 @@ export default getFunc(
   "chemistry_player",
   "chemistry",
   chemistry,
-  "player"
+  "player",
+  "Get the chemistry level (ranked from 'Poor' to 'Great') between 2 players on a team, including their three best/worst plays with each other."
 );

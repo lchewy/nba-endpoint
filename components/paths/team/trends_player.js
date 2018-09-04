@@ -6,5 +6,6 @@ export default getFunc(
   "trends_player",
   "trends_player",
   trends,
-  "team"
+  "team",
+  "A player's positive and/or negative in game trends"
 );

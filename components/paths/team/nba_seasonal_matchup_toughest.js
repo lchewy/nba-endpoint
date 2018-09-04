@@ -6,5 +6,6 @@ export default getFunc(
   "nba_seasonal_matchup_toughest",
   "nba_seasonal_matchup_toughest",
   nba_seasonal_matchup_toughest,
-  "team"
+  "team",
+  "Three most toughest matchup for a team's player against players from another team"
 );

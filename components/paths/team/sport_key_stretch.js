@@ -18,5 +18,6 @@ export default getFunc(
   "sport_key_stretch",
   "sport_key_stretch",
   body,
-  "team"
+  "team",
+  "A breakdown of a team's worst stretches"
 );
