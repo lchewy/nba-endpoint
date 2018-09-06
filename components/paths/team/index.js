@@ -7,7 +7,10 @@ import similarities from "./similarities";
 import style_comps from "./style_comps";
 import trends_player from "./trends_player";
 import trends_team from "./trends_team";
-import sport_key_stretch from "./sport_key_stretch";
+import top_3_players from "./top_3_players";
+import both_3_players from "./both_3_players";
+import bottom_3_players from "./bottom_3_players";
+import sport_key_stretch_best from "./sport_key_stretch_best";
 import {
   court_zone_1,
   court_zone_2,
@@ -20,6 +23,8 @@ import matchup_comparison from "./matchup_comparison";
 import nba_seasonal_matchup_easiest from "./nba_seasonal_matchup_easiest";
 import nba_seasonal_matchup_toughest from "./nba_seasonal_matchup_toughest";
 
+import team_game_all from "./team_game_all";
+
 export default {
   "/en_US/NBA/team/{teamId}/type/post_play_player": post_play,
   "/en_US/NBA/team/{teamId}/type/paint_drive_location": paint_drive_location,
@@ -28,11 +33,15 @@ export default {
   "/en_US/NBA/team/{teamId}/type/offensive_rating": offensive_rating,
   "/en_US/NBA/team/{teamId}/type/similarities": similarities,
   "/en_US/NBA/team/{teamId}/type/style_comps": style_comps,
-  "/en_US/NBA/team/{teamId}/trends_player": trends_player,
+  "/en_US/NBA/team/{teamId}/type/trends_player": trends_player,
+  "/en_US/NBA/team/{teamId}/type/trends_team": trends_team,
+  "/en_US/NBA/team/{teamId}/type/top_3_players": top_3_players,
+  "/en_US/NBA/team/{teamId}/type/both_3_players": both_3_players,
+  "/en_US/NBA/team/{teamId}/type/bottom_3_players": bottom_3_players,
+  "/en_US/NBA/team/{teamId}/type/sport_key_stretch_best": sport_key_stretch_best,
 
 
-  "/en_US/NBA/team/{teamId}/trends_team": trends_team,
-  "/en_US/NBA/team/{teamId}/sport_key_stretch": sport_key_stretch,
+
   "/en_US/NBA/team/{teamId}/court_zone_1": court_zone_1,
   "/en_US/NBA/team/{teamId}/court_zone_2": court_zone_2,
   "/en_US/NBA/team/{teamId}/court_zone_3": court_zone_3,
@@ -41,23 +50,5 @@ export default {
   "/en_US/NBA/team/{teamId}/matchup_comparison": matchup_comparison,
   "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_easiest": nba_seasonal_matchup_easiest,
   "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_toughest": nba_seasonal_matchup_toughest,
+  "/en_US/NBA/team/{teamId}/game/{gameId}/type/all":team_game_all
 };
-
-// const list = [
-//   { path: "post_play", obj: post_play },
-//   { path: "paint_drive_location", obj: paint_drive_location },
-//   { path: "shot_tracks_time", obj: shot_tracks_time },
-//   { path: "shot_tracks_length", obj: shot_tracks_length },
-//   { path: "offensive_rating", obj: offensive_rating },
-//   { path: "trends_player", obj: trends_player },
-//   { path: "trends_team", obj: trends_team }
-// ];
-
-// const testing = list.reduce((accumulator, currentVal, currentInd, arr) => {
-//   console.log(accumulator);
-//   return (accumulator[`/en_US/NBA/team/{teamId}/${currentInd}`] = "b");
-// }, {});
-
-// console.log("coffeeeee ", testing);
-
-// export default testing;

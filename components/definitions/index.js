@@ -6,6 +6,7 @@ import matchup_comparison from "./matchup_comparison";
 import nba_seasonal_matchup_easiest from "./nba_seasonal_matchup_easiest";
 import chemistry from "./chemistry";
 import nba_seasonal_matchup_toughest from "./nba_seasonal_matchup_toughest";
+import top_3 from "./top_3"
 
 const definitions = {
   shot_tracks,
@@ -15,7 +16,8 @@ const definitions = {
   matchup_comparison,
   chemistry,
   nba_seasonal_matchup_easiest,
-  nba_seasonal_matchup_toughest
+  nba_seasonal_matchup_toughest,
+  top_3
 };
 
 export default definitions;

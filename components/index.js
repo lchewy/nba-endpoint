@@ -32,6 +32,14 @@ export default {
                 description:"Find out more",
                 url:"https://sportradar.us/"
             }
+        },
+        {
+            name:"game",
+            description:"API+ official stats for NBA players",
+            externalDocs:{
+                description:"Find out more",
+                url:"https://sportradar.us/"
+            }
         }
     ],
     schemes: ["http", "https"],
