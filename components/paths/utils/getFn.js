@@ -138,7 +138,7 @@ const getFn = (summary, id, key, body, tag, methodDescription) => {
   return {
     get: {
       tags: [tag],
-      summary: `${tag} card's ${summary}`,
+      summary: `${tag} card - ${summary}`,
       description: methodDescription,
       operationId: `${id}`,
       produces: ["application/json"],

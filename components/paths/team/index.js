@@ -3,6 +3,8 @@ import paint_drive_location from "./paint_drive_location";
 import shot_tracks_time from "./shot_tracks_time";
 import shot_tracks_length from "./shot_tracks_length";
 import offensive_rating from "./offensive_rating";
+import similarities from "./similarities";
+import style_comps from "./style_comps";
 import trends_player from "./trends_player";
 import trends_team from "./trends_team";
 import sport_key_stretch from "./sport_key_stretch";
@@ -24,8 +26,11 @@ export default {
   "/en_US/NBA/team/{teamId}/type/shot_tracks_time": shot_tracks_time,
   "/en_US/NBA/team/{teamId}/type/shot_tracks_length": shot_tracks_length,
   "/en_US/NBA/team/{teamId}/type/offensive_rating": offensive_rating,
-  // *********************************** similarities //
+  "/en_US/NBA/team/{teamId}/type/similarities": similarities,
+  "/en_US/NBA/team/{teamId}/type/style_comps": style_comps,
   "/en_US/NBA/team/{teamId}/trends_player": trends_player,
+
+
   "/en_US/NBA/team/{teamId}/trends_team": trends_team,
   "/en_US/NBA/team/{teamId}/sport_key_stretch": sport_key_stretch,
   "/en_US/NBA/team/{teamId}/court_zone_1": court_zone_1,
