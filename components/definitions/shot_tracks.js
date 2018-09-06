@@ -1,4 +1,6 @@
 export default {
+  type: "array",
+  items: {
     type: "object",
     properties: {
       on_ball_pct: { type: "number", format: "float" },
@@ -9,3 +11,4 @@ export default {
       card_image: { type: "string" }
     }
   }
+};

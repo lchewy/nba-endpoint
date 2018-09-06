@@ -19,11 +19,12 @@ import nba_seasonal_matchup_easiest from "./nba_seasonal_matchup_easiest";
 import nba_seasonal_matchup_toughest from "./nba_seasonal_matchup_toughest";
 
 export default {
-  "/en_US/NBA/team/{teamId}/post_play": post_play,
-  "/en_US/NBA/team/{teamId}/paint_drive_location": paint_drive_location,
-  "/en_US/NBA/team/{teamId}/shot_tracks_time": shot_tracks_time,
-  "/en_US/NBA/team/{teamId}/shot_tracks_length": shot_tracks_length,
-  "/en_US/NBA/team/{teamId}/offensive_rating": offensive_rating,
+  "/en_US/NBA/team/{teamId}/type/post_play_player": post_play,
+  "/en_US/NBA/team/{teamId}/type/paint_drive_location": paint_drive_location,
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_time": shot_tracks_time,
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_length": shot_tracks_length,
+  "/en_US/NBA/team/{teamId}/type/offensive_rating": offensive_rating,
+  // *********************************** similarities //
   "/en_US/NBA/team/{teamId}/trends_player": trends_player,
   "/en_US/NBA/team/{teamId}/trends_team": trends_team,
   "/en_US/NBA/team/{teamId}/sport_key_stretch": sport_key_stretch,
