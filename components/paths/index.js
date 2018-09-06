@@ -1,4 +1,5 @@
 import team from "./team";
 import player from "./player";
-const paths = { ...team, ...player };
+import game from "./game";
+const paths = { ...team, ...player, ...game };
 export default paths;

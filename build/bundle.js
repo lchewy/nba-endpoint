@@ -206,6 +206,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pat
 
 /***/ }),
 
+/***/ "./components/paths/game/index.js":
+/*!****************************************!*\
+  !*** ./components/paths/game/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({});\n\n//# sourceURL=webpack:///./components/paths/game/index.js?");
+
+/***/ }),
+
 /***/ "./components/paths/index.js":
 /*!***********************************!*\
   !*** ./components/paths/index.js ***!
@@ -214,7 +226,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pat
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./team */ \"./components/paths/team/index.js\");\n/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./player */ \"./components/paths/player/index.js\");\n\n\nconst paths = { ..._team__WEBPACK_IMPORTED_MODULE_0__[\"default\"], ..._player__WEBPACK_IMPORTED_MODULE_1__[\"default\"] };\n/* harmony default export */ __webpack_exports__[\"default\"] = (paths);\n\n\n//# sourceURL=webpack:///./components/paths/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./team */ \"./components/paths/team/index.js\");\n/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./player */ \"./components/paths/player/index.js\");\n/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./game */ \"./components/paths/game/index.js\");\n\n\n\nconst paths = { ..._team__WEBPACK_IMPORTED_MODULE_0__[\"default\"], ..._player__WEBPACK_IMPORTED_MODULE_1__[\"default\"], ..._game__WEBPACK_IMPORTED_MODULE_2__[\"default\"] };\n/* harmony default export */ __webpack_exports__[\"default\"] = (paths);\n\n\n//# sourceURL=webpack:///./components/paths/index.js?");
 
 /***/ }),
 
