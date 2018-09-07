@@ -6,13 +6,14 @@ import matchup_comparison from "./matchup_comparison";
 // import nba_seasonal_matchup_easiest from "./nba_seasonal_matchup_easiest";
 import chemistry from "./chemistry";
 // import nba_seasonal_matchup_toughest from "./nba_seasonal_matchup_toughest";
-import top_3 from "./top_3"
+import top_3 from "./top_3";
 import {
   easiest_matchup_offense,
   toughest_matchup_offense,
   easiest_matchup_defense,
   toughest_matchup_defense
 } from "./nba_seasonal_matchup";
+import nba_lineups from "./nba_lineups";
 
 const definitions = {
   shot_tracks,
@@ -27,7 +28,8 @@ const definitions = {
   toughest_matchup_offense,
   easiest_matchup_defense,
   toughest_matchup_defense,
-  top_3
+  top_3,
+  nba_lineups
 };
 
 export default definitions;

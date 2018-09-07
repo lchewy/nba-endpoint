@@ -28,6 +28,12 @@ import {
   emDefense,
   tmDefense
 } from "./nba_seasonal_matchup";
+import nba_1on1_matchups from "./nba_1on1_matchups";
+import team_rank from "./team_rank";
+import { nba_lineups, nba_lineups_starting } from "./nba_lineups";
+import nba_shot_taking_making from "./nba_shot_taking_making";
+import shot_probability from "./shot_probability";
+
 // import nba_seasonal_matchup_easiest from "./nba_seasonal_matchup_easiest";  // DELETE FILE
 // import nba_seasonal_matchup_toughest from "./nba_seasonal_matchup_toughest";// DELETE FILE
 
@@ -54,11 +60,16 @@ export default {
   "/en_US/NBA/team/{teamId}/type/court_zone_4": court_zone_4,
   "/en_US/NBA/team/{teamId}/type/chemistry": chemistry,
   "/en_US/NBA/team/{teamId}/type/matchup_comparison": matchup_comparison,
-
   "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_easiest_off": emOffense,
   "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_toughest_off": tmOffense,
   "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_easiest_def": emDefense,
-  "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_toughest_def": tmDefense
+  "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_toughest_def": tmDefense,
+  "/en_US/NBA/team/{teamId}/type/nba_1on1_matchups": nba_1on1_matchups,
+  "/en_US/NBA/team/{teamId}/type/team_rank": team_rank,
+  "/en_US/NBA/team/{teamId}/type/nba_lineups": nba_lineups,
+  "/en_US/NBA/team/{teamId}/type/nba_lineups_starting": nba_lineups_starting,
+  "/en_US/NBA/team/{teamId}/type/nba_shot_taking_making": nba_shot_taking_making,
+  "/en_US/NBA/team/{teamId}/type/shot_probability": shot_probability
 
   // "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_easiest": nba_seasonal_matchup_easiest, // DELETE FILE
   // "/en_US/NBA/team/{teamId}/nba_seasonal_matchup_toughest": nba_seasonal_matchup_toughest, // DELETE FILE
