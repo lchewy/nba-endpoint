@@ -1,5 +1,10 @@
 // court_player_season_shots not on team path
-
+import {
+  shot_tracks_chart_2pt,
+  shot_tracks_chart_3pt,
+  shot_tracks_chart_early_o,
+  shot_tracks_chart_late_clock
+} from "./shot_tracks_chart";
 import post_play from "./post_play";
 import paint_drive_location from "./paint_drive_location";
 import shot_tracks_time from "./shot_tracks_time";
@@ -40,6 +45,11 @@ import shot_probability from "./shot_probability";
 // import team_game_all from "./team_game_all";
 
 export default {
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_2pt": shot_tracks_chart_2pt,
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
+  "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock,
+
   "/en_US/NBA/team/{teamId}/type/post_play_player": post_play,
   "/en_US/NBA/team/{teamId}/type/paint_drive_location": paint_drive_location,
   "/en_US/NBA/team/{teamId}/type/shot_tracks_time": shot_tracks_time,

@@ -14,8 +14,10 @@ import {
   toughest_matchup_defense
 } from "./nba_seasonal_matchup";
 import nba_lineups from "./nba_lineups";
+import shot_tracks_chart from "./shot_tracks_chart";
 
 const definitions = {
+  shot_tracks_chart,
   shot_tracks,
   trends,
   post_play,
