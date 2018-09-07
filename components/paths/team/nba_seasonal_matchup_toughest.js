@@ -1,3 +1,5 @@
+// DELETE FILE
+
 import getFunc from "../utils/getFn";
 import nba_seasonal_matchup_toughest from "../../definitions/nba_seasonal_matchup_toughest"
 

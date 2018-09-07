@@ -1,6 +1,6 @@
 import swagger from "./components";
 
-console.log(JSON.stringify(swagger));
+// console.log(JSON.stringify(swagger));
 
 window.onload = function() {
   // Build a system

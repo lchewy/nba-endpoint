@@ -135,6 +135,7 @@ const getSchema = (tag, key, body) => {
 };
 
 const getFn = (summary, id, key, body, tag, methodDescription, tag2) => {
+  
   return {
     get: {
       tags: [tag],
@@ -150,13 +151,13 @@ const getFn = (summary, id, key, body, tag, methodDescription, tag2) => {
           type: "string",
           required: true
         },
-        tag2 && {
-          name: `${tag2}Id`,
-          in:"path",
-          description:`${tag2} Id from SR model`,
-          type:"string",
-          required:true
-        }
+        // tag2 && {
+        //   name: `${tag2}Id`,
+        //   in:"path",
+        //   description:`${tag2} Id from SR model`,
+        //   type:"string",
+        //   required:true
+        // }
       ],
       responses: {
         "200": {

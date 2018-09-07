@@ -14,11 +14,13 @@ const three_zones = {
     paint_attempts: str,
     paint_eFG_pct: str,
     paint_points_per_shot: str,
+    graphic_title: str,
     card_image: str
   }
 };
 
 const five_zones = {
+  // on Teams paths some have only 14 instead of 17 properties
   type: "object",
   properties: {
     midrange_attempts: str,
@@ -36,6 +38,7 @@ const five_zones = {
     right_corner_3_attempts: str,
     right_corner_3_eFG_pct: str,
     right_corner_3_points_per_shot: str,
+    graphic_title: str,
     card_image: str
   }
 };
@@ -58,6 +61,7 @@ const seven_zones = {
     straight_attempts: str,
     straight_eFG_pct: str,
     straight_points_per_shot: str,
+    graphic_title: str,
     card_image: str
   }
 };
@@ -104,40 +108,33 @@ const fourteen_zones = {
     far_right_midrange_attempts: str,
     far_right_midrange_eFG_pct: str,
     far_right_midrange_points_per_shot: str,
+    graphic_title: str,
     card_image: str
   }
 };
 
 const zone_1 = {
-  type: "object",
-  properties: {
-    three_zones
-  }
+  type: "array",
+  items: three_zones
 };
 
 const zone_2 = {
-  type: "object",
-  properties: {
-    five_zones
-  }
+  type: "array",
+  items: five_zones
 };
 const zone_3 = {
-  type: "object",
-  properties: {
-    seven_zones
-  }
+  type: "array",
+  items: seven_zones
 };
 const zone_4 = {
-  type: "object",
-  properties: {
-    fourteen_zones
-  }
+  type: "array",
+  items: fourteen_zones
 };
 
 export const court_zone_1 = getFunc(
   "player shot zones",
   "player_shot_zones_1",
-  "player_shot_zones",
+  "court_zones",
   zone_1,
   "team",
   "a player's shot attempts and percentages broken down to three zones"
@@ -146,7 +143,7 @@ export const court_zone_1 = getFunc(
 export const court_zone_2 = getFunc(
   "player shot zones",
   "player_shot_zones_2",
-  "player_shot_zones",
+  "court_zones",
   zone_2,
   "team",
   "a player's shot attempts and percentages broken down to five zones"
@@ -155,7 +152,7 @@ export const court_zone_2 = getFunc(
 export const court_zone_3 = getFunc(
   "player shot zones",
   "player_shot_zones_3",
-  "player_shot_zones",
+  "court_zones",
   zone_3,
   "team",
   "a player's shot attempts and percentages broken down to seven zones"
@@ -164,7 +161,7 @@ export const court_zone_3 = getFunc(
 export const court_zone_4 = getFunc(
   "player shot zones",
   "player_shot_zones_4",
-  "player_shot_zones",
+  "court_zones",
   zone_4,
   "team",
   "a player's shot attempts and percentages broken down to fourteen zones"

@@ -1,3 +1,5 @@
+// DELETE FILE
+
 const str = { type: "string" };
 
 export default {
