@@ -790,7 +790,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst int32 = { type: \"integ
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components */ \"./components/index.js\");\n\n\nconsole.log(JSON.stringify(_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n\nwindow.onload = function() {\n  // Build a system\n  const ui = SwaggerUIBundle({\n    // url: \"https://petstore.swagger.io/v2/swagger.json\",\n    spec: _components__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    dom_id: \"#swagger-ui\",\n    deepLinking: true,\n    presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],\n    plugins: [SwaggerUIBundle.plugins.DownloadUrl],\n    layout: \"StandaloneLayout\"\n  });\n\n  window.ui = ui;\n};\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components */ \"./components/index.js\");\n\n\n// console.log(JSON.stringify(swagger));\n\nwindow.onload = function() {\n  // Build a system\n  const ui = SwaggerUIBundle({\n    // url: \"https://petstore.swagger.io/v2/swagger.json\",\n    spec: _components__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    dom_id: \"#swagger-ui\",\n    deepLinking: true,\n    presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],\n    plugins: [SwaggerUIBundle.plugins.DownloadUrl],\n    layout: \"StandaloneLayout\"\n  });\n\n  window.ui = ui;\n};\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
