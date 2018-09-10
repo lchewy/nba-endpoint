@@ -3,8 +3,8 @@ import style from "../../definitions/style";
 
 export default getFunc(
   "Style Comps",
-  "team_style_comps",
-  "Style Comps",
+  "player_style_comps",
+  "style",
   style,
-  "team"
+  "player"
 );

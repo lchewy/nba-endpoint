@@ -1,10 +1,12 @@
 import getFunc from "../utils/getFn";
 import post_play from "../../definitions/post_play";
 
+// console.log("Player ",post_play)
+
 export default getFunc(
   "player's post play",
-  "player_post_play",
-  "post_play",
+  "post_play_location",
+  "post_play_location",
   post_play,
   "player",
   "a players post play abilities to the left/right"

@@ -4,7 +4,7 @@ import trends from "../../definitions/trends";
 export default getFunc(
   "trends player",
   "trends_player_player",
-  "trends_player",
+  "trends",
   trends,
   "player",
   "A player's positive and/or negative in game trends"

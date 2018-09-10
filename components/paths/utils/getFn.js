@@ -114,7 +114,9 @@ const playerSchema = (key, body) => ({
             },
             stats: {
               type: "object",
-              [key]: body
+              properties: {
+                [key]: body
+              }
             }
           }
         },
@@ -134,8 +136,7 @@ const getSchema = (tag, key, body) => {
   }
 };
 
-const getFn = (summary, id, key, body, tag, methodDescription, tag2) => {
-  
+const getFn = (summary, id, key, body, tag, methodDescription) => {
   return {
     get: {
       tags: [tag],
@@ -150,7 +151,7 @@ const getFn = (summary, id, key, body, tag, methodDescription, tag2) => {
           description: `${tag}'s Id from SR model`,
           type: "string",
           required: true
-        },
+        }
         // tag2 && {
         //   name: `${tag2}Id`,
         //   in:"path",

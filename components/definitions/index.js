@@ -15,6 +15,7 @@ import {
 } from "./nba_seasonal_matchup";
 import nba_lineups from "./nba_lineups";
 import shot_tracks_chart from "./shot_tracks_chart";
+import similarities from "./similarities";
 
 const definitions = {
   shot_tracks_chart,
@@ -31,7 +32,8 @@ const definitions = {
   easiest_matchup_defense,
   toughest_matchup_defense,
   top_3,
-  nba_lineups
+  nba_lineups,
+  similarities
 };
 
 export default definitions;

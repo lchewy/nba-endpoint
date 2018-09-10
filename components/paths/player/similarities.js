@@ -4,8 +4,8 @@ import similarities from "../../definitions/similarities";
 
 export default getFunc(
   "similarities",
-  "team_similarities",
+  "player_similarities",
   "skill",
   similarities,
-  "team"
+  "player"
 );

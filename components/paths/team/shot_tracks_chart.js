@@ -9,8 +9,6 @@ export const shot_tracks_chart_2pt = getFunc(
   "team"
 );
 
-console.log("shot tracks chart ", shot_tracks_chart_2pt)
-
 export const shot_tracks_chart_3pt = getFunc(
   "shot tracks chart 3pt",
   "shot_tracks_chart_3pt",
