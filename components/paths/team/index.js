@@ -38,6 +38,8 @@ import { nba_lineups, nba_lineups_starting } from "./nba_lineups";
 import nba_shot_taking_making from "./nba_shot_taking_making";
 import shot_probability from "./shot_probability";
 
+import team_game_all from "./team_game_all";
+
 export default {
   "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_2pt": shot_tracks_chart_2pt,
   "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
@@ -72,5 +74,11 @@ export default {
   "/en_US/NBA/team/{teamId}/type/nba_lineups": nba_lineups,
   "/en_US/NBA/team/{teamId}/type/nba_lineups_starting": nba_lineups_starting,
   "/en_US/NBA/team/{teamId}/type/nba_shot_taking_making": nba_shot_taking_making,
-  "/en_US/NBA/team/{teamId}/type/shot_probability": shot_probability
+  "/en_US/NBA/team/{teamId}/type/shot_probability": shot_probability,
+
+  "/en_US/NBA/team/{teamId}/game/{gameId}/type/shot_probability": team_game_all
 };
+
+
+// 583ecae2-fb46-11e1-82cb-f4ce4684ea4c
+// ff1c4678-1862-42d5-8735-5c8693f3cc4a

@@ -12,6 +12,6 @@ export default getFunc2(
   "ASDFASDF",
   body,
   "team",
-  "",
+  "player",
   "game"
 );
