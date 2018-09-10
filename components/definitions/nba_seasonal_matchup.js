@@ -1,8 +1,8 @@
 const str = { type: "string" };
 
 export const easiest_matchup_offense = {
-  type: "array",
-  items: {
+  // type: "array",
+  // items: {
     type: "object",
     properties: {
       easiest_matchup_offense_1: str,
@@ -10,13 +10,13 @@ export const easiest_matchup_offense = {
       easiest_matchup_offense_3: str,
       graphic_title: str,
       card_image: str
-    }
+    // }
   }
 };
 
 export const toughest_matchup_offense = {
-  type: "array",
-  items: {
+  // type: "array",
+  // items: {
     type: "object",
     properties: {
       toughest_matchup_offense_1: str,
@@ -24,13 +24,13 @@ export const toughest_matchup_offense = {
       toughest_matchup_offense_3: str,
       graphic_title: str,
       card_image: str
-    }
+    // }
   }
 };
 
 export const easiest_matchup_defense = {
-  type: "array",
-  items: {
+  // type: "array",
+  // items: {
     type: "object",
     properties: {
       easiest_matchup_defense_1: str,
@@ -38,13 +38,13 @@ export const easiest_matchup_defense = {
       easiest_matchup_defense_3: str,
       graphic_title: str,
       card_image: str
-    }
+    // }
   }
 };
 
 export const toughest_matchup_defense = {
-  type: "array",
-  items: {
+  // type: "array",
+  // items: {
     type: "object",
     properties: {
       toughest_matchup_defense_1: str,
@@ -52,6 +52,6 @@ export const toughest_matchup_defense = {
       toughest_matchup_defense_3: str,
       graphic_title: str,
       card_image: str
-    }
+    // }
   }
 };
