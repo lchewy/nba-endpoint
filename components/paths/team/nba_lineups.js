@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import lineups from "../../definitions/nba_lineups";
 
 export const nba_lineups = getFunc(

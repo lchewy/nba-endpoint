@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import similarities from "../../definitions/similarities";
 
 

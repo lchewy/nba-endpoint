@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import {
   easiest_matchup_offense,
   toughest_matchup_offense,

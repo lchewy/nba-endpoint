@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import nba_1on1_matchups from "../../definitions/nba_1on1_matchups";
 
 export default getFunc(

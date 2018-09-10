@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import post_play from "../../definitions/post_play";
 
 export default getFunc(

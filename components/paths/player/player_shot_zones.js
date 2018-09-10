@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import { zone_1, zone_2, zone_3, zone_4 } from "../../definitions/zones";
 
 export const court_zone_1 = getFunc(

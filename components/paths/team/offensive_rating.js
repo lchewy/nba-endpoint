@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 
 const int32 = { type: "integer", format: "int32" };
 

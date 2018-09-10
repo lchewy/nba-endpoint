@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import shot_tracks from "../../definitions/shot_tracks";
 
 export const shotTracksLength = getFunc(

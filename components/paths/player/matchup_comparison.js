@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import matchup_comparison from "../../definitions/matchup_comparison";
 
 export default getFunc(

@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import trends from "../../definitions/trends";
 
 export default getFunc(

@@ -1,5 +1,5 @@
 import shot_tracks from "../../definitions/shot_tracks";
-import getFunc from "../utils/getFn";
+import { getFunc } from "../utils/getFn";
 
 export default getFunc(
   "shot tracks length",

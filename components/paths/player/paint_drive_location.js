@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import paint_drive_location from "../../definitions/paint_drive_location";
 
 export default getFunc(

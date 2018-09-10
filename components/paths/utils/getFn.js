@@ -136,7 +136,7 @@ const getSchema = (tag, key, body) => {
   }
 };
 
-const getFn = (summary, id, key, body, tag, methodDescription) => {
+export const getFunc = (summary, id, key, body, tag, methodDescription) => {
   return {
     get: {
       tags: [tag],
@@ -172,4 +172,38 @@ const getFn = (summary, id, key, body, tag, methodDescription) => {
   };
 };
 
-export default getFn;
+export const getFunc2 = (summary, id, key, body, tag, tag2, methodDescription) => {
+  return {
+    get: {
+      tags: [tag],
+      summary: `${tag} card - ${summary}`,
+      description: methodDescription,
+      operationId: `${id}`,
+      produces: ["application/json"],
+      parameters: [
+        {
+          name: `${tag}Id`,
+          in: "path",
+          description: `${tag}'s Id from SR model`,
+          type: "string",
+          required: true
+        },
+        {
+          name: `${tag2}Id`,
+          in: "path",
+          description: `${tag2} Id from SR model`,
+          type: "string",
+          required: true
+        }
+      ],
+      responses: {
+        "200": {
+          description: "successful operation",
+          schema: getSchema(tag, key, body)
+        },
+        "400": { description: "Invalid ID supplied" },
+        "404": { description: "Player not found" }
+      }
+    }
+  };
+};

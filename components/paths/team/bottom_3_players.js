@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import bottom_3_players from "../../definitions/top_3";
 
 export default getFunc(

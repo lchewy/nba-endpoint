@@ -1,4 +1,4 @@
-import getFunc from "../utils/getFn";
+import {getFunc} from "../utils/getFn";
 import shot_tracks_chart from "../../definitions/shot_tracks_chart";
 
 export const shot_tracks_chart_2pt = getFunc(
