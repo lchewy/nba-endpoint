@@ -14,8 +14,8 @@ export default {
       url: "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  host: "localhost:2000/api",
-  basePath: "/v1",
+  host: "api-plus.dev.denali-sr.com",
+  basePath: "/api/v1/en_US/NBA",
   tags: [
     {
       name: "team",
@@ -42,7 +42,7 @@ export default {
       }
     }
   ],
-  schemes: ["http", "https"],
+  schemes: ["https", "http"],
   paths,
   definitions,
   externalDocs: {

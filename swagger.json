@@ -11,8 +11,8 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "localhost:2000/api",
-  "basePath": "/v1",
+  "host": "api-plus.dev.denali-sr.com",
+  "basePath": "/api/v1/en_US/NBA",
   "tags": [
     {
       "name": "team",
@@ -39,9 +39,9 @@
       }
     }
   ],
-  "schemes": ["http", "https"],
+  "schemes": ["https", "http"],
   "paths": {
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_2pt": {
+    "/team/{teamId}/type/shot_tracks_chart_2pt": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks chart 2pt",
@@ -151,7 +151,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_3pt": {
+    "/team/{teamId}/type/shot_tracks_chart_3pt": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks chart 3pt",
@@ -261,7 +261,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_early_o": {
+    "/team/{teamId}/type/shot_tracks_chart_early_o": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks chart sprint offense",
@@ -371,7 +371,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_chart_late_clock": {
+    "/team/{teamId}/type/shot_tracks_chart_late_clock": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks chart late clock",
@@ -481,7 +481,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/post_play_player": {
+    "/team/{teamId}/type/post_play_player": {
       "get": {
         "tags": ["team"],
         "summary": "team card - post play",
@@ -601,7 +601,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/paint_drive_location": {
+    "/team/{teamId}/type/paint_drive_location": {
       "get": {
         "tags": ["team"],
         "summary": "team card - paint drive location team",
@@ -722,7 +722,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_time": {
+    "/team/{teamId}/type/shot_tracks_time": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks time",
@@ -843,7 +843,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_tracks_length": {
+    "/team/{teamId}/type/shot_tracks_length": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot tracks length",
@@ -964,7 +964,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/rating": {
+    "/team/{teamId}/type/rating": {
       "get": {
         "tags": ["team"],
         "summary": "team card - rating",
@@ -1161,7 +1161,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/similarities": {
+    "/team/{teamId}/type/similarities": {
       "get": {
         "tags": ["team"],
         "summary": "team card - similarities",
@@ -1290,7 +1290,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/style_comps": {
+    "/team/{teamId}/type/style_comps": {
       "get": {
         "tags": ["team"],
         "summary": "team card - Style Comps",
@@ -1419,7 +1419,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/trends_player": {
+    "/team/{teamId}/type/trends_player": {
       "get": {
         "tags": ["team"],
         "summary": "team card - trends player",
@@ -1539,7 +1539,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/trends_team": {
+    "/team/{teamId}/type/trends_team": {
       "get": {
         "tags": ["team"],
         "summary": "team card - trends team",
@@ -1659,7 +1659,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/top_3_players": {
+    "/team/{teamId}/type/top_3_players": {
       "get": {
         "tags": ["team"],
         "summary": "team card - top 3 players",
@@ -1794,7 +1794,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/both_3_players": {
+    "/team/{teamId}/type/both_3_players": {
       "get": {
         "tags": ["team"],
         "summary": "team card - Shots taken by key shooters",
@@ -1928,7 +1928,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/bottom_3_players": {
+    "/team/{teamId}/type/bottom_3_players": {
       "get": {
         "tags": ["team"],
         "summary": "team card - bottom 3 players",
@@ -2063,7 +2063,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/sport_key_stretch_best": {
+    "/team/{teamId}/type/sport_key_stretch_best": {
       "get": {
         "tags": ["team"],
         "summary": "team card - best stretch",
@@ -2174,7 +2174,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/sport_key_stretch_worst": {
+    "/team/{teamId}/type/sport_key_stretch_worst": {
       "get": {
         "tags": ["team"],
         "summary": "team card - sport key stretch",
@@ -2288,7 +2288,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/court_zone_1": {
+    "/team/{teamId}/type/court_zone_1": {
       "get": {
         "tags": ["team"],
         "summary": "team card - player shot zones",
@@ -2412,7 +2412,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/court_zone_2": {
+    "/team/{teamId}/type/court_zone_2": {
       "get": {
         "tags": ["team"],
         "summary": "team card - player shot zones",
@@ -2554,7 +2554,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/court_zone_3": {
+    "/team/{teamId}/type/court_zone_3": {
       "get": {
         "tags": ["team"],
         "summary": "team card - player shot zones",
@@ -2690,7 +2690,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/court_zone_4": {
+    "/team/{teamId}/type/court_zone_4": {
       "get": {
         "tags": ["team"],
         "summary": "team card - player shot zones",
@@ -2900,7 +2900,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/chemistry": {
+    "/team/{teamId}/type/chemistry": {
       "get": {
         "tags": ["team"],
         "summary": "team card - chemistry",
@@ -3005,7 +3005,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/matchup_comparison": {
+    "/team/{teamId}/type/matchup_comparison": {
       "get": {
         "tags": ["team"],
         "summary": "team card - matchup comparison",
@@ -3124,7 +3124,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_easiest_off": {
+    "/team/{teamId}/type/nba_seasonal_matchup_easiest_off": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team's easiest offensive matchup",
@@ -3234,7 +3234,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_toughest_off": {
+    "/team/{teamId}/type/nba_seasonal_matchup_toughest_off": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team's toughest offensive matchup",
@@ -3344,7 +3344,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_easiest_def": {
+    "/team/{teamId}/type/nba_seasonal_matchup_easiest_def": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team's easiest defensive matchup",
@@ -3454,7 +3454,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_seasonal_matchup_toughest_def": {
+    "/team/{teamId}/type/nba_seasonal_matchup_toughest_def": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team's toughest defensive matchup",
@@ -3564,7 +3564,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_1on1_matchups": {
+    "/team/{teamId}/type/nba_1on1_matchups": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team 1 on 1 matchups",
@@ -3676,7 +3676,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/team_rank": {
+    "/team/{teamId}/type/team_rank": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team rank",
@@ -3792,7 +3792,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_lineups": {
+    "/team/{teamId}/type/nba_lineups": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team lineups against opponents",
@@ -3920,7 +3920,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_lineups_starting": {
+    "/team/{teamId}/type/nba_lineups_starting": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team lineups against opponents",
@@ -4048,7 +4048,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/nba_shot_taking_making": {
+    "/team/{teamId}/type/nba_shot_taking_making": {
       "get": {
         "tags": ["team"],
         "summary": "team card - a team's shot taking stats during away/home games",
@@ -4198,7 +4198,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/type/shot_probability": {
+    "/team/{teamId}/type/shot_probability": {
       "get": {
         "tags": ["team"],
         "summary": "team card - shot probability",
@@ -4336,7 +4336,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/game/{gameId}/type/shot_probability": {
+    "/team/{teamId}/game/{gameId}/type/shot_probability": {
       "get": {
         "tags": ["team"],
         "summary": "team card - a teams shot probability for a game",
@@ -4480,7 +4480,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": {
+    "/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": {
       "get": {
         "tags": ["team"],
         "summary": "team card - insights on 1 on 1 matchups within a game",
@@ -4598,7 +4598,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/game/{gameId}/type/nba_shot_taking_making": {
+    "/team/{teamId}/game/{gameId}/type/nba_shot_taking_making": {
       "get": {
         "tags": ["team"],
         "summary": "team card - A team's shot taking stats during away/home games",
@@ -4755,7 +4755,7 @@
         }
       }
     },
-    "/en_US/NBA/team/{teamId}/game/{gameId}/type/nba_lineups": {
+    "/team/{teamId}/game/{gameId}/type/nba_lineups": {
       "get": {
         "tags": ["team"],
         "summary": "team card - team's lineup within a game",
@@ -4889,7 +4889,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/post_play_player": {
+    "/player/{playerId}/type/post_play_player": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player's post play",
@@ -5002,7 +5002,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/paint_drive_location": {
+    "/player/{playerId}/type/paint_drive_location": {
       "get": {
         "tags": ["player"],
         "summary": "player card - paint drive location player",
@@ -5115,7 +5115,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/shot_tracks_length": {
+    "/player/{playerId}/type/shot_tracks_length": {
       "get": {
         "tags": ["player"],
         "summary": "player card - shot tracks length",
@@ -5228,7 +5228,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/shot_tracks_time": {
+    "/player/{playerId}/type/shot_tracks_time": {
       "get": {
         "tags": ["player"],
         "summary": "player card - shot tracks time",
@@ -5341,7 +5341,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/rating": {
+    "/player/{playerId}/type/rating": {
       "get": {
         "tags": ["player"],
         "summary": "player card - rating",
@@ -5530,7 +5530,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/similarities": {
+    "/player/{playerId}/type/similarities": {
       "get": {
         "tags": ["player"],
         "summary": "player card - similarities",
@@ -5651,7 +5651,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/style_comps": {
+    "/player/{playerId}/type/style_comps": {
       "get": {
         "tags": ["player"],
         "summary": "player card - Style Comps",
@@ -5772,7 +5772,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/trends_player": {
+    "/player/{playerId}/type/trends_player": {
       "get": {
         "tags": ["player"],
         "summary": "player card - trends player",
@@ -5884,7 +5884,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/court_zone_1": {
+    "/player/{playerId}/type/court_zone_1": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player shot zones",
@@ -6000,7 +6000,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/court_zone_2": {
+    "/player/{playerId}/type/court_zone_2": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player shot zones",
@@ -6134,7 +6134,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/court_zone_3": {
+    "/player/{playerId}/type/court_zone_3": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player shot zones",
@@ -6262,7 +6262,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/court_zone_4": {
+    "/player/{playerId}/type/court_zone_4": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player shot zones",
@@ -6464,7 +6464,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/chemistry": {
+    "/player/{playerId}/type/chemistry": {
       "get": {
         "tags": ["player"],
         "summary": "player card - chemistry",
@@ -6561,7 +6561,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/matchup_comparison": {
+    "/player/{playerId}/type/matchup_comparison": {
       "get": {
         "tags": ["player"],
         "summary": "player card - matchup comparison",
@@ -6672,7 +6672,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/nba_seasonal_matchup_easiest_off": {
+    "/player/{playerId}/type/nba_seasonal_matchup_easiest_off": {
       "get": {
         "tags": ["player"],
         "summary": "player card - team's easiest offensive matchup",
@@ -6771,7 +6771,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/nba_seasonal_matchup_easiest_def": {
+    "/player/{playerId}/type/nba_seasonal_matchup_easiest_def": {
       "get": {
         "tags": ["player"],
         "summary": "player card - team's easiest defensive matchup",
@@ -6870,7 +6870,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/nba_seasonal_matchup_toughest_off": {
+    "/player/{playerId}/type/nba_seasonal_matchup_toughest_off": {
       "get": {
         "tags": ["player"],
         "summary": "player card - team's toughest offensive matchup",
@@ -6969,7 +6969,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/nba_seasonal_matchup_toughest_def": {
+    "/player/{playerId}/type/nba_seasonal_matchup_toughest_def": {
       "get": {
         "tags": ["player"],
         "summary": "player card - team's toughest defensive matchup",
@@ -7068,7 +7068,7 @@
         }
       }
     },
-    "/en_US/NBA/player/{playerId}/type/nba_1on1_matchups": {
+    "/player/{playerId}/type/nba_1on1_matchups": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player 1 on 1 matchups",
