@@ -1,9 +1,12 @@
-import {
-  shot_tracks_chart_2pt,
-  shot_tracks_chart_3pt,
-  shot_tracks_chart_early_o,
-  shot_tracks_chart_late_clock
-} from "./shot_tracks_chart";
+// import {
+//   shot_tracks_chart_2pt,
+//   shot_tracks_chart_3pt,
+//   shot_tracks_chart_early_o,
+//   shot_tracks_chart_late_clock
+// } from "./shot_tracks_chart";        // DELETE MAYBE
+
+
+import shot_tracks_chart_team from "./shot_tracks_chart_team";
 import post_play from "./post_play";
 import paint_drive_location from "./paint_drive_location";
 import shot_tracks_time from "./shot_tracks_time";
@@ -44,11 +47,15 @@ import team_game_nba_1on1_matchups from "./team_game_nba_1on1_matchups";
 import team_game_shot_taking_making from "./team_game_shot_taking_making";
 import team_game_lineups from "./team_game_lineups";
 
+// no court_player_season_shots
+
 export default {
-  "/team/{teamId}/type/shot_tracks_chart_2pt": shot_tracks_chart_2pt,
-  "/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
-  "/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
-  "/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock,
+  // "/team/{teamId}/type/shot_tracks_chart_2pt": shot_tracks_chart_2pt,
+  // "/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
+  // "/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
+  // "/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock, // DELETE
+  "/team/{teamId}/type/shot_tracks_chart_team": shot_tracks_chart_team,
+  "/team/{teamId}/type/shot_probability": shot_probability,
   "/team/{teamId}/type/post_play_player": post_play,
   "/team/{teamId}/type/paint_drive_location": paint_drive_location,
   "/team/{teamId}/type/shot_tracks_time": shot_tracks_time,
@@ -78,7 +85,8 @@ export default {
   "/team/{teamId}/type/nba_lineups": nba_lineups,
   "/team/{teamId}/type/nba_lineups_starting": nba_lineups_starting,
   "/team/{teamId}/type/nba_shot_taking_making": nba_shot_taking_making,
-  "/team/{teamId}/type/shot_probability": shot_probability,
+
+
 
   "/team/{teamId}/game/{gameId}/type/shot_probability": team_game_shot_probability,
   "/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": team_game_nba_1on1_matchups,
@@ -88,3 +96,5 @@ export default {
 
 // 583ecae2-fb46-11e1-82cb-f4ce4684ea4c
 // ff1c4678-1862-42d5-8735-5c8693f3cc4a
+
+// 5382cf43-3a79-4a5a-a7fd-153906fe65dd

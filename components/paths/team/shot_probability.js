@@ -10,13 +10,13 @@ const body = {
     type: "object",
     properties: {
       two_pts_expected_value: float,
-      two_pts_attempted: int32,
+      two_points_att: int32,
       two_pts_made: int32,
       three_pts_expected_value: float,
-      three_pts_attempted: int32,
+      three_points_att: int32,
       three_pts_made: int32,
       free_throws_expected_value: float,
-      free_throws_attempted: int32,
+      free_throws_att: int32,
       free_throws_made: int32,
       text_description: str,
       text_visualization: str

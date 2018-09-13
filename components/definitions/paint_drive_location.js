@@ -13,6 +13,8 @@ export default {
   items: {
     type: "object",
     properties: {
+      image_id : int32,
+      player_ID: {type:"string"},
       graphic_title: { type: "string" },
       paint_drive_location_left: int32,
       per_game_created_left: float,

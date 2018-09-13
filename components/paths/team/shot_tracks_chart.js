@@ -1,5 +1,36 @@
-import {getFunc} from "../utils/getFn";
+// DELETE
+
+import { getFunc } from "../utils/getFn";
 import shot_tracks_chart from "../../definitions/shot_tracks_chart";
+
+// const body = {
+//   type: "object",
+//   properties: {
+//     sprint_offense: {
+//       type: "array",
+//       items: shot_tracks_chart
+//     },
+//     late_clock: {
+//       type: "array",
+//       items: shot_tracks_chart
+//     },
+//     halfcourt_3pt: {
+//       type: "array",
+//       items: shot_tracks_chart
+//     },
+//     halfcourt_2pt: {
+//       type: "array",
+//       items: shot_tracks_chart
+//     },
+//     shot_tracks: {
+//       type: "array",
+//       items: shot_tracks_chart
+//     }
+//   }
+// };
+
+
+
 
 export const shot_tracks_chart_2pt = getFunc(
   "shot tracks chart 2pt",

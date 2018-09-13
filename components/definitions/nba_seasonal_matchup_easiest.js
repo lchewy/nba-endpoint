@@ -8,6 +8,7 @@ export default {
     easiest_matchup_offense_1: str,
     easiest_matchup_offense_2: str,
     easiest_matchup_offense_3: str,
+    player_ID: str,
     card_image: str
   }
 };

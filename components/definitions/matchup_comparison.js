@@ -15,7 +15,7 @@ export default {
       text_description: str,
       graphic_title: str,
       game_ID: str,
-      card_image: str
+      // card_image: str
     }
   }
 };

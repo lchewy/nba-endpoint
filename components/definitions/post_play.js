@@ -6,6 +6,7 @@ export default {
   items: {
     type: "object",
     properties: {
+      player_ID: { type: "string" },
       graphic_title: { type: "string" },
       post_location_left: int32,
       post_points_per_game_created_left: float,

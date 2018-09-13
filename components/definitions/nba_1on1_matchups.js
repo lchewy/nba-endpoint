@@ -6,13 +6,14 @@ export default {
   items: {
     type: "object",
     properties: {
+      player_ID: str,
       game_ID: str,
       total_possessions: int32,
       text_description: str,
-      FGA: str,
-      FGM: str,
+      field_goals_att: str,
+      field_goals_made: str,
       turnovers: str,
-      pts_scored: str,
+      points: str,
       rating: str,
       fense: str
     }

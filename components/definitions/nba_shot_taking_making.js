@@ -41,7 +41,7 @@ export default {
           win_frequency_text: str,
           win_frequency_value: {
             type: "array",
-            items: { type: float }
+            items: float
           }
         }
       }

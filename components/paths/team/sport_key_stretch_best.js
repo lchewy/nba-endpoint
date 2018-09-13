@@ -3,8 +3,8 @@ import {getFunc} from "../utils/getFn";
 const str = { type: "string" };
 
 const body = {
-  type: "array",
-  items: {
+  // type: "array",
+  // items: {
     type: "object",
     properties: {
       team_best_stretch_1: str,
@@ -17,9 +17,9 @@ const body = {
       avg_per_game: str,
       lineup_avg_per_game: str,
       lineup_plus_minus: str,
-      card_image: str
+      // card_image: str
     }
-  }
+  // }
 };
 
 export default getFunc(

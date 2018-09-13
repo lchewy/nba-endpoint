@@ -6,9 +6,9 @@ const three_zones = {
     items: {
       type: "object",
       properties: {
-        "3-pointer_attempts": str,
-        "3-pointer_eFG_pct": str,
-        "3-pointer_points_per_shot": str,
+        "three_pointer_attempts": str,
+        "three_pointer_eFG_pct": str,
+        "three_pointer_points_per_shot": str,
         midrange_attempts: str,
         midrange_eFG_pct: str,
         midrange_points_per_shot: str,
@@ -16,7 +16,7 @@ const three_zones = {
         paint_eFG_pct: str,
         paint_points_per_shot: str,
         graphic_title: str,
-        card_image: str
+        // card_image: str
       }
     }
   }
@@ -34,9 +34,9 @@ const five_zones = {
         left_corner_3_attempts: str,
         left_corner_3_eFG_pct: str,
         left_corner_3_points_per_shot: str,
-        "3-pointer_attempts": str,
-        "3-pointer_eFG_pct": str,
-        "3-pointer_points_per_shot": str,
+        "three_pointer_attempts": str,
+        "three_pointer_eFG_pct": str,
+        "three_pointer_points_per_shot": str,
         paint_attempts: str,
         paint_eFG_pct: str,
         paint_points_per_shot: str,
@@ -72,7 +72,7 @@ const seven_zones = {
         straight_eFG_pct: str,
         straight_points_per_shot: str,
         graphic_title: str,
-        card_image: str
+        // card_image: str
       }
     }
   }
@@ -124,7 +124,7 @@ const fourteen_zones = {
         far_right_midrange_eFG_pct: str,
         far_right_midrange_points_per_shot: str,
         graphic_title: str,
-        card_image: str
+        // card_image: str
       }
     }
   }

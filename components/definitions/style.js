@@ -7,6 +7,7 @@ export default {
     type: "object",
     properties: {
       display_text: str,
+      player_ID: str,
       skill_most_similar_name_1: str,
       skill_most_similar_rating_1: float,
       skill_most_similar_name_2: str,
@@ -15,7 +16,7 @@ export default {
       skill_most_similar_rating_3: float,
       skill_most_similar_name_4: str,
       skill_most_similar_rating_4: float,
-      card_image: str
+      // card_image: str
     }
   }
 };
