@@ -12,7 +12,7 @@
     }
   },
   "host": "api-plus.dev.denali-sr.com",
-  "basePath": "/api/v1/en_US/NBA",
+  "basePath": "/api/NBA/v1/en_US",
   "tags": [
     {
       "name": "team",
@@ -41,11 +41,11 @@
   ],
   "schemes": ["https", "http"],
   "paths": {
-    "/team/{teamId}/type/shot_tracks_chart_2pt": {
+    "/team/{teamId}/type/shot_tracks_chart_team": {
       "get": {
         "tags": ["team"],
-        "summary": "team card - shot tracks chart 2pt",
-        "operationId": "shot_tracks_chart_2pt",
+        "summary": "team card - teams shot tracks chart",
+        "operationId": "shot_tracks_chart_team",
         "produces": ["application/json"],
         "parameters": [
           {
@@ -115,23 +115,189 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_tracks_chart_halfcourt_2pt": {
+                            "shot_tracks_chart": {
                               "type": "object",
                               "properties": {
-                                "graphic_title": { "type": "string" },
-                                "team_ID": { "type": "string" },
-                                "game_ID": { "type": "string" },
-                                "opponent_name": { "type": "string" },
-                                "PTS": { "type": "integer", "format": "int32" },
-                                "FGM": { "type": "integer", "format": "int32" },
-                                "FGA": { "type": "integer", "format": "int32" },
-                                "3PA": { "type": "integer", "format": "int32" },
-                                "3PM": { "type": "integer", "format": "int32" },
+                                "sprint_offense": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "opponent_name": { "type": "string" },
+                                      "field_goals_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "field_goals_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "points": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "shot_tracks": {
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                      }
+                                    }
+                                  }
+                                },
+                                "late_clock": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "opponent_name": { "type": "string" },
+                                      "field_goals_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "field_goals_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "points": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "shot_tracks": {
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                      }
+                                    }
+                                  }
+                                },
+                                "halfcourt_3pt": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "opponent_name": { "type": "string" },
+                                      "field_goals_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "field_goals_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "points": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "shot_tracks": {
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                      }
+                                    }
+                                  }
+                                },
+                                "halfcourt_2pt": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "opponent_name": { "type": "string" },
+                                      "field_goals_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "field_goals_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "points": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "shot_tracks": {
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                      }
+                                    }
+                                  }
+                                },
                                 "shot_tracks": {
                                   "type": "array",
-                                  "items": { "type": "string" }
-                                },
-                                "card_image": { "type": "string" }
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "opponent_name": { "type": "string" },
+                                      "field_goals_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "field_goals_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "points": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "three_points_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "shot_tracks": {
+                                        "type": "array",
+                                        "items": { "type": "string" }
+                                      }
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
@@ -151,11 +317,12 @@
         }
       }
     },
-    "/team/{teamId}/type/shot_tracks_chart_3pt": {
+    "/team/{teamId}/type/shot_probability": {
       "get": {
         "tags": ["team"],
-        "summary": "team card - shot tracks chart 3pt",
-        "operationId": "shot_tracks_chart_3pt",
+        "summary": "team card - shot probability",
+        "description": "",
+        "operationId": "team_shot_probability",
         "produces": ["application/json"],
         "parameters": [
           {
@@ -225,243 +392,50 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_tracks_chart_halfcourt_3pt": {
-                              "type": "object",
-                              "properties": {
-                                "graphic_title": { "type": "string" },
-                                "team_ID": { "type": "string" },
-                                "game_ID": { "type": "string" },
-                                "opponent_name": { "type": "string" },
-                                "PTS": { "type": "integer", "format": "int32" },
-                                "FGM": { "type": "integer", "format": "int32" },
-                                "FGA": { "type": "integer", "format": "int32" },
-                                "3PA": { "type": "integer", "format": "int32" },
-                                "3PM": { "type": "integer", "format": "int32" },
-                                "shot_tracks": {
-                                  "type": "array",
-                                  "items": { "type": "string" }
-                                },
-                                "card_image": { "type": "string" }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "created_at": { "type": "string" },
-                    "updated_at": { "type": "string" },
-                    "deleted_at": { "type": "string", "nullable": true }
-                  }
-                }
-              }
-            }
-          },
-          "400": { "description": "Invalid ID supplied" },
-          "404": { "description": "Player not found" }
-        }
-      }
-    },
-    "/team/{teamId}/type/shot_tracks_chart_early_o": {
-      "get": {
-        "tags": ["team"],
-        "summary": "team card - shot tracks chart sprint offense",
-        "operationId": "shot_tracks_chart_sprint_offense",
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "teamId",
-            "in": "path",
-            "description": "team's Id from SR model",
-            "type": "string",
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "success": { "type": "boolean" },
-                "response": {
-                  "type": "object",
-                  "properties": {
-                    "id": { "type": "integer", "format": "int32" },
-                    "sr_id": { "type": "string" },
-                    "type": { "type": "string" },
-                    "sport": { "type": "string" },
-                    "data": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "string" },
-                        "sr_id": { "type": "string" },
-                        "reference": { "type": "string" },
-                        "name": { "type": "string" },
-                        "market": { "type": "string" },
-                        "alias": { "type": "string" },
-                        "conference": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "division": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "venue": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "capacity": {
-                              "type": "integer",
-                              "format": "int32"
-                            },
-                            "address": { "type": "string" },
-                            "city": { "type": "string" },
-                            "state": { "type": "string" },
-                            "zip": { "type": "string" },
-                            "country": { "type": "string" },
-                            "sr_id": { "type": "string" }
-                          }
-                        },
-                        "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shot_tracks_chart_sprint_offense": {
-                              "type": "object",
-                              "properties": {
-                                "graphic_title": { "type": "string" },
-                                "team_ID": { "type": "string" },
-                                "game_ID": { "type": "string" },
-                                "opponent_name": { "type": "string" },
-                                "PTS": { "type": "integer", "format": "int32" },
-                                "FGM": { "type": "integer", "format": "int32" },
-                                "FGA": { "type": "integer", "format": "int32" },
-                                "3PA": { "type": "integer", "format": "int32" },
-                                "3PM": { "type": "integer", "format": "int32" },
-                                "shot_tracks": {
-                                  "type": "array",
-                                  "items": { "type": "string" }
-                                },
-                                "card_image": { "type": "string" }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "created_at": { "type": "string" },
-                    "updated_at": { "type": "string" },
-                    "deleted_at": { "type": "string", "nullable": true }
-                  }
-                }
-              }
-            }
-          },
-          "400": { "description": "Invalid ID supplied" },
-          "404": { "description": "Player not found" }
-        }
-      }
-    },
-    "/team/{teamId}/type/shot_tracks_chart_late_clock": {
-      "get": {
-        "tags": ["team"],
-        "summary": "team card - shot tracks chart late clock",
-        "operationId": "shot_tracks_chart_late_clock",
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "teamId",
-            "in": "path",
-            "description": "team's Id from SR model",
-            "type": "string",
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "success": { "type": "boolean" },
-                "response": {
-                  "type": "object",
-                  "properties": {
-                    "id": { "type": "integer", "format": "int32" },
-                    "sr_id": { "type": "string" },
-                    "type": { "type": "string" },
-                    "sport": { "type": "string" },
-                    "data": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "string" },
-                        "sr_id": { "type": "string" },
-                        "reference": { "type": "string" },
-                        "name": { "type": "string" },
-                        "market": { "type": "string" },
-                        "alias": { "type": "string" },
-                        "conference": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "division": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "venue": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "capacity": {
-                              "type": "integer",
-                              "format": "int32"
-                            },
-                            "address": { "type": "string" },
-                            "city": { "type": "string" },
-                            "state": { "type": "string" },
-                            "zip": { "type": "string" },
-                            "country": { "type": "string" },
-                            "sr_id": { "type": "string" }
-                          }
-                        },
-                        "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shot_tracks_chart_late_clock": {
-                              "type": "object",
-                              "properties": {
-                                "graphic_title": { "type": "string" },
-                                "team_ID": { "type": "string" },
-                                "game_ID": { "type": "string" },
-                                "opponent_name": { "type": "string" },
-                                "PTS": { "type": "integer", "format": "int32" },
-                                "FGM": { "type": "integer", "format": "int32" },
-                                "FGA": { "type": "integer", "format": "int32" },
-                                "3PA": { "type": "integer", "format": "int32" },
-                                "3PM": { "type": "integer", "format": "int32" },
-                                "shot_tracks": {
-                                  "type": "array",
-                                  "items": { "type": "string" }
-                                },
-                                "card_image": { "type": "string" }
+                            "shot_probability": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "two_pts_expected_value": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "two_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "two_pts_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_pts_expected_value": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_pts_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "free_throws_expected_value": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "free_throws_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "free_throws_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "text_description": { "type": "string" },
+                                  "text_visualization": { "type": "string" }
+                                }
                               }
                             }
                           }
@@ -555,11 +529,12 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "left_right_post_play": {
+                            "post_play_location": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "post_location_left": {
                                     "type": "integer",
@@ -675,11 +650,16 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "left_right_with_numbers": {
+                            "paint_drive_location": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "paint_drive_location_left": {
                                     "type": "integer",
@@ -796,7 +776,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_on_off_ball_by_time": {
+                            "shot_tracks_time": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -821,8 +801,9 @@
                                     "type": "integer",
                                     "format": "int32"
                                   },
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "game_ID": { "type": "string" }
                                 }
                               }
                             }
@@ -917,7 +898,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_on_off_ball": {
+                            "shot_tracks_length": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -942,7 +923,6 @@
                                     "type": "integer",
                                     "format": "int32"
                                   },
-                                  "graphic_title": { "type": "string" },
                                   "card_image": { "type": "string" }
                                 }
                               }
@@ -1241,6 +1221,7 @@
                                 "type": "object",
                                 "properties": {
                                   "display_text": { "type": "string" },
+                                  "player_ID": { "type": "string" },
                                   "defense_skill_most_similar_name_1": {
                                     "type": "string"
                                   },
@@ -1269,7 +1250,34 @@
                                     "type": "number",
                                     "format": "float"
                                   },
-                                  "card_image": { "type": "string" }
+                                  "offense_style_most_similar_name_1": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_1": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_2": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_2": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_3": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_3": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_4": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_4": {
+                                    "type": "number",
+                                    "format": "float"
+                                  }
                                 }
                               }
                             }
@@ -1364,12 +1372,13 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "Style Comps": {
+                            "style": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
                                   "display_text": { "type": "string" },
+                                  "player_ID": { "type": "string" },
                                   "skill_most_similar_name_1": {
                                     "type": "string"
                                   },
@@ -1397,8 +1406,7 @@
                                   "skill_most_similar_rating_4": {
                                     "type": "number",
                                     "format": "float"
-                                  },
-                                  "card_image": { "type": "string" }
+                                  }
                                 }
                               }
                             }
@@ -1499,6 +1507,7 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "up_down": { "type": "string" },
                                   "player_downwards_trend_1": {
                                     "type": "string"
@@ -1515,10 +1524,7 @@
                                   "player_upwards_trend_2": {
                                     "type": "string"
                                   },
-                                  "player_upwards_trend_3": {
-                                    "type": "string"
-                                  },
-                                  "card_image": { "type": "string" }
+                                  "player_upwards_trend_3": { "type": "string" }
                                 }
                               }
                             }
@@ -1635,10 +1641,7 @@
                                   "player_upwards_trend_2": {
                                     "type": "string"
                                   },
-                                  "player_upwards_trend_3": {
-                                    "type": "string"
-                                  },
-                                  "card_image": { "type": "string" }
+                                  "player_upwards_trend_3": { "type": "string" }
                                 }
                               }
                             }
@@ -1734,46 +1737,40 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "NBA_top_3_players": {
+                            "shot_makers": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
-                                  "shot_makers": {
-                                    "type": "object",
-                                    "properties": {
-                                      "points_scored_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_3": {
-                                        "type": "string"
-                                      }
-                                    }
-                                  },
                                   "aggregate_name": { "type": "string" },
                                   "card_sub_type": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "points_scored_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_3": {
+                                    "type": "string"
+                                  }
                                 }
                               }
                             }
@@ -1868,46 +1865,40 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "NBA_top_3_players": {
+                            "shot_makers": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
-                                  "shot_makers": {
-                                    "type": "object",
-                                    "properties": {
-                                      "points_scored_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_3": {
-                                        "type": "string"
-                                      }
-                                    }
-                                  },
                                   "aggregate_name": { "type": "string" },
                                   "card_sub_type": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "points_scored_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_3": {
+                                    "type": "string"
+                                  }
                                 }
                               }
                             }
@@ -2003,46 +1994,40 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "NBA_top_3_players": {
+                            "shot_makers": {
                               "type": "array",
                               "items": {
                                 "type": "object",
                                 "properties": {
-                                  "shot_makers": {
-                                    "type": "object",
-                                    "properties": {
-                                      "points_scored_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_1": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_2": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_scored_text_player_3": {
-                                        "type": "string"
-                                      },
-                                      "points_more_than_expected_player_3": {
-                                        "type": "string"
-                                      }
-                                    }
-                                  },
                                   "aggregate_name": { "type": "string" },
                                   "card_sub_type": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "points_scored_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_1": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_2": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_scored_text_player_3": {
+                                    "type": "string"
+                                  },
+                                  "points_more_than_expected_player_3": {
+                                    "type": "string"
+                                  }
                                 }
                               }
                             }
@@ -2139,22 +2124,18 @@
                           "type": "object",
                           "properties": {
                             "sport_key_stretch": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "team_best_stretch_1": { "type": "string" },
-                                  "team_best_stretch_2": { "type": "string" },
-                                  "team_best_stretch_3": { "type": "string" },
-                                  "team_best_stretch_4": { "type": "string" },
-                                  "team_best_stretch_5": { "type": "string" },
-                                  "text_description": { "type": "string" },
-                                  "total_plus_minus": { "type": "string" },
-                                  "avg_per_game": { "type": "string" },
-                                  "lineup_avg_per_game": { "type": "string" },
-                                  "lineup_plus_minus": { "type": "string" },
-                                  "card_image": { "type": "string" }
-                                }
+                              "type": "object",
+                              "properties": {
+                                "team_best_stretch_1": { "type": "string" },
+                                "team_best_stretch_2": { "type": "string" },
+                                "team_best_stretch_3": { "type": "string" },
+                                "team_best_stretch_4": { "type": "string" },
+                                "team_best_stretch_5": { "type": "string" },
+                                "text_description": { "type": "string" },
+                                "total_plus_minus": { "type": "string" },
+                                "avg_per_game": { "type": "string" },
+                                "lineup_avg_per_game": { "type": "string" },
+                                "lineup_plus_minus": { "type": "string" }
                               }
                             }
                           }
@@ -2250,25 +2231,17 @@
                           "type": "object",
                           "properties": {
                             "sport_key_stretch": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "team_worst_stretch_1": { "type": "string" },
-                                  "team_worst_stretch_2": { "type": "string" },
-                                  "team_worst_stretch_3": { "type": "string" },
-                                  "team_worst_stretch_4": { "type": "string" },
-                                  "team_worst_stretch_5": { "type": "string" },
-                                  "text_description": {
-                                    "type": "array",
-                                    "items": { "type": "string" }
-                                  },
-                                  "total_plus_minus": { "type": "string" },
-                                  "avg_per_game": { "type": "string" },
-                                  "lineup_avg_per_game": { "type": "string" },
-                                  "lineup_plus_minus": { "type": "string" },
-                                  "card_image": { "type": "string" }
-                                }
+                              "properties": {
+                                "team_worst_stretch_1": { "type": "string" },
+                                "team_worst_stretch_2": { "type": "string" },
+                                "team_worst_stretch_3": { "type": "string" },
+                                "team_worst_stretch_4": { "type": "string" },
+                                "team_worst_stretch_5": { "type": "string" },
+                                "text_description": { "type": "string" },
+                                "total_plus_minus": { "type": "string" },
+                                "avg_per_game": { "type": "string" },
+                                "lineup_avg_per_game": { "type": "string" },
+                                "lineup_plus_minus": { "type": "string" }
                               }
                             }
                           }
@@ -2371,11 +2344,13 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
-                                      "3-pointer_attempts": {
+                                      "three_pointer_attempts": {
                                         "type": "string"
                                       },
-                                      "3-pointer_eFG_pct": { "type": "string" },
-                                      "3-pointer_points_per_shot": {
+                                      "three_pointer_eFG_pct": {
+                                        "type": "string"
+                                      },
+                                      "three_pointer_points_per_shot": {
                                         "type": "string"
                                       },
                                       "midrange_attempts": { "type": "string" },
@@ -2388,8 +2363,7 @@
                                       "paint_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -2509,11 +2483,13 @@
                                       "left_corner_3_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "3-pointer_attempts": {
+                                      "three_pointer_attempts": {
                                         "type": "string"
                                       },
-                                      "3-pointer_eFG_pct": { "type": "string" },
-                                      "3-pointer_points_per_shot": {
+                                      "three_pointer_eFG_pct": {
+                                        "type": "string"
+                                      },
+                                      "three_pointer_points_per_shot": {
                                         "type": "string"
                                       },
                                       "paint_attempts": { "type": "string" },
@@ -2666,8 +2642,7 @@
                                       "straight_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -2876,8 +2851,7 @@
                                       "far_right_midrange_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -2983,8 +2957,7 @@
                                   "display_text": { "type": "string" },
                                   "best_play_1": { "type": "string" },
                                   "best_play_2": { "type": "string" },
-                                  "best_play_3": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "best_play_3": { "type": "string" }
                                 }
                               }
                             }
@@ -3102,8 +3075,7 @@
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
                                   "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "game_ID": { "type": "string" }
                                 }
                               }
                             }
@@ -3198,7 +3170,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -3212,8 +3184,8 @@
                                   "easiest_matchup_offense_3": {
                                     "type": "string"
                                   },
-                                  "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "player_ID": { "type": "string" },
+                                  "graphic_title": { "type": "string" }
                                 }
                               }
                             }
@@ -3308,7 +3280,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -3322,8 +3294,8 @@
                                   "toughest_matchup_offense_3": {
                                     "type": "string"
                                   },
-                                  "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "player_ID": { "type": "string" },
+                                  "graphic_title": { "type": "string" }
                                 }
                               }
                             }
@@ -3418,7 +3390,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -3432,8 +3404,8 @@
                                   "easiest_matchup_defense_3": {
                                     "type": "string"
                                   },
-                                  "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "player_ID": { "type": "string" },
+                                  "graphic_title": { "type": "string" }
                                 }
                               }
                             }
@@ -3528,7 +3500,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "array",
                               "items": {
                                 "type": "object",
@@ -3542,8 +3514,8 @@
                                   "toughest_matchup_defense_3": {
                                     "type": "string"
                                   },
-                                  "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "player_ID": { "type": "string" },
+                                  "graphic_title": { "type": "string" }
                                 }
                               }
                             }
@@ -3644,16 +3616,17 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
                                   "total_possessions": {
                                     "type": "integer",
                                     "format": "int32"
                                   },
                                   "text_description": { "type": "string" },
-                                  "FGA": { "type": "string" },
-                                  "FGM": { "type": "string" },
+                                  "field_goals_att": { "type": "string" },
+                                  "field_goals_made": { "type": "string" },
                                   "turnovers": { "type": "string" },
-                                  "pts_scored": { "type": "string" },
+                                  "points": { "type": "string" },
                                   "rating": { "type": "string" },
                                   "fense": { "type": "string" }
                                 }
@@ -4170,152 +4143,12 @@
                                       "win_frequency_value": {
                                         "type": "array",
                                         "items": {
-                                          "type": {
-                                            "type": "number",
-                                            "format": "float"
-                                          }
+                                          "type": "number",
+                                          "format": "float"
                                         }
                                       }
                                     }
                                   }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "created_at": { "type": "string" },
-                    "updated_at": { "type": "string" },
-                    "deleted_at": { "type": "string", "nullable": true }
-                  }
-                }
-              }
-            }
-          },
-          "400": { "description": "Invalid ID supplied" },
-          "404": { "description": "Player not found" }
-        }
-      }
-    },
-    "/team/{teamId}/type/shot_probability": {
-      "get": {
-        "tags": ["team"],
-        "summary": "team card - shot probability",
-        "description": "",
-        "operationId": "team_shot_probability",
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "teamId",
-            "in": "path",
-            "description": "team's Id from SR model",
-            "type": "string",
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "success": { "type": "boolean" },
-                "response": {
-                  "type": "object",
-                  "properties": {
-                    "id": { "type": "integer", "format": "int32" },
-                    "sr_id": { "type": "string" },
-                    "type": { "type": "string" },
-                    "sport": { "type": "string" },
-                    "data": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "string" },
-                        "sr_id": { "type": "string" },
-                        "reference": { "type": "string" },
-                        "name": { "type": "string" },
-                        "market": { "type": "string" },
-                        "alias": { "type": "string" },
-                        "conference": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "division": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "alias": { "type": "string" }
-                          }
-                        },
-                        "venue": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "capacity": {
-                              "type": "integer",
-                              "format": "int32"
-                            },
-                            "address": { "type": "string" },
-                            "city": { "type": "string" },
-                            "state": { "type": "string" },
-                            "zip": { "type": "string" },
-                            "country": { "type": "string" },
-                            "sr_id": { "type": "string" }
-                          }
-                        },
-                        "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shot_probability": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "two_pts_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "two_pts_attempted": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "two_pts_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "three_pts_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "three_pts_attempted": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "three_pts_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "free_throws_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "free_throws_attempted": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "free_throws_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "text_description": { "type": "string" },
-                                  "text_visualization": { "type": "string" }
                                 }
                               }
                             }
@@ -4566,16 +4399,17 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
                                   "total_possessions": {
                                     "type": "integer",
                                     "format": "int32"
                                   },
                                   "text_description": { "type": "string" },
-                                  "FGA": { "type": "string" },
-                                  "FGM": { "type": "string" },
+                                  "field_goals_att": { "type": "string" },
+                                  "field_goals_made": { "type": "string" },
                                   "turnovers": { "type": "string" },
-                                  "pts_scored": { "type": "string" },
+                                  "points": { "type": "string" },
                                   "rating": { "type": "string" },
                                   "fense": { "type": "string" }
                                 }
@@ -4727,10 +4561,8 @@
                                       "win_frequency_value": {
                                         "type": "array",
                                         "items": {
-                                          "type": {
-                                            "type": "number",
-                                            "format": "float"
-                                          }
+                                          "type": "number",
+                                          "format": "float"
                                         }
                                       }
                                     }
@@ -4961,6 +4793,7 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "post_location_left": {
                                     "type": "integer",
@@ -5073,6 +4906,11 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "paint_drive_location_left": {
                                     "type": "integer",
@@ -5206,7 +5044,6 @@
                                     "type": "integer",
                                     "format": "int32"
                                   },
-                                  "graphic_title": { "type": "string" },
                                   "card_image": { "type": "string" }
                                 }
                               }
@@ -5319,8 +5156,9 @@
                                     "type": "integer",
                                     "format": "int32"
                                   },
+                                  "player_ID": { "type": "string" },
                                   "graphic_title": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "game_ID": { "type": "string" }
                                 }
                               }
                             }
@@ -5602,6 +5440,7 @@
                                 "type": "object",
                                 "properties": {
                                   "display_text": { "type": "string" },
+                                  "player_ID": { "type": "string" },
                                   "defense_skill_most_similar_name_1": {
                                     "type": "string"
                                   },
@@ -5630,7 +5469,34 @@
                                     "type": "number",
                                     "format": "float"
                                   },
-                                  "card_image": { "type": "string" }
+                                  "offense_style_most_similar_name_1": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_1": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_2": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_2": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_3": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_3": {
+                                    "type": "number",
+                                    "format": "float"
+                                  },
+                                  "offense_style_most_similar_name_4": {
+                                    "type": "string"
+                                  },
+                                  "offense_style_most_similar_rating_4": {
+                                    "type": "number",
+                                    "format": "float"
+                                  }
                                 }
                               }
                             }
@@ -5718,40 +5584,37 @@
                           "type": "object",
                           "properties": {
                             "style": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "display_text": { "type": "string" },
-                                  "skill_most_similar_name_1": {
-                                    "type": "string"
-                                  },
-                                  "skill_most_similar_rating_1": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "skill_most_similar_name_2": {
-                                    "type": "string"
-                                  },
-                                  "skill_most_similar_rating_2": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "skill_most_similar_name_3": {
-                                    "type": "string"
-                                  },
-                                  "skill_most_similar_rating_3": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "skill_most_similar_name_4": {
-                                    "type": "string"
-                                  },
-                                  "skill_most_similar_rating_4": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "card_image": { "type": "string" }
+                              "type": "object",
+                              "properties": {
+                                "display_text": { "type": "string" },
+                                "player_ID": { "type": "string" },
+                                "skill_most_similar_name_1": {
+                                  "type": "string"
+                                },
+                                "skill_most_similar_rating_1": {
+                                  "type": "number",
+                                  "format": "float"
+                                },
+                                "skill_most_similar_name_2": {
+                                  "type": "string"
+                                },
+                                "skill_most_similar_rating_2": {
+                                  "type": "number",
+                                  "format": "float"
+                                },
+                                "skill_most_similar_name_3": {
+                                  "type": "string"
+                                },
+                                "skill_most_similar_rating_3": {
+                                  "type": "number",
+                                  "format": "float"
+                                },
+                                "skill_most_similar_name_4": {
+                                  "type": "string"
+                                },
+                                "skill_most_similar_rating_4": {
+                                  "type": "number",
+                                  "format": "float"
                                 }
                               }
                             }
@@ -5840,31 +5703,21 @@
                           "type": "object",
                           "properties": {
                             "trends": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "up_down": { "type": "string" },
-                                  "player_downwards_trend_1": {
-                                    "type": "string"
-                                  },
-                                  "player_downwards_trend_2": {
-                                    "type": "string"
-                                  },
-                                  "player_downwards_trend_3": {
-                                    "type": "string"
-                                  },
-                                  "player_upwards_trend_1": {
-                                    "type": "string"
-                                  },
-                                  "player_upwards_trend_2": {
-                                    "type": "string"
-                                  },
-                                  "player_upwards_trend_3": {
-                                    "type": "string"
-                                  },
-                                  "card_image": { "type": "string" }
-                                }
+                              "type": "object",
+                              "properties": {
+                                "up_down": { "type": "string" },
+                                "player_downwards_trend_1": {
+                                  "type": "string"
+                                },
+                                "player_downwards_trend_2": {
+                                  "type": "string"
+                                },
+                                "player_downwards_trend_3": {
+                                  "type": "string"
+                                },
+                                "player_upwards_trend_1": { "type": "string" },
+                                "player_upwards_trend_2": { "type": "string" },
+                                "player_upwards_trend_3": { "type": "string" }
                               }
                             }
                           }
@@ -5959,11 +5812,13 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
-                                      "3-pointer_attempts": {
+                                      "three_pointer_attempts": {
                                         "type": "string"
                                       },
-                                      "3-pointer_eFG_pct": { "type": "string" },
-                                      "3-pointer_points_per_shot": {
+                                      "three_pointer_eFG_pct": {
+                                        "type": "string"
+                                      },
+                                      "three_pointer_points_per_shot": {
                                         "type": "string"
                                       },
                                       "midrange_attempts": { "type": "string" },
@@ -5976,8 +5831,7 @@
                                       "paint_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -6089,11 +5943,13 @@
                                       "left_corner_3_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "3-pointer_attempts": {
+                                      "three_pointer_attempts": {
                                         "type": "string"
                                       },
-                                      "3-pointer_eFG_pct": { "type": "string" },
-                                      "3-pointer_points_per_shot": {
+                                      "three_pointer_eFG_pct": {
+                                        "type": "string"
+                                      },
+                                      "three_pointer_points_per_shot": {
                                         "type": "string"
                                       },
                                       "paint_attempts": { "type": "string" },
@@ -6238,8 +6094,7 @@
                                       "straight_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -6440,8 +6295,7 @@
                                       "far_right_midrange_points_per_shot": {
                                         "type": "string"
                                       },
-                                      "graphic_title": { "type": "string" },
-                                      "card_image": { "type": "string" }
+                                      "graphic_title": { "type": "string" }
                                     }
                                   }
                                 }
@@ -6539,8 +6393,7 @@
                                   "display_text": { "type": "string" },
                                   "best_play_1": { "type": "string" },
                                   "best_play_2": { "type": "string" },
-                                  "best_play_3": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "best_play_3": { "type": "string" }
                                 }
                               }
                             }
@@ -6650,8 +6503,7 @@
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
                                   "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "card_image": { "type": "string" }
+                                  "game_ID": { "type": "string" }
                                 }
                               }
                             }
@@ -6738,7 +6590,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "object",
                               "properties": {
                                 "easiest_matchup_offense_1": {
@@ -6750,8 +6602,8 @@
                                 "easiest_matchup_offense_3": {
                                   "type": "string"
                                 },
-                                "graphic_title": { "type": "string" },
-                                "card_image": { "type": "string" }
+                                "player_ID": { "type": "string" },
+                                "graphic_title": { "type": "string" }
                               }
                             }
                           }
@@ -6837,7 +6689,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "object",
                               "properties": {
                                 "easiest_matchup_defense_1": {
@@ -6849,8 +6701,8 @@
                                 "easiest_matchup_defense_3": {
                                   "type": "string"
                                 },
-                                "graphic_title": { "type": "string" },
-                                "card_image": { "type": "string" }
+                                "player_ID": { "type": "string" },
+                                "graphic_title": { "type": "string" }
                               }
                             }
                           }
@@ -6936,7 +6788,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "object",
                               "properties": {
                                 "toughest_matchup_offense_1": {
@@ -6948,8 +6800,8 @@
                                 "toughest_matchup_offense_3": {
                                   "type": "string"
                                 },
-                                "graphic_title": { "type": "string" },
-                                "card_image": { "type": "string" }
+                                "player_ID": { "type": "string" },
+                                "graphic_title": { "type": "string" }
                               }
                             }
                           }
@@ -7035,7 +6887,7 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "nba_seasonal_matchup": {
+                            "seasonal_matchup": {
                               "type": "object",
                               "properties": {
                                 "toughest_matchup_defense_1": {
@@ -7047,8 +6899,8 @@
                                 "toughest_matchup_defense_3": {
                                   "type": "string"
                                 },
-                                "graphic_title": { "type": "string" },
-                                "card_image": { "type": "string" }
+                                "player_ID": { "type": "string" },
+                                "graphic_title": { "type": "string" }
                               }
                             }
                           }
@@ -7140,16 +6992,17 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "player_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
                                   "total_possessions": {
                                     "type": "integer",
                                     "format": "int32"
                                   },
                                   "text_description": { "type": "string" },
-                                  "FGA": { "type": "string" },
-                                  "FGM": { "type": "string" },
+                                  "field_goals_att": { "type": "string" },
+                                  "field_goals_made": { "type": "string" },
                                   "turnovers": { "type": "string" },
-                                  "pts_scored": { "type": "string" },
+                                  "points": { "type": "string" },
                                   "rating": { "type": "string" },
                                   "fense": { "type": "string" }
                                 }
@@ -7181,13 +7034,12 @@
         "team_ID": { "type": "string" },
         "game_ID": { "type": "string" },
         "opponent_name": { "type": "string" },
-        "PTS": { "type": "integer", "format": "int32" },
-        "FGM": { "type": "integer", "format": "int32" },
-        "FGA": { "type": "integer", "format": "int32" },
-        "3PA": { "type": "integer", "format": "int32" },
-        "3PM": { "type": "integer", "format": "int32" },
-        "shot_tracks": { "type": "array", "items": { "type": "string" } },
-        "card_image": { "type": "string" }
+        "field_goals_made": { "type": "integer", "format": "int32" },
+        "field_goals_att": { "type": "integer", "format": "int32" },
+        "points": { "type": "integer", "format": "int32" },
+        "three_points_att": { "type": "integer", "format": "int32" },
+        "three_points_made": { "type": "integer", "format": "int32" },
+        "shot_tracks": { "type": "array", "items": { "type": "string" } }
       }
     },
     "shot_tracks": {
@@ -7195,13 +7047,14 @@
       "items": {
         "type": "object",
         "properties": {
+          "player_ID": { "type": "string" },
           "on_ball_pct": { "type": "number", "format": "float" },
           "off_ball_pct": { "type": "number", "format": "float" },
           "on_ball": { "type": "number", "format": "float" },
           "off_ball": { "type": "number", "format": "float" },
           "shooting_plays": { "type": "integer", "format": "int32" },
           "graphic_title": { "type": "string" },
-          "card_image": { "type": "string" }
+          "game_ID": { "type": "string" }
         }
       }
     },
@@ -7216,8 +7069,7 @@
           "player_downwards_trend_3": { "type": "string" },
           "player_upwards_trend_1": { "type": "string" },
           "player_upwards_trend_2": { "type": "string" },
-          "player_upwards_trend_3": { "type": "string" },
-          "card_image": { "type": "string" }
+          "player_upwards_trend_3": { "type": "string" }
         }
       }
     },
@@ -7226,6 +7078,7 @@
       "items": {
         "type": "object",
         "properties": {
+          "player_ID": { "type": "string" },
           "graphic_title": { "type": "string" },
           "post_location_left": { "type": "integer", "format": "int32" },
           "post_points_per_game_created_left": {
@@ -7246,6 +7099,8 @@
       "items": {
         "type": "object",
         "properties": {
+          "image_id": { "type": "integer", "format": "int32" },
+          "player_ID": { "type": "string" },
           "graphic_title": { "type": "string" },
           "paint_drive_location_left": { "type": "integer", "format": "int32" },
           "per_game_created_left": { "type": "number", "format": "float" },
@@ -7275,8 +7130,7 @@
           "efficiency": { "type": "string" },
           "text_description": { "type": "string" },
           "graphic_title": { "type": "string" },
-          "game_ID": { "type": "string" },
-          "card_image": { "type": "string" }
+          "game_ID": { "type": "string" }
         }
       }
     },
@@ -7288,8 +7142,7 @@
           "display_text": { "type": "string" },
           "best_play_1": { "type": "string" },
           "best_play_2": { "type": "string" },
-          "best_play_3": { "type": "string" },
-          "card_image": { "type": "string" }
+          "best_play_3": { "type": "string" }
         }
       }
     },
@@ -7299,8 +7152,8 @@
         "easiest_matchup_offense_1": { "type": "string" },
         "easiest_matchup_offense_2": { "type": "string" },
         "easiest_matchup_offense_3": { "type": "string" },
-        "graphic_title": { "type": "string" },
-        "card_image": { "type": "string" }
+        "player_ID": { "type": "string" },
+        "graphic_title": { "type": "string" }
       }
     },
     "toughest_matchup_offense": {
@@ -7309,8 +7162,8 @@
         "toughest_matchup_offense_1": { "type": "string" },
         "toughest_matchup_offense_2": { "type": "string" },
         "toughest_matchup_offense_3": { "type": "string" },
-        "graphic_title": { "type": "string" },
-        "card_image": { "type": "string" }
+        "player_ID": { "type": "string" },
+        "graphic_title": { "type": "string" }
       }
     },
     "easiest_matchup_defense": {
@@ -7319,8 +7172,8 @@
         "easiest_matchup_defense_1": { "type": "string" },
         "easiest_matchup_defense_2": { "type": "string" },
         "easiest_matchup_defense_3": { "type": "string" },
-        "graphic_title": { "type": "string" },
-        "card_image": { "type": "string" }
+        "player_ID": { "type": "string" },
+        "graphic_title": { "type": "string" }
       }
     },
     "toughest_matchup_defense": {
@@ -7329,8 +7182,8 @@
         "toughest_matchup_defense_1": { "type": "string" },
         "toughest_matchup_defense_2": { "type": "string" },
         "toughest_matchup_defense_3": { "type": "string" },
-        "graphic_title": { "type": "string" },
-        "card_image": { "type": "string" }
+        "player_ID": { "type": "string" },
+        "graphic_title": { "type": "string" }
       }
     },
     "top_3": {
@@ -7338,23 +7191,17 @@
       "items": {
         "type": "object",
         "properties": {
-          "shot_makers": {
-            "type": "object",
-            "properties": {
-              "points_scored_player_1": { "type": "string" },
-              "points_scored_text_player_1": { "type": "string" },
-              "points_more_than_expected_player_1": { "type": "string" },
-              "points_scored_player_2": { "type": "string" },
-              "points_scored_text_player_2": { "type": "string" },
-              "points_more_than_expected_player_2": { "type": "string" },
-              "points_scored_player_3": { "type": "string" },
-              "points_scored_text_player_3": { "type": "string" },
-              "points_more_than_expected_player_3": { "type": "string" }
-            }
-          },
           "aggregate_name": { "type": "string" },
           "card_sub_type": { "type": "string" },
-          "card_image": { "type": "string" }
+          "points_scored_player_1": { "type": "string" },
+          "points_scored_text_player_1": { "type": "string" },
+          "points_more_than_expected_player_1": { "type": "string" },
+          "points_scored_player_2": { "type": "string" },
+          "points_scored_text_player_2": { "type": "string" },
+          "points_more_than_expected_player_2": { "type": "string" },
+          "points_scored_player_3": { "type": "string" },
+          "points_scored_text_player_3": { "type": "string" },
+          "points_more_than_expected_player_3": { "type": "string" }
         }
       }
     },
@@ -7395,6 +7242,7 @@
         "type": "object",
         "properties": {
           "display_text": { "type": "string" },
+          "player_ID": { "type": "string" },
           "defense_skill_most_similar_name_1": { "type": "string" },
           "defense_skill_most_similar_rating_1": {
             "type": "number",
@@ -7415,7 +7263,26 @@
             "type": "number",
             "format": "float"
           },
-          "card_image": { "type": "string" }
+          "offense_style_most_similar_name_1": { "type": "string" },
+          "offense_style_most_similar_rating_1": {
+            "type": "number",
+            "format": "float"
+          },
+          "offense_style_most_similar_name_2": { "type": "string" },
+          "offense_style_most_similar_rating_2": {
+            "type": "number",
+            "format": "float"
+          },
+          "offense_style_most_similar_name_3": { "type": "string" },
+          "offense_style_most_similar_rating_3": {
+            "type": "number",
+            "format": "float"
+          },
+          "offense_style_most_similar_name_4": { "type": "string" },
+          "offense_style_most_similar_rating_4": {
+            "type": "number",
+            "format": "float"
+          }
         }
       }
     },
@@ -7427,17 +7294,16 @@
           "items": {
             "type": "object",
             "properties": {
-              "3-pointer_attempts": { "type": "string" },
-              "3-pointer_eFG_pct": { "type": "string" },
-              "3-pointer_points_per_shot": { "type": "string" },
+              "three_pointer_attempts": { "type": "string" },
+              "three_pointer_eFG_pct": { "type": "string" },
+              "three_pointer_points_per_shot": { "type": "string" },
               "midrange_attempts": { "type": "string" },
               "midrange_eFG_pct": { "type": "string" },
               "midrange_points_per_shot": { "type": "string" },
               "paint_attempts": { "type": "string" },
               "paint_eFG_pct": { "type": "string" },
               "paint_points_per_shot": { "type": "string" },
-              "graphic_title": { "type": "string" },
-              "card_image": { "type": "string" }
+              "graphic_title": { "type": "string" }
             }
           }
         }
@@ -7457,9 +7323,9 @@
               "left_corner_3_attempts": { "type": "string" },
               "left_corner_3_eFG_pct": { "type": "string" },
               "left_corner_3_points_per_shot": { "type": "string" },
-              "3-pointer_attempts": { "type": "string" },
-              "3-pointer_eFG_pct": { "type": "string" },
-              "3-pointer_points_per_shot": { "type": "string" },
+              "three_pointer_attempts": { "type": "string" },
+              "three_pointer_eFG_pct": { "type": "string" },
+              "three_pointer_points_per_shot": { "type": "string" },
               "paint_attempts": { "type": "string" },
               "paint_eFG_pct": { "type": "string" },
               "paint_points_per_shot": { "type": "string" },
@@ -7496,8 +7362,7 @@
               "straight_attempts": { "type": "string" },
               "straight_eFG_pct": { "type": "string" },
               "straight_points_per_shot": { "type": "string" },
-              "graphic_title": { "type": "string" },
-              "card_image": { "type": "string" }
+              "graphic_title": { "type": "string" }
             }
           }
         }
@@ -7550,8 +7415,7 @@
               "far_right_midrange_attempts": { "type": "string" },
               "far_right_midrange_eFG_pct": { "type": "string" },
               "far_right_midrange_points_per_shot": { "type": "string" },
-              "graphic_title": { "type": "string" },
-              "card_image": { "type": "string" }
+              "graphic_title": { "type": "string" }
             }
           }
         }
@@ -7562,13 +7426,14 @@
       "items": {
         "type": "object",
         "properties": {
+          "player_ID": { "type": "string" },
           "game_ID": { "type": "string" },
           "total_possessions": { "type": "integer", "format": "int32" },
           "text_description": { "type": "string" },
-          "FGA": { "type": "string" },
-          "FGM": { "type": "string" },
+          "field_goals_att": { "type": "string" },
+          "field_goals_made": { "type": "string" },
           "turnovers": { "type": "string" },
-          "pts_scored": { "type": "string" },
+          "points": { "type": "string" },
           "rating": { "type": "string" },
           "fense": { "type": "string" }
         }
@@ -7613,7 +7478,7 @@
               "win_frequency_text": { "type": "string" },
               "win_frequency_value": {
                 "type": "array",
-                "items": { "type": { "type": "number", "format": "float" } }
+                "items": { "type": "number", "format": "float" }
               }
             }
           }

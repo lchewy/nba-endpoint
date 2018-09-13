@@ -15,7 +15,7 @@ export default {
     }
   },
   host: "api-plus.dev.denali-sr.com",
-  basePath: "/api/v1/en_US/NBA",
+  basePath:"/api/NBA/v1/en_US", //"/api/v1/en_US/NBA",
   tags: [
     {
       name: "team",
