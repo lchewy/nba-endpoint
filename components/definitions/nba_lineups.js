@@ -8,6 +8,7 @@ export default {
     properties: {
       graphic_title: str,
       game_ID: str,
+      player_ID: str,
       player_1_name: str,
       player_1_position: str,
       player_2_name: str,
@@ -25,7 +26,8 @@ export default {
       time_left_on_shot_clock: float,
       team_eFG_pct: str,
       team_eFG_pct_allowed: str,
-      team_time_left_on_shot_clock: float
+      team_time_left_on_shot_clock: float,
+      image_id: { type: "integer", format: "int32" }
     }
   }
 };

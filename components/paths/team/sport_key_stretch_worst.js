@@ -7,6 +7,7 @@ const body = {
   // items: {
   //   type: "object",
   properties: {
+    player_ID: str,
     team_worst_stretch_1: str,
     team_worst_stretch_2: str,
     team_worst_stretch_3: str,
@@ -17,6 +18,7 @@ const body = {
     avg_per_game: str,
     lineup_avg_per_game: str,
     lineup_plus_minus: str,
+    image_id: { type: "integer", format: "int32" }
     // card_image: str
   }
   // }
