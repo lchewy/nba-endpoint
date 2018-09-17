@@ -2,7 +2,7 @@ import paths from "./paths";
 import definitions from "./definitions";
 
 export default {
-  swagger: "2.0",
+  openapi: "3.0.0",
   info: {
     description: "API+ Endpoints for NBA",
     version: "1.0.0",
@@ -14,8 +14,9 @@ export default {
       url: "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  host: "api-plus.dev.denali-sr.com",
-  basePath:"/api/NBA/v1/en_US", //"/api/v1/en_US/NBA",
+  servers: [{ url: "https://api-plus.dev.denali-sr.com/api/NBA/v1/en_US" }],
+  // host: "api-plus.dev.denali-sr.com",
+  // basePath:"/api/NBA/v1/en_US", //"/api/v1/en_US/NBA",
   tags: [
     {
       name: "team",
@@ -42,9 +43,9 @@ export default {
       }
     }
   ],
-  schemes: ["https", "http"],
+  // schemes: ["https", "http"],
   paths,
-  definitions,
+  components: { schemas: definitions },
   externalDocs: {
     description: "Find out More",
     url: "https://sportradar.us/"

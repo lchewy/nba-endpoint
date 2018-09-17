@@ -128,6 +128,77 @@ const playerSchema = (key, body) => ({
   }
 });
 
+const pregameSchema = (key, body) => ({
+  type: "object",
+  properties: {
+    success: { type: "boolean" },
+    response: {
+      type: "object",
+      properties: {
+        game: {
+          type: "object",
+          properties: {
+            id: int32,
+            sr_id: str,
+            sport: str,
+            type: str
+          }
+        },
+        card: {
+          type: "object",
+          properties: {
+            id: int32,
+            sr_id: str,
+            away_sr_id: str,
+            home_sr_id: str,
+            sport: str,
+            season: int32,
+            segment: str,
+            date: str,
+            meta: {
+              type: "object",
+              properties: {
+                id: str,
+                date: str,
+                sr_id: str,
+                reference: str,
+                home_points: int32,
+                away_points: int32,
+                home: {
+                  type: "object",
+                  properties: {
+                    id: str,
+                    sr_id: str,
+                    reference: str
+                  }
+                },
+                away: {
+                  type: "object",
+                  properties: {
+                    id: str,
+                    sr_id: str,
+                    reference: str
+                  }
+                },
+                sport: str,
+                season: int32,
+                segment: str,
+                status: str
+              }
+            },
+            created_at: str,
+            updated_at: str,
+            deleted_at: { ...str, nullable: true }
+          }
+        },
+        cardData: {
+          type: "array"
+        }
+      }
+    }
+  }
+});
+
 const getSchema = (tag, key, body) => {
   if (tag === "team") {
     return teamSchema(key, body);
@@ -143,7 +214,7 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
       summary: `${tag} card - ${summary}`,
       description: methodDescription,
       operationId: `${id}`,
-      produces: ["application/json"],
+      // produces: ["application/json"],
       parameters: [
         {
           name: `${tag}Id`,
@@ -152,27 +223,44 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
           type: "string",
           required: true
         }
-        // tag2 && {
-        //   name: `${tag2}Id`,
-        //   in:"path",
-        //   description:`${tag2} Id from SR model`,
-        //   type:"string",
-        //   required:true
-        // }
       ],
       responses: {
+        // "200": {
+        //   description: "successful operation",
+        //   schema: getSchema(tag, key, body)
+        // },
         "200": {
-          description: "successful operation",
-          schema: getSchema(tag, key, body)
+          content: {
+            "application/json": {
+              description: "successful operation",
+              schema: getSchema(tag, key, body)
+            }
+          }
         },
-        "400": { description: "Invalid ID supplied" },
-        "404": { description: "Player not found" }
+        "400": {
+          content: {
+            description: "Invalid ID supplied"
+          }
+        },
+        "404": {
+          content: {
+            description: "Player not found"
+          }
+        }
       }
     }
   };
 };
 
-export const getFunc2 = (summary, id, key, body, tag, tag2, methodDescription) => {
+export const getFunc2 = (
+  summary,
+  id,
+  key,
+  body,
+  tag,
+  tag2,
+  methodDescription
+) => {
   return {
     get: {
       tags: [tag],
