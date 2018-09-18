@@ -13,7 +13,7 @@ export default {
     points: int32,
     three_points_att: int32,
     three_points_made: int32,
-    shot_tracks: { type: "array", items:str }, // NO ITEMS FOR ARRAY AVAILABLE
+    // shot_tracks: { type: "array", items:str }, // NO ITEMS FOR ARRAY AVAILABLE
     image_id: int32
     // PTS: int32,
     // FGM: int32,

@@ -15,6 +15,7 @@ export default {
       text_description: str,
       graphic_title: str,
       game_ID: str,
+      image_id: int32
       // card_image: str
     }
   }

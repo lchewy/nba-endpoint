@@ -3,8 +3,8 @@ import { getFunc } from "../utils/getFn";
 const str = { type: "string" };
 
 const body = {
-  // type: "array",
-  // items: {
+  type: "array",
+  items: {
   type: "object",
   properties: {
     player_ID: str,
@@ -21,7 +21,7 @@ const body = {
     image_id: { type: "integer", format: "int32" }
     // card_image: str
   }
-  // }
+  }
 };
 
 export default getFunc(

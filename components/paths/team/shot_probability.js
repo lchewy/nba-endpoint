@@ -9,6 +9,8 @@ const body = {
   items: {
     type: "object",
     properties: {
+      game_ID: str,
+
       two_pts_expected_value: float,
       two_points_att: int32,
       two_pts_made: int32,
@@ -19,7 +21,8 @@ const body = {
       free_throws_att: int32,
       free_throws_made: int32,
       text_description: str,
-      text_visualization: str
+      text_visualization: str,
+      image_id: int32
     }
   }
 };

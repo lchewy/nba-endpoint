@@ -12,7 +12,8 @@ export default {
       post_points_per_game_created_left: float,
       post_location_right: int32,
       post_points_per_game_created_right: float,
-      post_plays_count: int32
+      post_plays_count: int32,
+      image_id: int32
       // card_image: { type: "string" }
     }
   }
