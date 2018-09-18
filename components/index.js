@@ -2,7 +2,8 @@ import paths from "./paths";
 import definitions from "./definitions";
 
 export default {
-  openapi: "3.0.0",
+  openapi: "3.0.0-rc2",
+  servers: [{ url: "https://api-plus.dev.denali-sr.com/api/NBA/v1/en_US" }],
   info: {
     description: "API+ Endpoints for NBA",
     version: "1.0.0",
@@ -14,7 +15,6 @@ export default {
       url: "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  servers: [{ url: "https://api-plus.dev.denali-sr.com/api/NBA/v1/en_US" }],
   // host: "api-plus.dev.denali-sr.com",
   // basePath:"/api/NBA/v1/en_US", //"/api/v1/en_US/NBA",   
   tags: [

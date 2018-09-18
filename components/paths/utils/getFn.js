@@ -202,38 +202,29 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
       summary: `${tag} card - ${summary}`,
       description: methodDescription,
       operationId: `${id}`,
-      // produces: ["application/json"],
       parameters: [
         {
           name: `${tag}Id`,
           in: "path",
           description: `${tag}'s Id from SR model`,
-          type: "string",
+          schema:{type: "string"},
           required: true
         }
       ],
       responses: {
-        // "200": {
-        //   description: "successful operation",
-        //   schema: getSchema(tag, key, body)
-        // },
         "200": {
+          description: "successful operation",
           content: {
             "application/json": {
-              description: "successful operation",
               schema: getSchema(tag, key, body)
             }
           }
         },
         "400": {
-          content: {
-            description: "Invalid ID supplied"
-          }
+          description: "Invalid ID supplied"
         },
         "404": {
-          content: {
-            description: "Player not found"
-          }
+          description: "Player not found"
         }
       }
     }
@@ -255,20 +246,19 @@ export const getFunc2 = (
       summary: `${tag} card - ${summary}`,
       description: methodDescription,
       operationId: `${id}`,
-      produces: ["application/json"],
       parameters: [
         {
           name: `${tag}Id`,
           in: "path",
           description: `${tag}'s Id from SR model`,
-          type: "string",
+          schema:{type: "string"},
           required: true
         },
         {
           name: `${tag2}Id`,
           in: "path",
           description: `${tag2} Id from SR model`,
-          type: "string",
+          schema:{type: "string"},
           required: true
         }
       ],

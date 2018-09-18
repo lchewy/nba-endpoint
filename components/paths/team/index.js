@@ -53,30 +53,7 @@ export default {
   // "/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
   // "/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
   // "/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock, // DELETE
-  "/team/{teamId}/type/shot_tracks_chart": {
-    get: {
-      tags:["team"],
-      parameters: [
-        {
-          name: "teamId",
-          in: "path",
-          schema: { type: "string" },
-          required: true
-        }
-      ],
-      responses: {
-        "200": {
-          content: {
-            "application/json": {
-              schema: {
-                type: "string"
-              }
-            }
-          }
-        }
-      }
-    }
-  }, //shot_tracks_chart_team,
+  "/team/{teamId}/type/shot_tracks_chart": shot_tracks_chart_team,
   "/team/{teamId}/type/shot_probability": shot_probability,
   "/team/{teamId}/type/post_play_player": post_play,
   "/team/{teamId}/type/paint_drive_location": paint_drive_location,
