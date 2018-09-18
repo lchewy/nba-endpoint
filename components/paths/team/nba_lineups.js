@@ -12,7 +12,7 @@ export const nba_lineups = getFunc(
 
 export const nba_lineups_starting = getFunc(
   "team lineups against opponents",
-  "team_nba_lineups",
+  "team_nba_lineups_starting",
   "nba_lineups",
   lineups,
   "team",

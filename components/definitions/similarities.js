@@ -1,3 +1,5 @@
+// DELETE
+
 const str = { type: "string" };
 const float = { type: "number", format: "float" };
 

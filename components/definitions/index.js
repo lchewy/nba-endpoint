@@ -17,6 +17,7 @@ import similarities from "./similarities";
 import { zone_1, zone_2, zone_3, zone_4 } from "./zones";
 import nba_1on1_matchups from "./nba_1on1_matchups";
 import nba_shot_taking_making from "./nba_shot_taking_making";
+import shot_probability from "./shot_probability"
 
 const definitions = {
   shot_tracks_chart,
@@ -38,7 +39,8 @@ const definitions = {
   zone_3,
   zone_4,
   nba_1on1_matchups,
-  nba_shot_taking_making
+  nba_shot_taking_making,
+  shot_probability
 };
 
 export default definitions;

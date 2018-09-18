@@ -15,7 +15,8 @@ export default {
       turnovers: str,
       points: str,
       rating: str,
-      fense: str
+      fense: str,
+      image_id: int32
     }
   }
 };

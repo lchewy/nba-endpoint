@@ -1,6 +1,6 @@
 import post_play from "./post_play";
 import paint_drive_location from "./paint_drive_location";
-import { shotTracksLength, shotTracksTime } from "./shot_tracks";
+import { shotTracksLength, shotTracksTime, shotTracksPlayers } from "./shot_tracks";
 import similarities from "./similarities";
 import style_comps from "./style_comps";
 import trends_player from "./trends_player";
@@ -23,6 +23,7 @@ import rating from "./rating";
 
 
 export default {
+  "/player/{playerId}/type/shot_tracks": shotTracksPlayers,
   "/player/{playerId}/type/post_play_player": post_play,
   "/player/{playerId}/type/paint_drive_location": paint_drive_location,
   "/player/{playerId}/type/shot_tracks_length": shotTracksLength,

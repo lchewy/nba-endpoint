@@ -1,12 +1,13 @@
-import {getFunc} from "../utils/getFn";
+import { getFunc } from "../utils/getFn";
 // import trends from "../../definitions/trends";
-import {trends} from "../../definitions/common";
+import { trends, str } from "../../definitions/common";
+
+const trends_player = { player_ID: str, ...trends };
 
 const body = {
-  type:"object",
-  properties: trends
-}
-
+  type: "object",
+  properties: trends_player
+};
 
 export default getFunc(
   "trends player",

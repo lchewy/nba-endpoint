@@ -44,7 +44,8 @@ export default {
             items: float
           }
         }
-      }
+      },
+      image_id: int32
     }
   }
 };

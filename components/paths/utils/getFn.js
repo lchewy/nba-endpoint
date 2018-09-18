@@ -128,72 +128,58 @@ const playerSchema = (key, body) => ({
   }
 });
 
-const pregameSchema = (key, body) => ({
+const gameSchema = (key, body) => ({
   type: "object",
   properties: {
     success: { type: "boolean" },
     response: {
       type: "object",
       properties: {
-        game: {
+        id: int32,
+        sr_id: str,
+        type: str,
+        sport: str,
+        data: {
           type: "object",
           properties: {
-            id: int32,
+            id: str,
             sr_id: str,
-            sport: str,
-            type: str
-          }
-        },
-        card: {
-          type: "object",
-          properties: {
-            id: int32,
-            sr_id: str,
-            away_sr_id: str,
-            home_sr_id: str,
-            sport: str,
-            season: int32,
-            segment: str,
-            date: str,
-            meta: {
+            reference: str,
+            status: str,
+            scheduled: str,
+            attendance: int32,
+            clock: str,
+            quarter: int32,
+            home: {
               type: "object",
               properties: {
                 id: str,
-                date: str,
-                sr_id: str,
-                reference: str,
-                home_points: int32,
-                away_points: int32,
-                home: {
-                  type: "object",
-                  properties: {
-                    id: str,
-                    sr_id: str,
-                    reference: str
-                  }
-                },
-                away: {
-                  type: "object",
-                  properties: {
-                    id: str,
-                    sr_id: str,
-                    reference: str
-                  }
-                },
-                sport: str,
-                season: int32,
-                segment: str,
-                status: str
+                name: str,
+                market: str,
+                points: int32
               }
             },
-            created_at: str,
-            updated_at: str,
-            deleted_at: { ...str, nullable: true }
+            away: {
+              type: "object",
+              properties: {
+                id: str,
+                name: str,
+                market: str,
+                points: int32
+              }
+            },
+            stats: {
+              type: "object",
+              properties: {
+                [key]: body
+              }
+            }
           }
         },
-        cardData: {
-          type: "array"
-        }
+
+        created_at: str,
+        updated_at: str,
+        deleted_at: { type: "string", nullable: true }
       }
     }
   }
@@ -204,6 +190,8 @@ const getSchema = (tag, key, body) => {
     return teamSchema(key, body);
   } else if (tag === "player") {
     return playerSchema(key, body);
+  } else if (tag === "game") {
+    return gameSchema(key, body);
   }
 };
 

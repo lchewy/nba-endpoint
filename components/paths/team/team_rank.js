@@ -11,7 +11,8 @@ const body = {
       expected_points_per_shot: float,
       points_per_game: float,
       "possession_duration_(time_remaining)": float,
-      points_per_possession: float
+      points_per_possession: float,
+      image_id: {type:"integer", format:"int32"}
     }
   }
 };

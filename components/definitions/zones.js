@@ -1,4 +1,5 @@
 const str = { type: "string" };
+const int32 = { type: "integer", format: "int32" };
 
 const three_zones = {
   three_zones: {
@@ -15,7 +16,8 @@ const three_zones = {
         paint_attempts: str,
         paint_eFG_pct: str,
         paint_points_per_shot: str,
-        graphic_title: str
+        graphic_title: str,
+        image_id: int32
         // card_image: str
       }
     }
@@ -44,7 +46,8 @@ const five_zones = {
         right_corner_3_eFG_pct: str,
         right_corner_3_points_per_shot: str,
         graphic_title: str,
-        card_image: str
+        card_image: str,
+        image_id: int32
       }
     }
   }
@@ -71,7 +74,8 @@ const seven_zones = {
         straight_attempts: str,
         straight_eFG_pct: str,
         straight_points_per_shot: str,
-        graphic_title: str
+        graphic_title: str,
+        image_id: int32
         // card_image: str
       }
     }
@@ -123,7 +127,8 @@ const fourteen_zones = {
         far_right_midrange_attempts: str,
         far_right_midrange_eFG_pct: str,
         far_right_midrange_points_per_shot: str,
-        graphic_title: str
+        graphic_title: str,
+        image_id: int32
         // card_image: str
       }
     }
