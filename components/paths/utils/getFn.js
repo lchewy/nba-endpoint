@@ -128,11 +128,70 @@ const playerSchema = (key, body) => ({
   }
 });
 
+const gameSchema = (key, body) => ({
+  type: "object",
+  properties: {
+    success: { type: "boolean" },
+    response: {
+      type: "object",
+      properties: {
+        id: int32,
+        sr_id: str,
+        type: str,
+        sport: str,
+        data: {
+          type: "object",
+          properties: {
+            id: str,
+            sr_id: str,
+            reference: str,
+            status: str,
+            scheduled: str,
+            attendance: int32,
+            clock: str,
+            quarter: int32,
+            home: {
+              type: "object",
+              properties: {
+                id: str,
+                name: str,
+                market: str,
+                points: int32
+              }
+            },
+            away: {
+              type: "object",
+              properties: {
+                id: str,
+                name: str,
+                market: str,
+                points: int32
+              }
+            },
+            stats: {
+              type: "object",
+              properties: {
+                [key]: body
+              }
+            }
+          }
+        },
+
+        created_at: str,
+        updated_at: str,
+        deleted_at: { type: "string", nullable: true }
+      }
+    }
+  }
+});
+
 const getSchema = (tag, key, body) => {
   if (tag === "team") {
     return teamSchema(key, body);
   } else if (tag === "player") {
     return playerSchema(key, body);
+  }else if(tag === "game"){
+    return gameSchema(key, body)
   }
 };
 
@@ -152,13 +211,6 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
           type: "string",
           required: true
         }
-        // tag2 && {
-        //   name: `${tag2}Id`,
-        //   in:"path",
-        //   description:`${tag2} Id from SR model`,
-        //   type:"string",
-        //   required:true
-        // }
       ],
       responses: {
         "200": {
@@ -172,7 +224,15 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
   };
 };
 
-export const getFunc2 = (summary, id, key, body, tag, tag2, methodDescription) => {
+export const getFunc2 = (
+  summary,
+  id,
+  key,
+  body,
+  tag,
+  tag2,
+  methodDescription
+) => {
   return {
     get: {
       tags: [tag],
@@ -207,3 +267,4 @@ export const getFunc2 = (summary, id, key, body, tag, tag2, methodDescription) =
     }
   };
 };
+

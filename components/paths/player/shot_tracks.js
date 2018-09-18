@@ -3,14 +3,13 @@ import {getFunc} from "../utils/getFn";
 import {shot_tracks, str} from "../../definitions/common";
 // import shot_tracks_time from "../team/shot_tracks_time";
 
+import shot_track_chart from "../../definitions/shot_tracks_chart";
+
 const shot_tracks_length = {
   type:"array",
   items:{
     type:"object",
-    properties:{
-      ...shot_tracks,
-      card_image: str
-    }
+    properties:shot_tracks, 
   }
 }
 
@@ -25,6 +24,11 @@ const shot_tracks_time = {
       game_ID: str
     }
   }
+}
+
+const shot_tracks_player = {
+  type:"array",
+  items: shot_track_chart
 }
 
 
@@ -43,3 +47,11 @@ export const shotTracksTime = getFunc(
   shot_tracks_time,
   "player"
 );
+
+export const shotTracksPlayers = getFunc(
+  "shot tracks",
+  "shot_tracks_player",
+  "shot_tracks",
+  shot_tracks_player,
+  "player"
+)

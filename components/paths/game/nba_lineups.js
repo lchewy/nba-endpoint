@@ -6,8 +6,7 @@ export const nba_lineups = getFunc(
   "team_nba_lineups",
   "nba_lineups",
   lineups,
-  "team",
-  "get a team's starting lineup against their opponents"
+  "game"
 );
 
 export const nba_lineups_starting = getFunc(
@@ -15,6 +14,5 @@ export const nba_lineups_starting = getFunc(
   "team_nba_lineups_starting",
   "nba_lineups",
   lineups,
-  "team",
-  "get a team's starting lineup against their opponents"
+  "game"
 );

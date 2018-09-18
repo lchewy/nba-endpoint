@@ -1,13 +1,9 @@
 import { getFunc } from "../utils/getFn";
-// import shot_tracks_chart from "../../definitions/shot_tracks_chart";
 import { shot_tracks_chart } from "../../definitions/common";
 
-const shot_tracks_chart_with_id = {
+const shot_tracks_charts = {
   type: "object",
-  properties: {
-    player_ID: { type: "string" },
-    ...shot_tracks_chart
-  }
+  properties: shot_tracks_chart
 };
 
 const body = {
@@ -15,31 +11,31 @@ const body = {
   properties: {
     sprint_offense: {
       type: "array",
-      items: shot_tracks_chart_with_id
+      items: shot_tracks_charts
     },
     late_clock: {
       type: "array",
-      items: shot_tracks_chart_with_id
+      items: shot_tracks_charts
     },
     halfcourt_3pt: {
       type: "array",
-      items: shot_tracks_chart_with_id
+      items: shot_tracks_charts
     },
     halfcourt_2pt: {
       type: "array",
-      items: shot_tracks_chart_with_id
+      items: shot_tracks_charts
     },
     shot_tracks: {
       type: "array",
-      items: shot_tracks_chart_with_id
+      items: shot_tracks_charts
     }
   }
 };
 
 export default getFunc(
-  "teams shot tracks chart",
-  "shot_tracks_chart_team",
+  "shot tracks chart",
+  "game_shot_tracks_chart",
   "shot_tracks_chart",
   body,
-  "team"
+  "game"
 );
