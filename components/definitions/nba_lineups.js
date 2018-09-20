@@ -27,7 +27,9 @@ export default {
       team_eFG_pct: str,
       team_eFG_pct_allowed: str,
       team_time_left_on_shot_clock: float,
-      image_id: { type: "integer", format: "int32" }
+      image_id: { type: "integer", format: "int32" },
+      date: str,
+      date_string: str
     }
   }
 };

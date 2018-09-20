@@ -11,7 +11,8 @@ export const easiest_matchup_offense = {
     easiest_matchup_offense_3: str,
     player_ID: str,
     graphic_title: str,
-    image_id: int32
+    image_id: int32,
+    date: {...str, nullable: true}
     // card_image: str
     // }
   }
@@ -27,7 +28,8 @@ export const toughest_matchup_offense = {
     toughest_matchup_offense_3: str,
     player_ID: str,
     graphic_title: str,
-    image_id: int32
+    image_id: int32,
+    date: {...str, nullable: true}
     // card_image: str
     // }
   }
@@ -43,7 +45,8 @@ export const easiest_matchup_defense = {
     easiest_matchup_defense_3: str,
     player_ID: str,
     graphic_title: str,
-    image_id: int32
+    image_id: int32,
+    date: {...str, nullable: true}
     // card_image: str
     // }
   }
@@ -59,7 +62,8 @@ export const toughest_matchup_defense = {
     toughest_matchup_defense_3: str,
     player_ID: str,
     graphic_title: str,
-    image_id: int32
+    image_id: int32,
+    date: {...str, nullable: true}
     // card_image: str
     // }
   }

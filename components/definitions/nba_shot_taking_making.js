@@ -45,7 +45,9 @@ export default {
           }
         }
       },
-      image_id: int32
+      image_id: int32,
+      date: str,
+      date_string: str
     }
   }
 };

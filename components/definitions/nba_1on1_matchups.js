@@ -16,7 +16,9 @@ export default {
       points: str,
       rating: str,
       fense: str,
-      image_id: int32
+      image_id: int32,
+      date: str,
+      date_string: str
     }
   }
 };

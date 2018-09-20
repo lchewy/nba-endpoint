@@ -19,8 +19,8 @@ import trends_team from "./trends_team";
 import top_3_players from "./top_3_players";
 import both_3_players from "./both_3_players";
 import bottom_3_players from "./bottom_3_players";
-import sport_key_stretch_best from "./sport_key_stretch_best";
-import sport_key_stretch_worst from "./sport_key_stretch_worst";
+import most_favorable_stretch from "./most_favorable_stretch";
+import least_favorable_stretch from "./least_favorable_stretch";
 import {
   court_zone_1,
   court_zone_2,
@@ -54,7 +54,7 @@ export default {
   // "/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
   // "/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
   // "/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock, // DELETE
-  "/team/{teamId}/type/shot_tracks_chart": shot_tracks_chart_team,
+  "/team/{teamId}/type/shot_tracks": shot_tracks_chart_team,
   "/team/{teamId}/type/shot_probability": shot_probability,
   "/team/{teamId}/type/post_play_player": post_play,
   "/team/{teamId}/type/paint_drive_location": paint_drive_location,
@@ -68,8 +68,8 @@ export default {
   "/team/{teamId}/type/top_3_players": top_3_players,
   "/team/{teamId}/type/both_3_players": both_3_players,
   "/team/{teamId}/type/bottom_3_players": bottom_3_players,
-  "/team/{teamId}/type/sport_key_stretch_best": sport_key_stretch_best,
-  "/team/{teamId}/type/sport_key_stretch_worst": sport_key_stretch_worst,
+  "/team/{teamId}/type/sport_key_stretch_most_favorable": most_favorable_stretch,
+  "/team/{teamId}/type/sport_key_stretch_least_favorable": least_favorable_stretch,
   "/team/{teamId}/type/court_zone_1": court_zone_1,
   "/team/{teamId}/type/court_zone_2": court_zone_2,
   "/team/{teamId}/type/court_zone_3": court_zone_3,
