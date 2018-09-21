@@ -1,6 +1,7 @@
 export const str = { type: "string" };
 export const float = { type: "number", format: "float" };
 export const int32 = { type: "integer", format: "int32" };
+export const bool = { type: "boolean" };
 
 export const shot_tracks_chart = {
   graphic_title: str,
@@ -12,8 +13,35 @@ export const shot_tracks_chart = {
   points: int32,
   three_points_att: int32,
   three_points_made: int32,
-  image_id: int32
-}
+  image_id: int32,
+  date: str,
+  date_string: str
+};
+
+export const shot_tracks_chart_sub = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: {
+      game_clock: float,
+      shot_clock: float,
+      shot_points: int32,
+      shot_points_if_made: int32,
+      quarter: int32,
+      foul: bool,
+      outcome: str,
+      is_fastbreak: bool,
+      x_y_coords: {
+        type: "object",
+        properties: {
+          player_location: { type: "array", items: float },
+          on_ball: { type: "array", items: float },
+          ball_location: { type: "array", items: float }
+        }
+      }
+    }
+  }
+};
 
 export const shot_tracks = {
   on_ball_pct: float,

@@ -5,7 +5,6 @@
 //   shot_tracks_chart_late_clock
 // } from "./shot_tracks_chart";        // DELETE MAYBE
 
-
 import shot_tracks_chart_team from "./shot_tracks_chart_team";
 import post_play from "./post_play";
 import paint_drive_location from "./paint_drive_location";
@@ -41,11 +40,17 @@ import { nba_lineups, nba_lineups_starting } from "./nba_lineups";
 import nba_shot_taking_making from "./nba_shot_taking_making";
 import shot_probability from "./shot_probability";
 
-import team_game_shot_probability from "./team_game_shot_probability.js";
 
 import team_game_nba_1on1_matchups from "./team_game_nba_1on1_matchups";
 import team_game_shot_taking_making from "./team_game_shot_taking_making";
 import team_game_lineups from "./team_game_lineups";
+import team_game_shot_tracks from "./team_game_shot_tracks";
+import team_game_halfcourt_2pt from "./team_game_halfcourt_2pt";
+import team_game_halfcourt_3pt from "./team_game_halfcourt_3pt";
+import team_game_late_clock from "./team_game_late_clock"
+import team_game_shot_probability from "./team_game_shot_probability";
+import team_game_sprint_offense from "./team_game_sprint_offense";
+import team_game_shot_tracks_shot_tracks from "./team_game_shot_tracks_shot_tracks";
 
 // no court_player_season_shots
 
@@ -86,12 +91,32 @@ export default {
   "/team/{teamId}/type/nba_lineups_starting": nba_lineups_starting,
   "/team/{teamId}/type/nba_shot_taking_making": nba_shot_taking_making,
 
+  "/team/{teamId}/game/{gameId}/type/shot_tracks": team_game_shot_tracks,
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/halfcourt_2pt": team_game_halfcourt_2pt,
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/halfcourt_3pt": team_game_halfcourt_3pt,
 
-
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/late_clock": team_game_late_clock,
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/sprint_offense": team_game_sprint_offense,
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/shot_tracks": team_game_shot_tracks_shot_tracks,
   "/team/{teamId}/game/{gameId}/type/shot_probability": team_game_shot_probability,
-  "/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": team_game_nba_1on1_matchups,
-  "/team/{teamId}/game/{gameId}/type/nba_shot_taking_making": team_game_shot_taking_making,
-  "/team/{teamId}/game/{gameId}/type/nba_lineups": team_game_lineups
+  "/team/{teamId}/game/{gameId}/type/paint_drive_location": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/shot_tracks_time": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/shot_tracks_length": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/top_3_players": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/both_3_players": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/bottom_3_players": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/matchup_comparison": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/nba_lineups": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/nba_lineups_starting": "team_game_",
+  "/team/{teamId}/game/{gameId}/type/nba_shot_taking_making": "",
+
+
+
+  // "/team/{teamId}/game/{gameId}/type/shot_probability": team_game_shot_probability,
+  // "/team/{teamId}/game/{gameId}/type/nba_1on1_matchups": team_game_nba_1on1_matchups,
+  // "/team/{teamId}/game/{gameId}/type/nba_shot_taking_making": team_game_shot_taking_making,
+  // "/team/{teamId}/game/{gameId}/type/nba_lineups": team_game_lineups
 };
 
 // 583ecae2-fb46-11e1-82cb-f4ce4684ea4c
