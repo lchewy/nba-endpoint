@@ -7,6 +7,8 @@ export default {
     type: "object",
     properties: {
       player_ID: str,
+      defender_ID: str,
+      defender_name: str,
       game_ID: str,
       total_possessions: int32,
       text_description: str,

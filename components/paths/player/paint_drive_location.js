@@ -7,10 +7,18 @@ const body = {
   properties: paint_drive_location
 }
 
-export default getFunc(
+export const player_paint_drive_direction = getFunc(
   "paint drive location player",
-  "paint_drive_location_player",
-  "paint_drive_location",
+  "player_paint_drive_direction",
+  "paint_drive_direction",
+  body,
+  "player"
+);
+
+export const player_game_paint_drive_direction = getFunc(
+  "paint drive location player",
+  "player_game_paint_drive_direction",
+  "paint_drive_direction",
   body,
   "player"
 );

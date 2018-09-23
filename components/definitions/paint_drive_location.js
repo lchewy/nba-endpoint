@@ -8,6 +8,10 @@ const float = {
   format: "float"
 };
 
+const str = {
+  type: "string"
+};
+
 export default {
   type: "array",
   items: {
@@ -20,7 +24,9 @@ export default {
       paint_drive_location_right: int32,
       points_per_game_created_right: float,
       total_paint_drives: int32,
-      image_id: int32
+      image_id: int32,
+      date: str,
+      date_string: str
       // card_image: { type: "string" }
     }
   }

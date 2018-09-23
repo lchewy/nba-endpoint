@@ -49,7 +49,9 @@ export const shot_tracks = {
   on_ball: float,
   off_ball: float,
   shooting_plays: { type: "integer", format: "int32" },
-  image_id: int32
+  image_id: int32,
+  date: str,
+  date_string: str
 };
 
 export const trends = {
@@ -108,7 +110,9 @@ export const paint_drive_location = {
   paint_drive_location_right: int32,
   points_per_game_created_right: float,
   total_paint_drives: int32,
-  image_id: int32
+  image_id: int32,
+  date: str,
+  date_string: str
   // card_image: { type: "string" }
 };
 
