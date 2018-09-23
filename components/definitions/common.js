@@ -71,14 +71,14 @@ export const trends = {
 export const style_comps = {
   display_text: str,
   player_ID: str,
-  skill_most_similar_name_1: str,
-  skill_most_similar_rating_1: float,
-  skill_most_similar_name_2: str,
-  skill_most_similar_rating_2: float,
-  skill_most_similar_name_3: str,
-  skill_most_similar_rating_3: float,
-  skill_most_similar_name_4: str,
-  skill_most_similar_rating_4: float,
+  style_most_similar_name_1: str,
+  style_most_similar_rating_1: float,
+  style_most_similar_name_2: str,
+  style_most_similar_rating_2: float,
+  style_most_similar_name_3: str,
+  style_most_similar_rating_3: float,
+  style_most_similar_name_4: str,
+  style_most_similar_rating_4: float,
   image_id: int32,
   date: str,
   date_string: str
@@ -147,5 +147,59 @@ export const three_matchups = {
     image_id: int32,
     date: { nullable: true },
     date_string: str
+  }
+};
+
+export const most_favorable_stretch = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: {
+      team_most_favorable_stretch_1_id: str,
+      team_most_favorable_stretch_1_name: str,
+      team_most_favorable_stretch_2_id: str,
+      team_most_favorable_stretch_2_name: str,
+      team_most_favorable_stretch_3_id: str,
+      team_most_favorable_stretch_3_name: str,
+      team_most_favorable_stretch_4_id: str,
+      team_most_favorable_stretch_4_name: str,
+      team_most_favorable_stretch_5_id: str,
+      team_most_favorable_stretch_5_name: str,
+      text_description: str,
+      total_plus_minus: str,
+      avg_per_game: str,
+      lineup_avg_per_game: str,
+      lineup_plus_minus: str,
+      image_id: int32,
+      date: str,
+      date_string: str
+    }
+  }
+};
+
+export const least_favorable_stretch = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: {
+      team_least_favorable_stretch_1_id: str,
+      team_least_favorable_stretch_1_name: str,
+      team_least_favorable_stretch_2_id: str,
+      team_least_favorable_stretch_2_name: str,
+      team_least_favorable_stretch_3_id: str,
+      team_least_favorable_stretch_3_name: str,
+      team_least_favorable_stretch_4_id: str,
+      team_least_favorable_stretch_4_name: str,
+      team_least_favorable_stretch_5_id: str,
+      team_least_favorable_stretch_5_name: str,
+      text_description: str,
+      total_plus_minus: str,
+      avg_per_game: str,
+      lineup_avg_per_game: str,
+      lineup_plus_minus: str,
+      image_id: int32,
+      date: str,
+      date_string: str
+    }
   }
 };

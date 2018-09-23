@@ -14,7 +14,7 @@ const body = {
 export default getFunc(
   "similarities",
   "team_similarities",
-  "skill",
+  "skill_similarity",
   body,
   "team"
 );

@@ -13,7 +13,7 @@ const body = {
 export default getFunc(
   "Style Comps",
   "team_style_comps",
-  "style",
+  "style_similarity",
   body,
   "team"
 );

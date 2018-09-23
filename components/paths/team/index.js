@@ -39,6 +39,8 @@ import team_rank from "./team_rank";
 import { nba_lineups, nba_lineups_starting } from "./nba_lineups";
 import nba_shot_taking_making from "./nba_shot_taking_making";
 import shot_probability from "./shot_probability";
+import key_stretch from "./key_stretch";
+import three_matchups from "./three_matchups"
 
 /*   CHECK IF DELETE THESE FILES 
 // import team_game_nba_1on1_matchups from "./team_game_nba_1on1_matchups";
@@ -61,37 +63,45 @@ export default {
   // "/team/{teamId}/type/shot_tracks_chart_3pt": shot_tracks_chart_3pt,
   // "/team/{teamId}/type/shot_tracks_chart_early_o": shot_tracks_chart_early_o,
   // "/team/{teamId}/type/shot_tracks_chart_late_clock": shot_tracks_chart_late_clock, // DELETE
+
+
+
   "/team/{teamId}/type/shot_tracks": shot_tracks_chart_team,
-  "/team/{teamId}/type/shot_probability": shot_probability,
-  "/team/{teamId}/type/post_play_player": post_play,
-  "/team/{teamId}/type/paint_drive_location": paint_drive_location,
+  "/team/{teamId}/type/shooting_breakdown": shot_probability,
+  "/team/{teamId}/type/paint_drive_direction": paint_drive_location,
+  "/team/{teamId}/type/post_play_location": post_play,
   "/team/{teamId}/type/shot_tracks_time": shot_tracks_time,
   "/team/{teamId}/type/shot_tracks_length": shot_tracks_length,
-  "/team/{teamId}/type/rating": rating,
-  "/team/{teamId}/type/similarities": similarities,
-  "/team/{teamId}/type/style_comps": style_comps,
-  "/team/{teamId}/type/trends_player": trends_player,
-  "/team/{teamId}/type/trends_team": trends_team,
-  "/team/{teamId}/type/top_3_players": top_3_players,
-  "/team/{teamId}/type/both_3_players": both_3_players,
-  "/team/{teamId}/type/bottom_3_players": bottom_3_players,
-  "/team/{teamId}/type/sport_key_stretch_most_favorable": most_favorable_stretch,
-  "/team/{teamId}/type/sport_key_stretch_least_favorable": least_favorable_stretch,
+  "/team/{teamId}/type/offensive_and_defensive_ratings": rating,
+  "/team/{teamId}/type/skill_similarity": similarities,
+  "/team/{teamId}/type/style_similarity": style_comps,
+  "/team/{teamId}/type/player_trends": trends_player,
+  "/team/{teamId}/type/team_trends": trends_team,
+  "/team/{teamId}/type/top_shot_makers": top_3_players,
+  "/team/{teamId}/type/shot_taking": both_3_players,
+  "/team/{teamId}/type/bottom_shot_makers": bottom_3_players,
+  "/team/{teamId}/type/key_stretch": key_stretch,
   "/team/{teamId}/type/court_zone_1": court_zone_1,
   "/team/{teamId}/type/court_zone_2": court_zone_2,
   "/team/{teamId}/type/court_zone_3": court_zone_3,
   "/team/{teamId}/type/court_zone_4": court_zone_4,
-  "/team/{teamId}/type/chemistry": chemistry,
+  "/team/{teamId}/type/teammate_chemistry": chemistry,
   "/team/{teamId}/type/matchup_comparison": matchup_comparison,
-  "/team/{teamId}/type/nba_seasonal_matchup_easiest_off": emOffense,
-  "/team/{teamId}/type/nba_seasonal_matchup_toughest_off": tmOffense,
-  "/team/{teamId}/type/nba_seasonal_matchup_easiest_def": emDefense,
-  "/team/{teamId}/type/nba_seasonal_matchup_toughest_def": tmDefense,
-  "/team/{teamId}/type/nba_1on1_matchups": nba_1on1_matchups,
-  "/team/{teamId}/type/team_rank": team_rank,
-  "/team/{teamId}/type/nba_lineups": nba_lineups,
+   "/team/{teamId}/type/three_matchups": three_matchups,
+  "/team/{teamId}/type/1_on_1_matchups": nba_1on1_matchups,
+  "/team/{teamId}/type/team_ranks": team_rank,
+  "/team/{teamId}/type/lineups": nba_lineups,
   "/team/{teamId}/type/nba_lineups_starting": nba_lineups_starting,
-  "/team/{teamId}/type/nba_shot_taking_making": nba_shot_taking_making,
+  "/team/{teamId}/type/shot_taking_and_making": nba_shot_taking_making,
+  
+  
+  // "/team/{teamId}/type/sport_key_stretch_most_favorable": most_favorable_stretch, // DELETE
+  // "/team/{teamId}/type/sport_key_stretch_least_favorable": least_favorable_stretch, // DELETE
+    // "/team/{teamId}/type/nba_seasonal_matchup_easiest_off": emOffense, // DELETE
+  // "/team/{teamId}/type/nba_seasonal_matchup_toughest_off": tmOffense, // DELETE
+  // "/team/{teamId}/type/nba_seasonal_matchup_easiest_def": emDefense, // DELETE
+  // "/team/{teamId}/type/nba_seasonal_matchup_toughest_def": tmDefense, // DELETE
+
 
   "/team/{teamId}/game/{gameId}/type/shot_tracks": team_game_shot_tracks,
   "/team/{teamId}/game/{gameId}/type/shot_tracks/halfcourt_2pt": team_game_halfcourt_2pt,

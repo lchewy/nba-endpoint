@@ -13,7 +13,7 @@ const body = {
 export default getFunc(
   "trends team",
   "trends_team",
-  "trends",
+  "trends_team",
   body,
   "team",
   "Positive and/or negative in game trends for team's players"
