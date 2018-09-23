@@ -1,17 +1,19 @@
-import {getFunc} from "../utils/getFn";
+import { getFunc } from "../utils/getFn";
 // import similarities from "../../definitions/similarities";
-import {similarities} from "../../definitions/common";
+import { similarities } from "../../definitions/common";
 
 const body = {
-  type:"object",
-  properties: similarities
-}
-
+  type: "array",
+  items: {
+    type: "object",
+    properties: similarities
+  }
+};
 
 export default getFunc(
   "similarities",
   "player_similarities",
-  "skill",
+  "skill_similarity",
   body,
   "player"
 );

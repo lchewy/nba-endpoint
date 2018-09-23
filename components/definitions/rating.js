@@ -33,49 +33,51 @@ export default {
       defensive_boards: int32,
       rim_protection: int32,
       image_id: int32,
-      test:{
-        type:"object",
-        properties:{
-          _id: str,
-          game_IDs: {
-            type:"array",
-            items: {nullable: true} // NEED TO KEEP TRACK
-          },
+      date:str,
+      date_string:str
+      // test:{
+      //   type:"object",
+      //   properties:{
+      //     _id: str,
+      //     game_IDs: {
+      //       type:"array",
+      //       items: {nullable: true} // NEED TO KEEP TRACK
+      //     },
 
-          season: int32,
-          card_type: str,
-          custom_data: {
-            type:"object",
-            properties:{
-              display_text: str,
-              team_ID: str,
-              player_name: str,
-              sub_skills: {
-                type:"array",
-                items:{
-                  type:"object",
-                  properties:{
-                    rating: int32,
-                    name: str
-                  }
-                }
-              },
-              fense: str,
-              player_ID: str,
-              position: str,
-              team_name: str,
-              overall: int32,
-              team_abbr: str,
+      //     season: int32,
+      //     card_type: str,
+      //     custom_data: {
+      //       type:"object",
+      //       properties:{
+      //         display_text: str,
+      //         team_ID: str,
+      //         player_name: str,
+      //         sub_skills: {
+      //           type:"array",
+      //           items:{
+      //             type:"object",
+      //             properties:{
+      //               rating: int32,
+      //               name: str
+      //             }
+      //           }
+      //         },
+      //         fense: str,
+      //         player_ID: str,
+      //         position: str,
+      //         team_name: str,
+      //         overall: int32,
+      //         team_abbr: str,
 
-            }
-          },
-          sport: str,
-          date_string: str,
-          date: str
+      //       }
+      //     },
+      //     sport: str,
+      //     date_string: str,
+      //     date: str
 
 
-        }
-      }
+      //   }
+      // }
     }
   }
 };

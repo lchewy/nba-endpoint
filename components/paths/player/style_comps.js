@@ -10,7 +10,7 @@ const body = {
 export default getFunc(
   "Style Comps",
   "player_style_comps",
-  "style",
+  "style_similarity",
   body,
   "player"
 );

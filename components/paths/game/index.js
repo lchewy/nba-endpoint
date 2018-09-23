@@ -15,15 +15,15 @@ import shot_tracks from "./shot_tracks"
 export default {
 
   "/game/{gameId}/type/shot_tracks": shot_tracks,
-  "/game/{gameId}/type/shot_probability": shot_probability,
-  "/game/{gameId}/type/paint_drive_location": paint_drive_location,
+  "/game/{gameId}/type/shooting_breakdown": shot_probability,
+  "/game/{gameId}/type/paint_drive_direction": paint_drive_location,
   "/game/{gameId}/type/shot_tracks_time": shot_tracks_time,
   "/game/{gameId}/type/shot_tracks_length": shot_tracks_length,
-  "/game/{gameId}/type/top_3_players": top_3_players,
-  "/game/{gameId}/type/both_3_players": both_3_players,
-  "/game/{gameId}/type/bottom_3_players": bottom_3_players,
+  "/game/{gameId}/type/top_shot_makers": top_3_players,
+  "/game/{gameId}/type/shot_taking": both_3_players,
+  "/game/{gameId}/type/bottom_shot_makers": bottom_3_players,
   "/game/{gameId}/type/matchup_comparison": matchup_comparison,
-  "/game/{gameId}/type/nba_1on1_matchups": nba_1on1_matchups,
+  "/game/{gameId}/type/1_on_1_matchups": nba_1on1_matchups,
   "/game/{gameId}/type/nba_lineups": nba_lineups,
   "/game/{gameId}/type/nba_lineups_starting": nba_lineups_starting,
   "/game/{gameId}/type/nba_shot_taking_making": nba_shot_taking_making

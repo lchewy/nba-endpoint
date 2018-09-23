@@ -8,7 +8,6 @@ export default {
     type: "object",
     properties: {
       game_ID: str,
-
       two_points_expected_value: float,
       two_points_att: int32,
       two_points_made: int32,
@@ -20,7 +19,9 @@ export default {
       free_throws_made: int32,
       text_description: str,
       text_visualization: str,
-      image_id: int32
+      image_id: int32,
+      date: str,
+      date_string:str
     }
   }
 };

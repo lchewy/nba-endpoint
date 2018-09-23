@@ -63,7 +63,9 @@ export const trends = {
   player_upwards_trend_1: str,
   player_upwards_trend_2: str,
   player_upwards_trend_3: str,
-  image_id: float
+  image_id: float,
+  date: str,
+  date_string: str
 };
 
 export const style_comps = {
@@ -77,7 +79,9 @@ export const style_comps = {
   skill_most_similar_rating_3: float,
   skill_most_similar_name_4: str,
   skill_most_similar_rating_4: float,
-  image_id: int32
+  image_id: int32,
+  date: str,
+  date_string: str
 };
 
 export const similarities = {
@@ -99,7 +103,9 @@ export const similarities = {
   offense_style_most_similar_rating_3: float,
   offense_style_most_similar_name_4: str,
   offense_style_most_similar_rating_4: float,
-  image_id: int32
+  image_id: int32,
+  date: str,
+  date_string: str
 };
 
 export const paint_drive_location = {
@@ -125,4 +131,21 @@ export const post_play_location = {
   post_points_per_game_created_right: float,
   post_plays_count: int32,
   image_id: int32
+};
+
+export const three_matchups = {
+  type: "object",
+  properties: {
+    player_1_id: str,
+    player_1_name: str,
+    player_2_id: str,
+    player_2_name: str,
+    player_3_id: str,
+    player_3_name: str,
+    player_ID: str,
+    graphic_title: str,
+    image_id: int32,
+    date: { nullable: true },
+    date_string: str
+  }
 };

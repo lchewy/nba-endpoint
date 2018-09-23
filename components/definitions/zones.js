@@ -17,7 +17,9 @@ const three_zones = {
         paint_eFG_pct: str,
         paint_points_per_shot: str,
         graphic_title: str,
-        image_id: int32
+        image_id: int32,
+        date: str,
+        date_string:str
         // card_image: str
       }
     }
@@ -47,7 +49,9 @@ const five_zones = {
         right_corner_3_points_per_shot: str,
         graphic_title: str,
         card_image: str,
-        image_id: int32
+        image_id: int32,
+        date: str,
+        date_string:str
       }
     }
   }
@@ -75,7 +79,9 @@ const seven_zones = {
         straight_eFG_pct: str,
         straight_points_per_shot: str,
         graphic_title: str,
-        image_id: int32
+        image_id: int32,
+        date: str,
+        date_string:str
         // card_image: str
       }
     }
@@ -128,7 +134,9 @@ const fourteen_zones = {
         far_right_midrange_eFG_pct: str,
         far_right_midrange_points_per_shot: str,
         graphic_title: str,
-        image_id: int32
+        image_id: int32,
+        date: str,
+        date_string:str
         // card_image: str
       }
     }
