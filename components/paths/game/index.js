@@ -24,7 +24,7 @@ export default {
   "/game/{gameId}/type/bottom_shot_makers": bottom_3_players,
   "/game/{gameId}/type/matchup_comparison": matchup_comparison,
   "/game/{gameId}/type/1_on_1_matchups": nba_1on1_matchups,
-  "/game/{gameId}/type/nba_lineups": nba_lineups,
+  "/game/{gameId}/type/lineups": nba_lineups,
   "/game/{gameId}/type/nba_lineups_starting": nba_lineups_starting,
-  "/game/{gameId}/type/nba_shot_taking_making": nba_shot_taking_making
+  "/game/{gameId}/type/shot_taking_and_making": nba_shot_taking_making
 };

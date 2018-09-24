@@ -58,7 +58,7 @@ export default {
   "/player/{playerId}/type/teammate_chemistry": chemistry,
   "/player/{playerId}/type/matchup_comparison": player_matchup_comparison,
   "/player/{playerId}/type/three_matchups": three_matchups,
-  "/player/{playerId}/type/1on1_matchups": player_1on1_matchups,
+  "/player/{playerId}/type/1_on1_matchups": player_1on1_matchups,
   
   
   

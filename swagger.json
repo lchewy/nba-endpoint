@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API+ Endpoints for NBA",
+    "description": "API+ Endpoints for NBA - last update 9/24/2018",
     "version": "1.0.0",
     "title": "Sportradar's API+ NBA Endpoints",
     "termsOfService": "",
@@ -9332,7 +9332,7 @@
         }
       }
     },
-    "/player/{playerId}/type/1on1_matchups": {
+    "/player/{playerId}/type/1_on1_matchups": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player 1 on 1 matchups",
@@ -11568,7 +11568,7 @@
         }
       }
     },
-    "/game/{gameId}/type/nba_lineups": {
+    "/game/{gameId}/type/lineups": {
       "get": {
         "tags": ["game"],
         "summary": "game card - team lineups against opponents",
@@ -11810,7 +11810,7 @@
         }
       }
     },
-    "/game/{gameId}/type/nba_shot_taking_making": {
+    "/game/{gameId}/type/shot_taking_and_making": {
       "get": {
         "tags": ["game"],
         "summary": "game card - a team's shot taking stats during away/home games",
