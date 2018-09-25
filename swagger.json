@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API+ Endpoints for NBA - last update 9/24/2018",
+    "description": "API+ Endpoints for NBA - last update 9/25/2018",
     "version": "1.0.0",
     "title": "Sportradar's API+ NBA Endpoints",
     "termsOfService": "",
@@ -9332,7 +9332,7 @@
         }
       }
     },
-    "/player/{playerId}/type/1_on1_matchups": {
+    "/player/{playerId}/type/1_on_1_matchups": {
       "get": {
         "tags": ["player"],
         "summary": "player card - player 1 on 1 matchups",
