@@ -1,5 +1,4 @@
-// import shot_tracks from "../../definitions/shot_tracks";
-import { getFunc } from "../utils/getFn";
+import { getFunc, getFunc2 } from "../utils/getFn";
 import { shot_tracks, str } from "../../definitions/common";
 
 const shot_tracks_time = {
@@ -16,10 +15,19 @@ const body = {
   items: { type: "object", properties: shot_tracks_time }
 };
 
-export default getFunc(
+export const team_shot_tracks_time = getFunc(
   "shot tracks time",
-  "shot_tracks_time",
+  "team_shot_tracks_time",
   "shot_tracks_time",
   body,
   "team"
+);
+
+export const team_game_shot_tracks_time = getFunc2(
+  "shot tracks time",
+  "team_game_shot_tracks_time",
+  "shot_tracks_time",
+  body,
+  "team",
+  "game"
 );

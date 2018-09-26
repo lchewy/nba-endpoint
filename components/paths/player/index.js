@@ -39,6 +39,7 @@ import {
 } from "./nba_1on1_matchups";
 import rating from "./rating";
 import three_matchups from "./three_matchup";
+import shot_tracks_chart from "./player_game_shot_tracks"
 
 
 export default {
@@ -67,7 +68,9 @@ export default {
   "/player/{playerId}/game/{gameId}/type/shot_tracks_time":  playerGameShotTracksTime,
   "/player/{playerId}/game/{gameId}/type/shot_tracks_length": playerGameShotTracksLength,
   "/player/{playerId}/game/{gameId}/type/matchup_comparison": player_game_matchup_comparison,
-  "/player/{playerId}/game/{gameId}/type/1_on_1_matchups": player_game_1on1_matchups
+  "/player/{playerId}/game/{gameId}/type/1_on_1_matchups": player_game_1on1_matchups,
+  "/player/{playerId}/game/{gameId}/type/shot_tracks/all_shots": shot_tracks_chart
+
   
   // "/player/{playerId}/offensive_rating": offensive_rating, // no offensive rating url
   // "/player/{playerId}/nba_seasonal_matchup_easiest": nba_seasonal_matchup_easiest, // DELETE

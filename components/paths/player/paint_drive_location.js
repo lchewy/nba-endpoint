@@ -1,4 +1,4 @@
-import { getFunc } from "../utils/getFn";
+import { getFunc, getFunc2 } from "../utils/getFn";
 // import paint_drive_location from "../../definitions/paint_drive_location";
 import { paint_drive_location } from "../../definitions/common";
 
@@ -15,10 +15,11 @@ export const player_paint_drive_direction = getFunc(
   "player"
 );
 
-export const player_game_paint_drive_direction = getFunc(
+export const player_game_paint_drive_direction = getFunc2(
   "paint drive location player",
   "player_game_paint_drive_direction",
   "paint_drive_direction",
   body,
-  "player"
+  "player",
+  "game"
 );

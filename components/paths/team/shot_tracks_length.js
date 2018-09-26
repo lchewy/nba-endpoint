@@ -1,8 +1,5 @@
-// import shot_tracks from "../../definitions/shot_tracks";
-import { getFunc } from "../utils/getFn";
+import { getFunc, getFunc2 } from "../utils/getFn";
 import { shot_tracks } from "../../definitions/common";
-
-// const shot_tracks_length = { ...shot_tracks, card_image: { type: "string" } };
 
 const body = {
   type:"array",
@@ -13,10 +10,19 @@ const body = {
 }
 
 
-export default getFunc(
+export const team_shot_tracks_length = getFunc(
   "shot tracks length",
-  "shot_tracks_length",
+  "team_shot_tracks_length",
   "shot_tracks_length",
   body,
   "team"
+);
+
+export const team_game_shot_tracks_length = getFunc2(
+  "shot tracks length",
+  "team_game_shot_tracks_length",
+  "shot_tracks_length",
+  body,
+  "team",
+  "game"
 );

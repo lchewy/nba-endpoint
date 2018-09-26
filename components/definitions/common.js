@@ -203,3 +203,19 @@ export const least_favorable_stretch = {
     }
   }
 };
+
+export const possession = {
+graphic_title: str,
+game_ID: str,
+date: str,
+away_team_ID: str,
+away_team_name: str,
+away_rebounds: int32,
+away_opponent_turnovers: int32,
+away_total_shooting_plays: int32,
+home_team_ID: str,
+home_team_name: str,
+home_rebounds: int32,
+home_opponent_turnovers: int32,
+home_total_shooting_plays: int32,
+}

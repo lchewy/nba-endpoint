@@ -1,4 +1,4 @@
-import { getFunc } from "../utils/getFn";
+import { getFunc, getFunc2 } from "../utils/getFn";
 // import shot_tracks from "../../definitions/shot_tracks";
 import { shot_tracks, str } from "../../definitions/common";
 // import shot_tracks_time from "../team/shot_tracks_time";
@@ -41,12 +41,13 @@ export const playerShotTracksLength = getFunc(
   "player"
 );
 
-export const playerGameShotTracksLength = getFunc(
+export const playerGameShotTracksLength = getFunc2(
   "shot tracks length",
   "player_game_shot_tracks_length",
   "shot_tracks_length",
   shot_tracks_length,
-  "player"
+  "player",
+  "game"
 );
 
 export const playerShotTracksTime = getFunc(
@@ -57,12 +58,13 @@ export const playerShotTracksTime = getFunc(
   "player"
 );
 
-export const playerGameShotTracksTime = getFunc(
+export const playerGameShotTracksTime = getFunc2(
   "shot tracks time",
   "player_game_shot_tracks_time",
   "shot_tracks_time",
   shot_tracks_time,
-  "player"
+  "player",
+  "game"
 );
 
 export const shotTracksPlayers = getFunc(
@@ -73,10 +75,11 @@ export const shotTracksPlayers = getFunc(
   "player"
 );
 
-export const shotTracksPlayerGame = getFunc(
+export const shotTracksPlayerGame = getFunc2(
   "shot tracks",
   "shot_tracks_player_game",
   "shot_tracks",
   shot_tracks_player,
-  "player"
+  "player",
+  "game"
 );
