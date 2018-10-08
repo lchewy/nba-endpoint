@@ -40,5 +40,5 @@ export default {
   "/game/{gameId}/type/shot_tracks/halfcourt_3pt": halfcourt_3pt,
   "/game/{gameId}/type/shot_tracks/late_clock": late_clock,
   "/game/{gameId}/type/shot_tracks/sprint_offense": sprint_offense,
-  "/game/{gameId}/type/shot_tracks/shot_tracks": shot_tracks_sub,
+  "/game/{gameId}/type/shot_tracks/all_shots": shot_tracks_sub,
 };

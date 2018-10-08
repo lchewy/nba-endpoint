@@ -105,7 +105,7 @@ export default {
   "/team/{teamId}/game/{gameId}/type/shot_tracks/halfcourt_3pt": team_game_halfcourt_3pt,
   "/team/{teamId}/game/{gameId}/type/shot_tracks/late_clock": team_game_late_clock,
   "/team/{teamId}/game/{gameId}/type/shot_tracks/sprint_offense": team_game_sprint_offense,
-  "/team/{teamId}/game/{gameId}/type/shot_tracks/shot_tracks": team_game_shot_tracks_shot_tracks,
+  "/team/{teamId}/game/{gameId}/type/shot_tracks/all_shots": team_game_shot_tracks_shot_tracks,
   "/team/{teamId}/game/{gameId}/type/shooting_breakdown": team_game_shot_probability,
   "/team/{teamId}/game/{gameId}/type/paint_drive_direction": team_game_paint_drive_direction,
   "/team/{teamId}/game/{gameId}/type/shot_tracks_time": team_game_shot_tracks_time,
