@@ -13474,7 +13474,7 @@
         }
       }
     },
-    "/game/{gameId}/type/pregame": {
+    "/game/{gameId}/pregame": {
       "get": {
         "tags": ["game"],
         "summary": "game card - pregame",

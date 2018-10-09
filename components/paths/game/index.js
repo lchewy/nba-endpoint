@@ -43,5 +43,5 @@ export default {
   "/game/{gameId}/type/shot_tracks/late_clock": late_clock,
   "/game/{gameId}/type/shot_tracks/sprint_offense": sprint_offense,
   "/game/{gameId}/type/shot_tracks/all_shots": shot_tracks_sub,
-  "/game/{gameId}/type/pregame": pregame
+  "/game/{gameId}/pregame": pregame
 };
