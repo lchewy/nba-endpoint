@@ -128,7 +128,7 @@ const playerSchema = (key, body) => ({
   }
 });
 
-const gameSchema = (key, body) => ({
+const gameSchema = (key, body, pregame) => ({
   type: "object",
   properties: {
     success: { type: "boolean" },
@@ -168,12 +168,14 @@ const gameSchema = (key, body) => ({
                 points: int32
               }
             },
-            stats: {
-              type: "object",
-              properties: {
-                [key]: body
-              }
-            }
+            stats: pregame
+              ? {
+                  type: "object",
+                  properties: {
+                    [key]: body
+                  }
+                }
+              : body
           }
         },
 
@@ -185,17 +187,17 @@ const gameSchema = (key, body) => ({
   }
 });
 
-const getSchema = (tag, key, body) => {
+const getSchema = (tag, key, body, pregame) => {
   if (tag === "team") {
     return teamSchema(key, body);
   } else if (tag === "player") {
     return playerSchema(key, body);
-  }else if(tag === "game"){
-    return gameSchema(key, body)
+  } else if (tag === "game") {
+    return gameSchema(key, body, pregame);
   }
 };
 
-export const getFunc = (summary, id, key, body, tag, methodDescription) => {
+export const getFunc = (summary, id, key, body, tag, methodDescription, pregame) => {
   return {
     get: {
       tags: [tag],
@@ -215,7 +217,7 @@ export const getFunc = (summary, id, key, body, tag, methodDescription) => {
       responses: {
         "200": {
           description: "successful operation",
-          schema: getSchema(tag, key, body)
+          schema: getSchema(tag, key, body, pregame)
         },
         "400": { description: "Invalid ID supplied" },
         "404": { description: "Player not found" }
@@ -267,4 +269,3 @@ export const getFunc2 = (
     }
   };
 };
-

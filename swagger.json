@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API+ Endpoints for NBA - last update 10/8/2018",
+    "description": "API+ Endpoints for NBA - last update 10/9/2018",
     "version": "1.0.0",
     "title": "Sportradar's API+ NBA Endpoints",
     "termsOfService": "",
@@ -124,6 +124,7 @@
                                     "type": "object",
                                     "properties": {
                                       "player_ID": { "type": "string" },
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -163,6 +164,7 @@
                                     "type": "object",
                                     "properties": {
                                       "player_ID": { "type": "string" },
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -202,6 +204,7 @@
                                     "type": "object",
                                     "properties": {
                                       "player_ID": { "type": "string" },
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -241,6 +244,7 @@
                                     "type": "object",
                                     "properties": {
                                       "player_ID": { "type": "string" },
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -280,6 +284,7 @@
                                     "type": "object",
                                     "properties": {
                                       "player_ID": { "type": "string" },
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -3283,8 +3288,10 @@
                                   },
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "image_id": {
                                     "type": "integer",
                                     "format": "int32"
@@ -3576,6 +3583,7 @@
                                 "type": "object",
                                 "properties": {
                                   "player_ID": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "defender_ID": { "type": "string" },
                                   "defender_name": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -3820,6 +3828,7 @@
                                 "properties": {
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "player_ID": { "type": "string" },
                                   "player_1_name": { "type": "string" },
                                   "player_1_position": { "type": "string" },
@@ -3955,6 +3964,7 @@
                                 "properties": {
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "player_ID": { "type": "string" },
                                   "player_1_name": { "type": "string" },
                                   "player_1_position": { "type": "string" },
@@ -4381,6 +4391,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4419,6 +4430,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4457,6 +4469,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4495,6 +4508,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4533,6 +4547,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4674,6 +4689,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -4874,6 +4890,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -5074,6 +5091,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -5274,6 +5292,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -5474,6 +5493,7 @@
                                   "items": {
                                     "type": "object",
                                     "properties": {
+                                      "path": { "type": "string" },
                                       "graphic_title": { "type": "string" },
                                       "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
@@ -6744,8 +6764,10 @@
                                   },
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "image_id": {
                                     "type": "integer",
                                     "format": "int32"
@@ -6859,6 +6881,7 @@
                                 "type": "object",
                                 "properties": {
                                   "player_ID": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "defender_ID": { "type": "string" },
                                   "defender_name": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -6987,6 +7010,7 @@
                                 "properties": {
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "player_ID": { "type": "string" },
                                   "player_1_name": { "type": "string" },
                                   "player_1_position": { "type": "string" },
@@ -7128,6 +7152,7 @@
                                 "properties": {
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "player_ID": { "type": "string" },
                                   "player_1_name": { "type": "string" },
                                   "player_1_position": { "type": "string" },
@@ -7550,6 +7575,7 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "path": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "team_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -9481,8 +9507,10 @@
                                   },
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "image_id": {
                                     "type": "integer",
                                     "format": "int32"
@@ -9746,6 +9774,7 @@
                                 "type": "object",
                                 "properties": {
                                   "player_ID": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "defender_ID": { "type": "string" },
                                   "defender_name": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -9864,6 +9893,7 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "path": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "team_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -10394,8 +10424,10 @@
                                   },
                                   "efficiency": { "type": "string" },
                                   "text_description": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "game_ID": { "type": "string" },
+                                  "team_ID": { "type": "string" },
                                   "image_id": {
                                     "type": "integer",
                                     "format": "int32"
@@ -10502,6 +10534,7 @@
                                 "type": "object",
                                 "properties": {
                                   "player_ID": { "type": "string" },
+                                  "player_name": { "type": "string" },
                                   "defender_ID": { "type": "string" },
                                   "defender_name": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -10620,6 +10653,7 @@
                               "items": {
                                 "type": "object",
                                 "properties": {
+                                  "path": { "type": "string" },
                                   "graphic_title": { "type": "string" },
                                   "team_ID": { "type": "string" },
                                   "game_ID": { "type": "string" },
@@ -10788,198 +10822,198 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_tracks_chart": {
-                              "type": "object",
-                              "properties": {
-                                "sprint_offense": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
-                                },
-                                "late_clock": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
-                                },
-                                "halfcourt_3pt": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
-                                },
-                                "halfcourt_2pt": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
-                                },
-                                "shot_tracks": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
+                            "sprint_offense": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
+                                }
+                              }
+                            },
+                            "late_clock": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
+                                }
+                              }
+                            },
+                            "halfcourt_3pt": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
+                                }
+                              }
+                            },
+                            "halfcourt_2pt": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
+                                }
+                              }
+                            },
+                            "shot_tracks": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
                                 }
                               }
                             }
@@ -11059,60 +11093,55 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shooting_breakdown": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "game_ID": { "type": "string" },
-                                  "two_points_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "two_points_att": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "two_points_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "three_points_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "three_points_att": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "three_points_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "free_throws_expected_value": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "free_throws_att": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "free_throws_made": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "text_description": { "type": "string" },
-                                  "text_visualization": { "type": "string" },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "game_ID": { "type": "string" },
+                              "two_points_expected_value": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "two_points_att": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "two_points_made": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "three_points_expected_value": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "three_points_att": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "three_points_made": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "free_throws_expected_value": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "free_throws_att": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "free_throws_made": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "text_description": { "type": "string" },
+                              "text_visualization": { "type": "string" },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -11190,43 +11219,38 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "paint_drive_direction": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "player_ID": { "type": "string" },
-                                  "graphic_title": { "type": "string" },
-                                  "paint_drive_location_left": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "per_game_created_left": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "paint_drive_location_right": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "points_per_game_created_right": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "total_paint_drives": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "player_ID": { "type": "string" },
+                              "graphic_title": { "type": "string" },
+                              "paint_drive_location_left": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "per_game_created_left": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "paint_drive_location_right": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "points_per_game_created_right": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "total_paint_drives": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -11304,44 +11328,39 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shot_tracks_time": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "on_ball_pct": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "off_ball_pct": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "on_ball": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "off_ball": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "shooting_plays": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" },
-                                  "player_ID": { "type": "string" },
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "on_ball_pct": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "off_ball_pct": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "on_ball": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "off_ball": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "shooting_plays": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" },
+                              "player_ID": { "type": "string" },
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" }
                             }
                           }
                         }
@@ -11419,41 +11438,36 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "shot_tracks_length": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "on_ball_pct": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "off_ball_pct": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "on_ball": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "off_ball": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "shooting_plays": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "on_ball_pct": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "off_ball_pct": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "on_ball": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "off_ball": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "shooting_plays": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -11534,69 +11548,64 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_taking_making": {
-                              "type": "object",
-                              "properties": {
-                                "top_shot_makers": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "aggregate_name": { "type": "string" },
-                                      "card_sub_type": { "type": "string" },
-                                      "player_1": { "type": "string" },
-                                      "player_1_id": { "type": "string" },
-                                      "player_1_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_1_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_1_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_1_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_2": { "type": "string" },
-                                      "player_2_id": { "type": "string" },
-                                      "player_2_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_2_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_2_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_2_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_3": { "type": "string" },
-                                      "player_3_id": { "type": "string" },
-                                      "player_3_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_3_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_3_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_3_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
+                            "top_shot_makers": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "aggregate_name": { "type": "string" },
+                                  "card_sub_type": { "type": "string" },
+                                  "player_1": { "type": "string" },
+                                  "player_1_id": { "type": "string" },
+                                  "player_1_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_1_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_1_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_1_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_2": { "type": "string" },
+                                  "player_2_id": { "type": "string" },
+                                  "player_2_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_2_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_2_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_2_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_3": { "type": "string" },
+                                  "player_3_id": { "type": "string" },
+                                  "player_3_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_3_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_3_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_3_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
                                 }
                               }
                             }
@@ -11679,69 +11688,64 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_taking_making": {
-                              "type": "object",
-                              "properties": {
-                                "shot_takers": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "aggregate_name": { "type": "string" },
-                                      "card_sub_type": { "type": "string" },
-                                      "player_1": { "type": "string" },
-                                      "player_1_id": { "type": "string" },
-                                      "player_1_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_1_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_1_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_1_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_2": { "type": "string" },
-                                      "player_2_id": { "type": "string" },
-                                      "player_2_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_2_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_2_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_2_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_3": { "type": "string" },
-                                      "player_3_id": { "type": "string" },
-                                      "player_3_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_3_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_3_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_3_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
+                            "shot_takers": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "aggregate_name": { "type": "string" },
+                                  "card_sub_type": { "type": "string" },
+                                  "player_1": { "type": "string" },
+                                  "player_1_id": { "type": "string" },
+                                  "player_1_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_1_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_1_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_1_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_2": { "type": "string" },
+                                  "player_2_id": { "type": "string" },
+                                  "player_2_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_2_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_2_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_2_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_3": { "type": "string" },
+                                  "player_3_id": { "type": "string" },
+                                  "player_3_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_3_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_3_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_3_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
                                 }
                               }
                             }
@@ -11824,69 +11828,64 @@
                         "stats": {
                           "type": "object",
                           "properties": {
-                            "shot_taking_making": {
-                              "type": "object",
-                              "properties": {
-                                "bottom_shot_makers": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "aggregate_name": { "type": "string" },
-                                      "card_sub_type": { "type": "string" },
-                                      "player_1": { "type": "string" },
-                                      "player_1_id": { "type": "string" },
-                                      "player_1_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_1_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_1_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_1_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_2": { "type": "string" },
-                                      "player_2_id": { "type": "string" },
-                                      "player_2_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_2_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_2_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_2_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "player_3": { "type": "string" },
-                                      "player_3_id": { "type": "string" },
-                                      "player_3_points_scored": {
-                                        "type": "string"
-                                      },
-                                      "player_3_expected_points": {
-                                        "type": "string"
-                                      },
-                                      "player_3_player_stat": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "player_3_player_stat_string": {
-                                        "type": "string"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" }
-                                    }
-                                  }
+                            "bottom_shot_makers": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "aggregate_name": { "type": "string" },
+                                  "card_sub_type": { "type": "string" },
+                                  "player_1": { "type": "string" },
+                                  "player_1_id": { "type": "string" },
+                                  "player_1_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_1_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_1_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_1_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_2": { "type": "string" },
+                                  "player_2_id": { "type": "string" },
+                                  "player_2_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_2_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_2_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_2_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "player_3": { "type": "string" },
+                                  "player_3_id": { "type": "string" },
+                                  "player_3_points_scored": {
+                                    "type": "string"
+                                  },
+                                  "player_3_expected_points": {
+                                    "type": "string"
+                                  },
+                                  "player_3_player_stat": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "player_3_player_stat_string": {
+                                    "type": "string"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" }
                                 }
                               }
                             }
@@ -11967,49 +11966,46 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "matchup_comparison": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "defender_1_ID": { "type": "string" },
-                                  "defender_1_name": { "type": "string" },
-                                  "defender_1_offensive_rating": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "defender_1_possessions": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "defender_2_ID": { "type": "string" },
-                                  "defender_2_name": { "type": "string" },
-                                  "defender_2_offensive_rating": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "defender_2_possessions": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "total_possessions": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "efficiency": { "type": "string" },
-                                  "text_description": { "type": "string" },
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "defender_1_ID": { "type": "string" },
+                              "defender_1_name": { "type": "string" },
+                              "defender_1_offensive_rating": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "defender_1_possessions": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "defender_2_ID": { "type": "string" },
+                              "defender_2_name": { "type": "string" },
+                              "defender_2_offensive_rating": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "defender_2_possessions": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "total_possessions": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "efficiency": { "type": "string" },
+                              "text_description": { "type": "string" },
+                              "player_name": { "type": "string" },
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "team_ID": { "type": "string" },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -12088,36 +12084,32 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "1_on_1_matchups": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "player_ID": { "type": "string" },
-                                  "defender_ID": { "type": "string" },
-                                  "defender_name": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "total_possessions": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "text_description": { "type": "string" },
-                                  "field_goals_att": { "type": "string" },
-                                  "field_goals_made": { "type": "string" },
-                                  "turnovers": { "type": "string" },
-                                  "points": { "type": "string" },
-                                  "rating": { "type": "string" },
-                                  "fense": { "type": "string" },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "player_ID": { "type": "string" },
+                              "player_name": { "type": "string" },
+                              "defender_ID": { "type": "string" },
+                              "defender_name": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "total_possessions": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "text_description": { "type": "string" },
+                              "field_goals_att": { "type": "string" },
+                              "field_goals_made": { "type": "string" },
+                              "turnovers": { "type": "string" },
+                              "points": { "type": "string" },
+                              "rating": { "type": "string" },
+                              "fense": { "type": "string" },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -12195,50 +12187,44 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "nba_lineups": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "player_ID": { "type": "string" },
-                                  "player_1_name": { "type": "string" },
-                                  "player_1_position": { "type": "string" },
-                                  "player_2_name": { "type": "string" },
-                                  "player_2_position": { "type": "string" },
-                                  "player_3_name": { "type": "string" },
-                                  "player_3_position": { "type": "string" },
-                                  "player_4_name": { "type": "string" },
-                                  "player_4_position": { "type": "string" },
-                                  "player_5_name": { "type": "string" },
-                                  "player_5_position": { "type": "string" },
-                                  "lineup_plus_minus": { "type": "string" },
-                                  "lineup_time": { "type": "string" },
-                                  "lineup_eFG_pct": { "type": "string" },
-                                  "lineup_eFG_pct_allowed": {
-                                    "type": "string"
-                                  },
-                                  "time_left_on_shot_clock": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "team_eFG_pct": { "type": "string" },
-                                  "team_eFG_pct_allowed": { "type": "string" },
-                                  "team_time_left_on_shot_clock": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "team_ID": { "type": "string" },
+                              "player_ID": { "type": "string" },
+                              "player_1_name": { "type": "string" },
+                              "player_1_position": { "type": "string" },
+                              "player_2_name": { "type": "string" },
+                              "player_2_position": { "type": "string" },
+                              "player_3_name": { "type": "string" },
+                              "player_3_position": { "type": "string" },
+                              "player_4_name": { "type": "string" },
+                              "player_4_position": { "type": "string" },
+                              "player_5_name": { "type": "string" },
+                              "player_5_position": { "type": "string" },
+                              "lineup_plus_minus": { "type": "string" },
+                              "lineup_time": { "type": "string" },
+                              "lineup_eFG_pct": { "type": "string" },
+                              "lineup_eFG_pct_allowed": { "type": "string" },
+                              "time_left_on_shot_clock": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "team_eFG_pct": { "type": "string" },
+                              "team_eFG_pct_allowed": { "type": "string" },
+                              "team_time_left_on_shot_clock": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -12316,50 +12302,44 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "nba_lineups": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "player_ID": { "type": "string" },
-                                  "player_1_name": { "type": "string" },
-                                  "player_1_position": { "type": "string" },
-                                  "player_2_name": { "type": "string" },
-                                  "player_2_position": { "type": "string" },
-                                  "player_3_name": { "type": "string" },
-                                  "player_3_position": { "type": "string" },
-                                  "player_4_name": { "type": "string" },
-                                  "player_4_position": { "type": "string" },
-                                  "player_5_name": { "type": "string" },
-                                  "player_5_position": { "type": "string" },
-                                  "lineup_plus_minus": { "type": "string" },
-                                  "lineup_time": { "type": "string" },
-                                  "lineup_eFG_pct": { "type": "string" },
-                                  "lineup_eFG_pct_allowed": {
-                                    "type": "string"
-                                  },
-                                  "time_left_on_shot_clock": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "team_eFG_pct": { "type": "string" },
-                                  "team_eFG_pct_allowed": { "type": "string" },
-                                  "team_time_left_on_shot_clock": {
-                                    "type": "number",
-                                    "format": "float"
-                                  },
-                                  "image_id": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
-                                }
-                              }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "team_ID": { "type": "string" },
+                              "player_ID": { "type": "string" },
+                              "player_1_name": { "type": "string" },
+                              "player_1_position": { "type": "string" },
+                              "player_2_name": { "type": "string" },
+                              "player_2_position": { "type": "string" },
+                              "player_3_name": { "type": "string" },
+                              "player_3_position": { "type": "string" },
+                              "player_4_name": { "type": "string" },
+                              "player_4_position": { "type": "string" },
+                              "player_5_name": { "type": "string" },
+                              "player_5_position": { "type": "string" },
+                              "lineup_plus_minus": { "type": "string" },
+                              "lineup_time": { "type": "string" },
+                              "lineup_eFG_pct": { "type": "string" },
+                              "lineup_eFG_pct_allowed": { "type": "string" },
+                              "time_left_on_shot_clock": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "team_eFG_pct": { "type": "string" },
+                              "team_eFG_pct_allowed": { "type": "string" },
+                              "team_time_left_on_shot_clock": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -12437,70 +12417,63 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "nba_shot_taking_making": {
-                              "type": "array",
-                              "items": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "home": {
                                 "type": "object",
                                 "properties": {
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "home": {
-                                    "type": "object",
-                                    "properties": {
-                                      "name": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "score_info": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "shot_taking_text": { "type": "string" },
-                                      "shot_taking_value": { "type": "string" },
-                                      "shot_making_text": { "type": "string" },
-                                      "shot_making_value": { "type": "string" },
-                                      "actual_expected": { "type": "string" }
-                                    }
-                                  },
-                                  "away": {
-                                    "type": "object",
-                                    "properties": {
-                                      "name": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "score_info": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "shot_taking_text": { "type": "string" },
-                                      "shot_taking_value": { "type": "string" },
-                                      "shot_making_text": { "type": "string" },
-                                      "shot_making_value": { "type": "string" },
-                                      "actual_expected": { "type": "string" }
-                                    }
-                                  },
-                                  "game": {
-                                    "type": "object",
-                                    "properties": {
-                                      "win_frequency_text": {
-                                        "type": "string"
-                                      },
-                                      "win_frequency_value": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "number",
-                                          "format": "float"
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "image_id": {
+                                  "name": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "score_info": {
                                     "type": "integer",
                                     "format": "int32"
                                   },
-                                  "date": { "type": "string" },
-                                  "date_string": { "type": "string" }
+                                  "shot_taking_text": { "type": "string" },
+                                  "shot_taking_value": { "type": "string" },
+                                  "shot_making_text": { "type": "string" },
+                                  "shot_making_value": { "type": "string" },
+                                  "actual_expected": { "type": "string" }
                                 }
-                              }
+                              },
+                              "away": {
+                                "type": "object",
+                                "properties": {
+                                  "name": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "score_info": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "shot_taking_text": { "type": "string" },
+                                  "shot_taking_value": { "type": "string" },
+                                  "shot_making_text": { "type": "string" },
+                                  "shot_making_value": { "type": "string" },
+                                  "actual_expected": { "type": "string" }
+                                }
+                              },
+                              "game": {
+                                "type": "object",
+                                "properties": {
+                                  "win_frequency_text": { "type": "string" },
+                                  "win_frequency_value": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "number",
+                                      "format": "float"
+                                    }
+                                  }
+                                }
+                              },
+                              "image_id": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "date": { "type": "string" },
+                              "date_string": { "type": "string" }
                             }
                           }
                         }
@@ -12578,45 +12551,40 @@
                           }
                         },
                         "stats": {
-                          "type": "object",
-                          "properties": {
-                            "sport_game_possession": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "graphic_title": { "type": "string" },
-                                  "game_ID": { "type": "string" },
-                                  "date": { "type": "string" },
-                                  "away_team_ID": { "type": "string" },
-                                  "away_team_name": { "type": "string" },
-                                  "away_rebounds": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "away_opponent_turnovers": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "away_total_shooting_plays": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "home_team_ID": { "type": "string" },
-                                  "home_team_name": { "type": "string" },
-                                  "home_rebounds": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "home_opponent_turnovers": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  },
-                                  "home_total_shooting_plays": {
-                                    "type": "integer",
-                                    "format": "int32"
-                                  }
-                                }
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "graphic_title": { "type": "string" },
+                              "game_ID": { "type": "string" },
+                              "date": { "type": "string" },
+                              "away_team_ID": { "type": "string" },
+                              "away_team_name": { "type": "string" },
+                              "away_rebounds": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "away_opponent_turnovers": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "away_total_shooting_plays": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "home_team_ID": { "type": "string" },
+                              "home_team_name": { "type": "string" },
+                              "home_rebounds": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "home_opponent_turnovers": {
+                                "type": "integer",
+                                "format": "int32"
+                              },
+                              "home_total_shooting_plays": {
+                                "type": "integer",
+                                "format": "int32"
                               }
                             }
                           }
@@ -12698,97 +12666,91 @@
                           "type": "object",
                           "properties": {
                             "halfcourt_2pt": {
-                              "type": "object",
-                              "properties": {
-                                "halfcourt_2pt": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" },
-                                      "x_y_coords": {
-                                        "type": "array",
-                                        "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" },
+                                  "x_y_coords": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "game_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_points": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "shot_points_if_made": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "quarter": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "foul": { "type": "boolean" },
+                                        "outcome": { "type": "string" },
+                                        "is_fastbreak": { "type": "boolean" },
+                                        "x_y_coords": {
                                           "type": "object",
                                           "properties": {
-                                            "game_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "player_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "on_ball": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_points": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "shot_points_if_made": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "quarter": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "foul": { "type": "boolean" },
-                                            "outcome": { "type": "string" },
-                                            "is_fastbreak": {
-                                              "type": "boolean"
-                                            },
-                                            "x_y_coords": {
-                                              "type": "object",
-                                              "properties": {
-                                                "player_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "on_ball": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "ball_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                }
+                                            "ball_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
                                               }
                                             }
                                           }
@@ -12878,97 +12840,91 @@
                           "type": "object",
                           "properties": {
                             "halfcourt_3pt": {
-                              "type": "object",
-                              "properties": {
-                                "halfcourt_3pt": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" },
-                                      "x_y_coords": {
-                                        "type": "array",
-                                        "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" },
+                                  "x_y_coords": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "game_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_points": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "shot_points_if_made": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "quarter": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "foul": { "type": "boolean" },
+                                        "outcome": { "type": "string" },
+                                        "is_fastbreak": { "type": "boolean" },
+                                        "x_y_coords": {
                                           "type": "object",
                                           "properties": {
-                                            "game_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "player_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "on_ball": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_points": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "shot_points_if_made": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "quarter": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "foul": { "type": "boolean" },
-                                            "outcome": { "type": "string" },
-                                            "is_fastbreak": {
-                                              "type": "boolean"
-                                            },
-                                            "x_y_coords": {
-                                              "type": "object",
-                                              "properties": {
-                                                "player_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "on_ball": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "ball_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                }
+                                            "ball_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
                                               }
                                             }
                                           }
@@ -13058,97 +13014,91 @@
                           "type": "object",
                           "properties": {
                             "late_clock": {
-                              "type": "object",
-                              "properties": {
-                                "late_clock": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" },
-                                      "x_y_coords": {
-                                        "type": "array",
-                                        "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" },
+                                  "x_y_coords": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "game_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_points": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "shot_points_if_made": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "quarter": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "foul": { "type": "boolean" },
+                                        "outcome": { "type": "string" },
+                                        "is_fastbreak": { "type": "boolean" },
+                                        "x_y_coords": {
                                           "type": "object",
                                           "properties": {
-                                            "game_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "player_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "on_ball": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_points": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "shot_points_if_made": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "quarter": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "foul": { "type": "boolean" },
-                                            "outcome": { "type": "string" },
-                                            "is_fastbreak": {
-                                              "type": "boolean"
-                                            },
-                                            "x_y_coords": {
-                                              "type": "object",
-                                              "properties": {
-                                                "player_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "on_ball": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "ball_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                }
+                                            "ball_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
                                               }
                                             }
                                           }
@@ -13238,97 +13188,91 @@
                           "type": "object",
                           "properties": {
                             "sprint_offense": {
-                              "type": "object",
-                              "properties": {
-                                "sprint_offense": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
-                                      "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "field_goals_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "points": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_att": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "three_points_made": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "image_id": {
-                                        "type": "integer",
-                                        "format": "int32"
-                                      },
-                                      "date": { "type": "string" },
-                                      "date_string": { "type": "string" },
-                                      "x_y_coords": {
-                                        "type": "array",
-                                        "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" },
+                                  "x_y_coords": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "game_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_points": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "shot_points_if_made": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "quarter": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "foul": { "type": "boolean" },
+                                        "outcome": { "type": "string" },
+                                        "is_fastbreak": { "type": "boolean" },
+                                        "x_y_coords": {
                                           "type": "object",
                                           "properties": {
-                                            "game_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "player_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_clock": {
-                                              "type": "number",
-                                              "format": "float"
+                                            "on_ball": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
                                             },
-                                            "shot_points": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "shot_points_if_made": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "quarter": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "foul": { "type": "boolean" },
-                                            "outcome": { "type": "string" },
-                                            "is_fastbreak": {
-                                              "type": "boolean"
-                                            },
-                                            "x_y_coords": {
-                                              "type": "object",
-                                              "properties": {
-                                                "player_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "on_ball": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "ball_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                }
+                                            "ball_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
                                               }
                                             }
                                           }
@@ -13418,28 +13362,377 @@
                           "type": "object",
                           "properties": {
                             "shot_tracks": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": { "type": "string" },
+                                  "graphic_title": { "type": "string" },
+                                  "team_ID": { "type": "string" },
+                                  "game_ID": { "type": "string" },
+                                  "opponent_name": { "type": "string" },
+                                  "field_goals_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "field_goals_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "points": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_att": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "three_points_made": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "image_id": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                  },
+                                  "date": { "type": "string" },
+                                  "date_string": { "type": "string" },
+                                  "x_y_coords": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "game_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_clock": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
+                                        "shot_points": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "shot_points_if_made": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "quarter": {
+                                          "type": "integer",
+                                          "format": "int32"
+                                        },
+                                        "foul": { "type": "boolean" },
+                                        "outcome": { "type": "string" },
+                                        "is_fastbreak": { "type": "boolean" },
+                                        "x_y_coords": {
+                                          "type": "object",
+                                          "properties": {
+                                            "player_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
+                                            },
+                                            "on_ball": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
+                                            },
+                                            "ball_location": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "number",
+                                                "format": "float"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "created_at": { "type": "string" },
+                    "updated_at": { "type": "string" },
+                    "deleted_at": { "type": "string", "nullable": true }
+                  }
+                }
+              }
+            }
+          },
+          "400": { "description": "Invalid ID supplied" },
+          "404": { "description": "Player not found" }
+        }
+      }
+    },
+    "/game/{gameId}/type/pregame": {
+      "get": {
+        "tags": ["game"],
+        "summary": "game card - pregame",
+        "description": "",
+        "operationId": "game_pregame",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "gameId",
+            "in": "path",
+            "description": "game's Id from SR model",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": { "type": "boolean" },
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "integer", "format": "int32" },
+                    "sr_id": { "type": "string" },
+                    "type": { "type": "string" },
+                    "sport": { "type": "string" },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "string" },
+                        "sr_id": { "type": "string" },
+                        "reference": { "type": "string" },
+                        "status": { "type": "string" },
+                        "scheduled": { "type": "string" },
+                        "attendance": { "type": "integer", "format": "int32" },
+                        "clock": { "type": "string" },
+                        "quarter": { "type": "integer", "format": "int32" },
+                        "home": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "name": { "type": "string" },
+                            "market": { "type": "string" },
+                            "points": { "type": "integer", "format": "int32" }
+                          }
+                        },
+                        "away": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "name": { "type": "string" },
+                            "market": { "type": "string" },
+                            "points": { "type": "integer", "format": "int32" }
+                          }
+                        },
+                        "stats": {
+                          "type": "object",
+                          "properties": {
+                            "null": {
                               "type": "object",
                               "properties": {
-                                "shot_tracks": {
+                                "shot_tracks_chart_home": {
+                                  "type": "object",
+                                  "properties": {
+                                    "all_shots": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "player_ID": { "type": "string" },
+                                          "path": { "type": "string" },
+                                          "graphic_title": { "type": "string" },
+                                          "team_ID": { "type": "string" },
+                                          "game_ID": { "type": "string" },
+                                          "opponent_name": { "type": "string" },
+                                          "field_goals_made": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "field_goals_att": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "points": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "three_points_att": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "three_points_made": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "image_id": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "date": { "type": "string" },
+                                          "date_string": { "type": "string" }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "shot_tracks_chart_away": {
+                                  "type": "object",
+                                  "properties": {
+                                    "all_shots": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "player_ID": { "type": "string" },
+                                          "path": { "type": "string" },
+                                          "graphic_title": { "type": "string" },
+                                          "team_ID": { "type": "string" },
+                                          "game_ID": { "type": "string" },
+                                          "opponent_name": { "type": "string" },
+                                          "field_goals_made": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "field_goals_att": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "points": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "three_points_att": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "three_points_made": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "image_id": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "date": { "type": "string" },
+                                          "date_string": { "type": "string" }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "nba_shot_taking_making": {
                                   "type": "array",
                                   "items": {
                                     "type": "object",
                                     "properties": {
                                       "graphic_title": { "type": "string" },
-                                      "team_ID": { "type": "string" },
                                       "game_ID": { "type": "string" },
-                                      "opponent_name": { "type": "string" },
-                                      "field_goals_made": {
+                                      "home": {
+                                        "type": "object",
+                                        "properties": {
+                                          "name": { "type": "string" },
+                                          "team_ID": { "type": "string" },
+                                          "score_info": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "shot_taking_text": {
+                                            "type": "string"
+                                          },
+                                          "shot_taking_value": {
+                                            "type": "string"
+                                          },
+                                          "shot_making_text": {
+                                            "type": "string"
+                                          },
+                                          "shot_making_value": {
+                                            "type": "string"
+                                          },
+                                          "actual_expected": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      },
+                                      "away": {
+                                        "type": "object",
+                                        "properties": {
+                                          "name": { "type": "string" },
+                                          "team_ID": { "type": "string" },
+                                          "score_info": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                          },
+                                          "shot_taking_text": {
+                                            "type": "string"
+                                          },
+                                          "shot_taking_value": {
+                                            "type": "string"
+                                          },
+                                          "shot_making_text": {
+                                            "type": "string"
+                                          },
+                                          "shot_making_value": {
+                                            "type": "string"
+                                          },
+                                          "actual_expected": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      },
+                                      "game": {
+                                        "type": "object",
+                                        "properties": {
+                                          "win_frequency_text": {
+                                            "type": "string"
+                                          },
+                                          "win_frequency_value": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "number",
+                                              "format": "float"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "image_id": {
                                         "type": "integer",
                                         "format": "int32"
                                       },
-                                      "field_goals_att": {
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "shooting_breakdown": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "game_ID": { "type": "string" },
+                                      "two_points_expected_value": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
+                                      "two_points_att": {
                                         "type": "integer",
                                         "format": "int32"
                                       },
-                                      "points": {
+                                      "two_points_made": {
                                         "type": "integer",
                                         "format": "int32"
+                                      },
+                                      "three_points_expected_value": {
+                                        "type": "number",
+                                        "format": "float"
                                       },
                                       "three_points_att": {
                                         "type": "integer",
@@ -13449,71 +13742,327 @@
                                         "type": "integer",
                                         "format": "int32"
                                       },
+                                      "free_throws_expected_value": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
+                                      "free_throws_att": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "free_throws_made": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "text_description": { "type": "string" },
+                                      "text_visualization": {
+                                        "type": "string"
+                                      },
                                       "image_id": {
                                         "type": "integer",
                                         "format": "int32"
                                       },
                                       "date": { "type": "string" },
-                                      "date_string": { "type": "string" },
-                                      "x_y_coords": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "object",
-                                          "properties": {
-                                            "game_clock": {
-                                              "type": "number",
-                                              "format": "float"
-                                            },
-                                            "shot_clock": {
-                                              "type": "number",
-                                              "format": "float"
-                                            },
-                                            "shot_points": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "shot_points_if_made": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "quarter": {
-                                              "type": "integer",
-                                              "format": "int32"
-                                            },
-                                            "foul": { "type": "boolean" },
-                                            "outcome": { "type": "string" },
-                                            "is_fastbreak": {
-                                              "type": "boolean"
-                                            },
-                                            "x_y_coords": {
-                                              "type": "object",
-                                              "properties": {
-                                                "player_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "on_ball": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                },
-                                                "ball_location": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number",
-                                                    "format": "float"
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "nba_lineups": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "player_ID": { "type": "string" },
+                                      "player_1_name": { "type": "string" },
+                                      "player_1_position": { "type": "string" },
+                                      "player_2_name": { "type": "string" },
+                                      "player_2_position": { "type": "string" },
+                                      "player_3_name": { "type": "string" },
+                                      "player_3_position": { "type": "string" },
+                                      "player_4_name": { "type": "string" },
+                                      "player_4_position": { "type": "string" },
+                                      "player_5_name": { "type": "string" },
+                                      "player_5_position": { "type": "string" },
+                                      "lineup_plus_minus": { "type": "string" },
+                                      "lineup_time": { "type": "string" },
+                                      "lineup_eFG_pct": { "type": "string" },
+                                      "lineup_eFG_pct_allowed": {
+                                        "type": "string"
+                                      },
+                                      "time_left_on_shot_clock": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
+                                      "team_eFG_pct": { "type": "string" },
+                                      "team_eFG_pct_allowed": {
+                                        "type": "string"
+                                      },
+                                      "team_time_left_on_shot_clock": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
+                                      "image_id": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "sport_game_possession": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "graphic_title": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "date": { "type": "string" },
+                                      "away_team_ID": { "type": "string" },
+                                      "away_team_name": { "type": "string" },
+                                      "away_rebounds": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "away_opponent_turnovers": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "away_total_shooting_plays": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "home_team_ID": { "type": "string" },
+                                      "home_team_name": { "type": "string" },
+                                      "home_rebounds": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "home_opponent_turnovers": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "home_total_shooting_plays": {
+                                        "type": "integer",
+                                        "format": "int32"
                                       }
+                                    }
+                                  }
+                                },
+                                "trends_team": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "up_down": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "player_downwards_trend_1": {
+                                        "type": "string"
+                                      },
+                                      "player_downwards_trend_2": {
+                                        "type": "string"
+                                      },
+                                      "player_downwards_trend_3": {
+                                        "type": "string"
+                                      },
+                                      "player_upwards_trend_1": {
+                                        "type": "string"
+                                      },
+                                      "player_upwards_trend_2": {
+                                        "type": "string"
+                                      },
+                                      "player_upwards_trend_3": {
+                                        "type": "string"
+                                      },
+                                      "image_id": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "trends_player": {
+                                  "type": "object",
+                                  "properties": {
+                                    "player_ID": { "type": "string" },
+                                    "up_down": { "type": "string" },
+                                    "team_ID": { "type": "string" },
+                                    "player_downwards_trend_1": {
+                                      "type": "string"
+                                    },
+                                    "player_downwards_trend_2": {
+                                      "type": "string"
+                                    },
+                                    "player_downwards_trend_3": {
+                                      "type": "string"
+                                    },
+                                    "player_upwards_trend_1": {
+                                      "type": "string"
+                                    },
+                                    "player_upwards_trend_2": {
+                                      "type": "string"
+                                    },
+                                    "player_upwards_trend_3": {
+                                      "type": "string"
+                                    },
+                                    "image_id": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
+                                    "date": { "type": "string" },
+                                    "date_string": { "type": "string" }
+                                  }
+                                },
+                                "matchup_comparison_home": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "defender_1_ID": { "type": "string" },
+                                      "defender_1_name": { "type": "string" },
+                                      "defender_1_offensive_rating": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_1_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_2_ID": { "type": "string" },
+                                      "defender_2_name": { "type": "string" },
+                                      "defender_2_offensive_rating": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_2_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "total_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "efficiency": { "type": "string" },
+                                      "text_description": { "type": "string" },
+                                      "player_name": { "type": "string" },
+                                      "graphic_title": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "image_id": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "matchup_comparison_away": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "defender_1_ID": { "type": "string" },
+                                      "defender_1_name": { "type": "string" },
+                                      "defender_1_offensive_rating": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_1_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_2_ID": { "type": "string" },
+                                      "defender_2_name": { "type": "string" },
+                                      "defender_2_offensive_rating": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "defender_2_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "total_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "efficiency": { "type": "string" },
+                                      "text_description": { "type": "string" },
+                                      "player_name": { "type": "string" },
+                                      "graphic_title": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "team_ID": { "type": "string" },
+                                      "image_id": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "1_on_1_matchups_home": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "player_ID": { "type": "string" },
+                                      "player_name": { "type": "string" },
+                                      "defender_ID": { "type": "string" },
+                                      "defender_name": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "total_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "text_description": { "type": "string" },
+                                      "field_goals_att": { "type": "string" },
+                                      "field_goals_made": { "type": "string" },
+                                      "turnovers": { "type": "string" },
+                                      "points": { "type": "string" },
+                                      "rating": { "type": "string" },
+                                      "fense": { "type": "string" },
+                                      "image_id": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
+                                    }
+                                  }
+                                },
+                                "1_on_1_matchups_away": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "player_ID": { "type": "string" },
+                                      "player_name": { "type": "string" },
+                                      "defender_ID": { "type": "string" },
+                                      "defender_name": { "type": "string" },
+                                      "game_ID": { "type": "string" },
+                                      "total_possessions": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "text_description": { "type": "string" },
+                                      "field_goals_att": { "type": "string" },
+                                      "field_goals_made": { "type": "string" },
+                                      "turnovers": { "type": "string" },
+                                      "points": { "type": "string" },
+                                      "rating": { "type": "string" },
+                                      "fense": { "type": "string" },
+                                      "image_id": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                      },
+                                      "date": { "type": "string" },
+                                      "date_string": { "type": "string" }
                                     }
                                   }
                                 }
@@ -13541,6 +14090,7 @@
     "shot_tracks_chart": {
       "type": "object",
       "properties": {
+        "path": { "type": "string" },
         "graphic_title": { "type": "string" },
         "team_ID": { "type": "string" },
         "game_ID": { "type": "string" },
@@ -13655,8 +14205,10 @@
           "total_possessions": { "type": "integer", "format": "int32" },
           "efficiency": { "type": "string" },
           "text_description": { "type": "string" },
+          "player_name": { "type": "string" },
           "graphic_title": { "type": "string" },
           "game_ID": { "type": "string" },
+          "team_ID": { "type": "string" },
           "image_id": { "type": "integer", "format": "int32" },
           "date": { "type": "string" },
           "date_string": { "type": "string" }
@@ -13767,6 +14319,7 @@
         "properties": {
           "graphic_title": { "type": "string" },
           "game_ID": { "type": "string" },
+          "team_ID": { "type": "string" },
           "player_ID": { "type": "string" },
           "player_1_name": { "type": "string" },
           "player_1_position": { "type": "string" },
@@ -13998,6 +14551,7 @@
         "type": "object",
         "properties": {
           "player_ID": { "type": "string" },
+          "player_name": { "type": "string" },
           "defender_ID": { "type": "string" },
           "defender_name": { "type": "string" },
           "game_ID": { "type": "string" },

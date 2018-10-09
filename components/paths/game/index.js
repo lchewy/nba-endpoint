@@ -20,6 +20,8 @@ import {
   shot_tracks as shot_tracks_sub
 } from "./shot_tracks_charts";
 
+import pregame from "./pregame";
+
 export default {
   "/game/{gameId}/type/shot_tracks": shot_tracks,
   "/game/{gameId}/type/shooting_breakdown": shot_probability,
@@ -41,4 +43,5 @@ export default {
   "/game/{gameId}/type/shot_tracks/late_clock": late_clock,
   "/game/{gameId}/type/shot_tracks/sprint_offense": sprint_offense,
   "/game/{gameId}/type/shot_tracks/all_shots": shot_tracks_sub,
+  "/game/{gameId}/type/pregame": pregame
 };

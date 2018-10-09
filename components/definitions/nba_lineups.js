@@ -8,6 +8,7 @@ export default {
     properties: {
       graphic_title: str,
       game_ID: str,
+      team_ID: str,
       player_ID: str,
       player_1_name: str,
       player_1_position: str,

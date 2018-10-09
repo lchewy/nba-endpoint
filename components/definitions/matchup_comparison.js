@@ -17,8 +17,10 @@ export default {
       total_possessions: int32,
       efficiency: str,
       text_description: str,
+      player_name: str,
       graphic_title: str,
       game_ID: str,
+      team_ID: str,
       image_id: int32,
       date: str,
       date_string: str

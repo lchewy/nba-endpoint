@@ -4,6 +4,7 @@ export const int32 = { type: "integer", format: "int32" };
 export const bool = { type: "boolean" };
 
 export const shot_tracks_chart = {
+  path: str,
   graphic_title: str,
   team_ID: str,
   game_ID: str,
